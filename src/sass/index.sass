@@ -3,38 +3,148 @@
 @import "components/_header"
 @import "components/_footer"
 
-%item
-  display: inline-block
-  width: 100px
-  height: 100px
-  border: 1px solid black
-  background-color: green
+
+$font_base_size: 10px
+$max_with: 768px
+
+@mixin size($w,$h)
+  width: $w
+  height: $h
+
+
+/*....... 共用css.................................*/
+*
+  // border: 1px solid
+
+
+%container
+  width: 90%
+  margin: 0 auto
+  max-width: 1140px
+
+.img_fluid
+  max-width: 100%
+  height: auto
+  display: block
+
+/* ............................................... */
+#wrapper
+  header
+    width: 100%
+    top: 0
+    left: 0
+    position: absolute
+    z-index: 99
+    .header_container
+      @extend %container
+      .row1
+        display: flex
+        margin-top: 10px
+        .login
+          margin-left: auto
+          padding: 10px
+          a
+            padding: 5px
+            margin: 0 5px
+            font-weight: bold
+      .row2
+        display: flex
+        .logo
+          width: 180px
+          height: 80px
+          background-image: url("../img/logo.png")
+          background-size: cover
+
+        .nav_bar
+          display: flex
+          margin-left: auto
+          nav
+            display: flex
+            argin-left: auto
+            li
+              display: flex
+              align-items: center
+              a
+                padding: 15px
+                font-weight: bold
+      .row3
+        .container_row3
+          width: 60%
+          margin: 0 auto
+          height: 200px
+          display: flex
+          flex-direction: column
+          .slogan
+            width: 80%
+            margin: 10px auto
+            text-align: center
+            a
+              font-size: 32px
+              letter-spacing: 2px
+          .buy
+            padding: 10px
+            margin: 10px auto
+            background-color: transparent
+            border: 1px solid
+            a
+              padding: 10px
+  .banner img
+   margin-top: -100px
+
+//................ content......
+.container
+  margin: 0 auto
+  max-width: 1140px
+  z-index: 1
+  .container_title
+    +size(500px,200px)
+    width: 40%
+    margin: 0 auto
+  .container_box
+    width: 80%
+    margin: 0 auto
+    height: 300px
+    display: flex
+    .wrapper_box
+      display: flex
+      justify-content: space-around
+      align-items: center
+      width: 90%
+      margin: 0 auto
+      .box
+        width: 20%
+        height: 150px
 
 
 
-#app-index
-
-  .list
-    margin-bottom: 50px
-    .item
-      @extend %item
-      width: 150px
-      height: 150px
-
-      // @include respond-to('pad')
-      //   display: block
 
 
-      // @include respond-to('pc')
-      //   display: block
+// %item
+//   display: inline-block
+//   width: 100px
+//   height: 100px
+//   border: 1px solid black
+//   background-color: green
 
 
+// #app-index
+
+//   .list
+//     margin-bottom: 50px
+//     .item
+//       @extend %item
+//       width: 150px
+//       height: 150px
+
+//       // @include respond-to('pad')
+//       //   display: block
 
 
-
-  .banner
-    .item
-      @extend %item
+//       // @include respond-to('pc')
+//       //   display: block
+//   .banner
+//     .item
+//       @extend %item
 
 
 
