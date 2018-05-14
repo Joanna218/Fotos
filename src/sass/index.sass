@@ -14,7 +14,7 @@ $max_with: 768px
 
 /*....... 共用css.................................*/
 *
-  // border: 1px solid
+  border: 1px solid
 
 
 %container
@@ -27,6 +27,23 @@ $max_with: 768px
   height: auto
   display: block
 
+.slogan
+  width: 80%
+  margin: 10px auto
+  text-align: center
+  font-size: 32px
+  letter-spacing: 2px
+  .subtitle
+    font-size: 20px
+
+.logo
+  width: 180px
+  height: 80px
+  background-image: url("../img/logo.png")
+  background-size: cover
+
+.content2
+  background-color: #d9e8f1
 /* ............................................... */
 #wrapper
   header
@@ -49,11 +66,7 @@ $max_with: 768px
             font-weight: bold
       .row2
         display: flex
-        .logo
-          width: 180px
-          height: 80px
-          background-image: url("../img/logo.png")
-          background-size: cover
+
 
         .nav_bar
           display: flex
@@ -74,13 +87,6 @@ $max_with: 768px
           height: 200px
           display: flex
           flex-direction: column
-          .slogan
-            width: 80%
-            margin: 10px auto
-            text-align: center
-            a
-              font-size: 32px
-              letter-spacing: 2px
           .buy
             padding: 10px
             margin: 10px auto
@@ -89,7 +95,7 @@ $max_with: 768px
             a
               padding: 10px
   .banner img
-   margin-top: -100px
+    // margin-top: -100px
 
 //................ content......
 .container
@@ -97,8 +103,8 @@ $max_with: 768px
   max-width: 1140px
   z-index: 1
   .container_title
-    +size(500px,200px)
-    width: 40%
+    width: 500px
+    width: 60%
     margin: 0 auto
   .container_box
     width: 80%
@@ -112,10 +118,74 @@ $max_with: 768px
       width: 90%
       margin: 0 auto
       .box
-        width: 20%
-        height: 150px
+        width: 25%
+        height: 200px
+        .service_img
+          width: 100%
+          height: 80%
+          background-size: contain
+          background-repeat: no-repeat
+          background-position: center
+        .service_title
+          width: 100%
+          height: 20%
+          display: flex
+          align-items: center
+          justify-content: center
+        .service1
+          background-image: url("../img/service1.png")
+        .service2
+          background-image: url("../img/service2.png")
+        .service3
+          background-image: url("../img/service3.png")
 
+//................ footer......
+footer
+  position: relative
+  display: flex
+  // background-color: #7a95a5
+  // opacity: .9
+  .footer_container
+    @extend %container
+    display: flex
+    left: 0px
+    bottom: 0px
+    .footer_logo
+      display: flex
+      width: 30%
+      justify-content: center
+      align-items: center
 
+    .footer_info
+      margin-left: auto
+      width: 70%
+      display: flex
+      .info_box
+        width: 33.33%
+        display: flex
+        flex-direction: column
+        margin: 20px
+        background-color: pink
+        a
+          text-align: center
+          padding: 5px
+        .email_paper
+          display: flex
+          justify-content: center
+          input
+            margin: 1px
+            width: 140px
+          button
+            background-color: black
+            border: 1px solid
+            a
+              font-size: 14px
+              color: white
+
+  .banner
+    position: absolute
+    top: 0
+    z-index: -1
 
 
 
