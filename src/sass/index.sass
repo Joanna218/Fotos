@@ -21,6 +21,7 @@ $max_with: 768px
   width: 90%
   margin: 0 auto
   max-width: 1140px
+  // border: 3px solid red
 
 .img_fluid
   max-width: 100%
@@ -62,12 +63,10 @@ $max_with: 768px
           padding: 10px
           a
             padding: 5px
-            margin: 0 5px
+            // margin: 0 5px
             font-weight: bold
       .row2
         display: flex
-
-
         .nav_bar
           display: flex
           margin-left: auto
@@ -77,12 +76,16 @@ $max_with: 768px
             li
               display: flex
               align-items: center
+              &:hover a
+                border-bottom: 1px solid #ccdde7
+              &:active a
+                border-bottom: 1px solid #436275
               a
-                padding: 15px
+                padding: 15px 15px 10px 15px
                 font-weight: bold
       .row3
         .container_row3
-          width: 60%
+          width: 80%
           margin: 0 auto
           height: 200px
           display: flex
@@ -92,6 +95,10 @@ $max_with: 768px
             margin: 10px auto
             background-color: transparent
             border: 1px solid
+            &:hover
+              background-color: black
+              a
+                color: white
             a
               padding: 10px
   .banner img
@@ -103,7 +110,6 @@ $max_with: 768px
   max-width: 1140px
   z-index: 1
   .container_title
-    width: 500px
     width: 60%
     margin: 0 auto
   .container_box

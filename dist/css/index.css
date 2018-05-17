@@ -374,7 +374,6 @@ a {
       padding: 10px; }
       #wrapper header .header_container .row1 .login a {
         padding: 5px;
-        margin: 0 5px;
         font-weight: bold; }
   #wrapper header .header_container .row2 {
     display: -webkit-box;
@@ -397,11 +396,15 @@ a {
           -webkit-box-align: center;
           -ms-flex-align: center;
           align-items: center; }
+          #wrapper header .header_container .row2 .nav_bar nav li:hover a {
+            border-bottom: 1px solid #ccdde7; }
+          #wrapper header .header_container .row2 .nav_bar nav li:active a {
+            border-bottom: 1px solid #436275; }
           #wrapper header .header_container .row2 .nav_bar nav li a {
-            padding: 15px;
+            padding: 15px 15px 10px 15px;
             font-weight: bold; }
   #wrapper header .header_container .row3 .container_row3 {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     height: 200px;
     display: -webkit-box;
@@ -416,6 +419,10 @@ a {
       margin: 10px auto;
       background-color: transparent;
       border: 1px solid; }
+      #wrapper header .header_container .row3 .container_row3 .buy:hover {
+        background-color: black; }
+        #wrapper header .header_container .row3 .container_row3 .buy:hover a {
+          color: white; }
       #wrapper header .header_container .row3 .container_row3 .buy a {
         padding: 10px; }
 
@@ -424,7 +431,6 @@ a {
   max-width: 1140px;
   z-index: 1; }
   .container .container_title {
-    width: 500px;
     width: 60%;
     margin: 0 auto; }
   .container .container_box {
