@@ -14,10 +14,10 @@ $max_with: 768px
 
 /*....... 共用css.................................*/
 *
-  border: 1px solid
+  // border: 1px solid
 
 
-%container
+%_container
   width: 90%
   margin: 0 auto
   max-width: 1140px
@@ -36,7 +36,29 @@ $max_with: 768px
   letter-spacing: 2px
   .subtitle
     font-size: 20px
-
+  .spesubtitle
+    margin-left: 50px
+.bubble
+  position: relative
+  padding: 10px
+  color: #fff
+  background: #075698
+  border-radius: 50%
+  font-size: 10px
+  top: -30px
+  left: -10px
+  &:after
+    content: "\00a0"
+    width: 0
+    height: 0
+    display: block
+    border-style: solid
+    border-width: 15px
+    border-color: #075698 transparent transparent transparent
+    position: absolute
+    z-index: -1
+    bottom: -19px
+    left: 8px
 .logo
   width: 180px
   height: 80px
@@ -54,7 +76,7 @@ $max_with: 768px
     position: absolute
     z-index: 99
     .header_container
-      @extend %container
+      @extend %_container
       .row1
         display: flex
         margin-top: 10px
@@ -84,7 +106,7 @@ $max_with: 768px
                 padding: 15px 15px 10px 15px
                 font-weight: bold
       .row3
-        .container_row3
+        ._container_row3
           width: 80%
           margin: 0 auto
           height: 200px
@@ -105,17 +127,18 @@ $max_with: 768px
     // margin-top: -100px
 
 //................ content......
-.container
-  margin: 0 auto
-  max-width: 1140px
+.content2_bgc
+  background-color: #d9e8f1
+._container
+  @extend %_container
   z-index: 1
-  .container_title
+  ._container_title
     width: 60%
     margin: 0 auto
-  .container_box
+  ._container_box
     width: 80%
     margin: 0 auto
-    height: 300px
+    // height: 300px
     display: flex
     .wrapper_box
       display: flex
@@ -152,26 +175,26 @@ footer
   // background-color: #7a95a5
   // opacity: .9
   .footer_container
-    @extend %container
+    @extend %_container
     display: flex
     left: 0px
     bottom: 0px
     .footer_logo
       display: flex
-      width: 30%
-      justify-content: center
+      width: 20%
+      justify-content: flex-start
       align-items: center
 
     .footer_info
-      margin-left: auto
-      width: 70%
+      margin-left: 10%
+      width: 60%
       display: flex
       .info_box
         width: 33.33%
         display: flex
         flex-direction: column
-        margin: 20px
-        background-color: pink
+        margin: 20px 0px
+        border-left: 1px solid
         a
           text-align: center
           padding: 5px

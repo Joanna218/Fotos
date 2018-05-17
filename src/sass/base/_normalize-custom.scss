@@ -13,5 +13,11 @@ li {
 a {
     text-decoration: none;
     letter-spacing: 2px;
+    color: black;
+}
+
+//預防bootstrap 內定效果
+:hover a {
+    text-decoration: none;
     color: black
 }

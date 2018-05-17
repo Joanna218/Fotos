@@ -317,6 +317,10 @@ a {
   letter-spacing: 2px;
   color: black; }
 
+:hover a {
+  text-decoration: none;
+  color: black; }
+
 #app-header {
   height: 100px;
   background-color: #bbb; }
@@ -326,10 +330,7 @@ a {
   background-color: #bbb; }
 
 /*....... 共用css.................................*/
-* {
-  border: 1px solid; }
-
-#wrapper header .header_container, footer .footer_container {
+#wrapper header .header_container, ._container, footer .footer_container {
   width: 90%;
   margin: 0 auto;
   max-width: 1140px; }
@@ -347,6 +348,30 @@ a {
   letter-spacing: 2px; }
   .slogan .subtitle {
     font-size: 20px; }
+  .slogan .spesubtitle {
+    margin-left: 50px; }
+
+.bubble {
+  position: relative;
+  padding: 10px;
+  color: #fff;
+  background: #075698;
+  border-radius: 50%;
+  font-size: 10px;
+  top: -30px;
+  left: -10px; }
+  .bubble:after {
+    content: "\00a0";
+    width: 0;
+    height: 0;
+    display: block;
+    border-style: solid;
+    border-width: 15px;
+    border-color: #075698 transparent transparent transparent;
+    position: absolute;
+    z-index: -1;
+    bottom: -19px;
+    left: 8px; }
 
 .logo {
   width: 180px;
@@ -403,7 +428,7 @@ a {
           #wrapper header .header_container .row2 .nav_bar nav li a {
             padding: 15px 15px 10px 15px;
             font-weight: bold; }
-  #wrapper header .header_container .row3 .container_row3 {
+  #wrapper header .header_container .row3 ._container_row3 {
     width: 80%;
     margin: 0 auto;
     height: 200px;
@@ -414,33 +439,33 @@ a {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
-    #wrapper header .header_container .row3 .container_row3 .buy {
+    #wrapper header .header_container .row3 ._container_row3 .buy {
       padding: 10px;
       margin: 10px auto;
       background-color: transparent;
       border: 1px solid; }
-      #wrapper header .header_container .row3 .container_row3 .buy:hover {
+      #wrapper header .header_container .row3 ._container_row3 .buy:hover {
         background-color: black; }
-        #wrapper header .header_container .row3 .container_row3 .buy:hover a {
+        #wrapper header .header_container .row3 ._container_row3 .buy:hover a {
           color: white; }
-      #wrapper header .header_container .row3 .container_row3 .buy a {
+      #wrapper header .header_container .row3 ._container_row3 .buy a {
         padding: 10px; }
 
-.container {
-  margin: 0 auto;
-  max-width: 1140px;
+.content2_bgc {
+  background-color: #d9e8f1; }
+
+._container {
   z-index: 1; }
-  .container .container_title {
+  ._container ._container_title {
     width: 60%;
     margin: 0 auto; }
-  .container .container_box {
+  ._container ._container_box {
     width: 80%;
     margin: 0 auto;
-    height: 300px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    .container .container_box .wrapper_box {
+    ._container ._container_box .wrapper_box {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -451,16 +476,16 @@ a {
       align-items: center;
       width: 90%;
       margin: 0 auto; }
-      .container .container_box .wrapper_box .box {
+      ._container ._container_box .wrapper_box .box {
         width: 25%;
         height: 200px; }
-        .container .container_box .wrapper_box .box .service_img {
+        ._container ._container_box .wrapper_box .box .service_img {
           width: 100%;
           height: 80%;
           background-size: contain;
           background-repeat: no-repeat;
           background-position: center; }
-        .container .container_box .wrapper_box .box .service_title {
+        ._container ._container_box .wrapper_box .box .service_title {
           width: 100%;
           height: 20%;
           display: -webkit-box;
@@ -472,11 +497,11 @@ a {
           -webkit-box-pack: center;
           -ms-flex-pack: center;
           justify-content: center; }
-        .container .container_box .wrapper_box .box .service1 {
+        ._container ._container_box .wrapper_box .box .service1 {
           background-image: url("../img/service1.png"); }
-        .container .container_box .wrapper_box .box .service2 {
+        ._container ._container_box .wrapper_box .box .service2 {
           background-image: url("../img/service2.png"); }
-        .container .container_box .wrapper_box .box .service3 {
+        ._container ._container_box .wrapper_box .box .service3 {
           background-image: url("../img/service3.png"); }
 
 footer {
@@ -494,16 +519,16 @@ footer {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      width: 30%;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
+      width: 20%;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
     footer .footer_container .footer_info {
-      margin-left: auto;
-      width: 70%;
+      margin-left: 10%;
+      width: 60%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
@@ -516,8 +541,8 @@ footer {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        margin: 20px;
-        background-color: pink; }
+        margin: 20px 0px;
+        border-left: 1px solid; }
         footer .footer_container .footer_info .info_box a {
           text-align: center;
           padding: 5px; }

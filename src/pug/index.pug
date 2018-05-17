@@ -5,7 +5,11 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Document
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
     link(rel="stylesheet", href="../css/index.css")
+    link(rel="stylesheet", href="../css/boostrap.css")
   body
     //包住整個html
     #wrapper
@@ -31,7 +35,7 @@ html(lang="en")
                 li
                   a(href="#") 常見問題
           .row3
-            .container_row3
+            ._container_row3
               .slogan
                 a 用自己的方式看見世界
                 br
@@ -41,25 +45,53 @@ html(lang="en")
       //header背景圖
       .banner
         img(src="../img/header.png").img_fluid
-      .content1
-        .container
-          .container_title
+      .content
+        ._container
+          ._container_title
             .slogan
               a 永遠都在你身邊
               br
-              a.subtitle 用照片的故事來陪伴在你的身邊
-          .container_box
-          //-   .box
-          //-   .box
-          //-   .box
-      .content2
-        .container
-          .container_title
+              a.subtitle.spesubtitle 用照片的故事來陪伴在你的身邊
+                span.bubble Hot
+          ._container_box
+            #carousel-example-generic.carousel.slide(data-ride='carousel')
+                // Indicators
+                ol.carousel-indicators
+                  li.active(data-target='#carousel-example-generic', data-slide-to='0')
+                  li(data-target='#carousel-example-generic', data-slide-to='1')
+                  li(data-target='#carousel-example-generic', data-slide-to='2')
+                // Wrapper for slides
+                .carousel-inner(role='listbox')
+                  .item.active
+                    img(src='http://home.bt.com/images/the-20-best-views-in-the-uk-revealed-136417214455702601-170411144310.jpg', width='100%')
+                    .carousel-caption
+                      h3 Title1
+                      p 内容1
+                  .item
+                    img(src='https://www.wavemaker.com/wp-content/uploads/blog-hawk-hill-view.jpg', width='100%')
+                    .carousel-caption
+                      h3 Title2
+                      p 内容2
+                  .item
+                    img(src='https://www.discoverwalks.com/blog/wp-content/uploads/2016/06/paris-view-big.jpg', width='100%')
+                    .carousel-caption
+                      h3 Title3
+                      p 内容3
+                // Controls
+                a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+                  span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+                  span.sr-only Previous
+                a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+                  span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+                  span.sr-only Next
+      .content.content2_bgc
+        ._container
+          ._container_title
             .slogan
                 a 用溫暖的手體會你的心
                 br
                 a.subtitle Fotos用熱忱的雙手提供最真摯的服務貼近你的心
-          .container_box
+          ._container_box
             .wrapper_box
               .box
                 .service_img.service1

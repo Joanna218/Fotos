@@ -13,3 +13,7 @@ a {
   text-decoration: none;
   letter-spacing: 2px;
   color: black; }
+
+:hover a {
+  text-decoration: none;
+  color: black; }
