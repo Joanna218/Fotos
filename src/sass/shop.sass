@@ -1,0 +1,49 @@
+@import "base/_normalize"
+@import "base/_normalize-custom"
+@import "components/_header"
+@import "components/_footer"
+
+*
+  border: 1px solid
+
+%_container
+  width: 90%
+  margin: 0 auto
+  max-width: 1140px
+
+#wrapper
+  .banner_nav
+    ._container_nav
+      @extend %_container
+      nav
+        display: flex
+        justify-content: center
+        // background-color: red
+        margin: 30px 0
+        li
+          display: flex
+          align-items: center
+          justify-content: center
+          border-radius: 25px
+          width: 100px
+          border: 1px solid
+          margin: 5px
+          // background-color: blue
+          a
+            padding: 10px
+            border-radius: 25px
+
+  .content
+    ._container_content
+      @extend %_container
+      display: flex
+      flex-wrap: wrap
+      align-items: stretch
+      align-content: center
+      justify-content: center
+      .box
+        width: 30%
+        height: 350px
+        margin: 1%
+
+

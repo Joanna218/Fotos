@@ -1,4 +1,46 @@
-#app-header
-  height: 100px
-  background-color: #bbb
+*
+  // border: 1px solid
 
+%_container
+  width: 90%
+  margin: 0 auto
+  max-width: 1140px
+  // border: 3px solid red
+
+.logo
+  width: 180px
+  height: 80px
+  background-image: url("../img/logo.png")
+  background-size: cover
+
+header
+  background-color: #f2f7fa
+  .header_container
+    @extend %_container
+    .row1
+      display: flex
+      .login
+        margin-left: auto
+        padding: 10px
+        a
+          padding: 5px
+          // margin: 0 5px
+          font-weight: bold
+    .row2
+      display: flex
+      .nav_bar
+        display: flex
+        margin-left: auto
+        nav
+          display: flex
+          argin-left: auto
+          li
+            display: flex
+            align-items: center
+            &:hover a
+              border-bottom: 1px solid #ccdde7
+            &:active a
+              border-bottom: 1px solid #436275
+            a
+              padding: 15px 15px 10px 15px
+              font-weight: bold
