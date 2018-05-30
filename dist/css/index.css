@@ -326,9 +326,6 @@ a {
   background-color: #bbb; }
 
 /*....... 共用css.................................*/
-* {
-  border: 1px solid; }
-
 #wrapper header .header_container, ._container, footer .footer_container {
   width: 90%;
   margin: 0 auto;
