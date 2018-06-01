@@ -1,0 +1,120 @@
+@import "base/_normalize"
+@import "base/_normalize-custom"
+@import "components/_header"
+@import "components/_footer"
+
+*
+  // border: 1px solid
+
+//colors
+$color_delta_approx: #a4a3a3
+$color_link_water_approx: #d9e8f1
+$red: red
+$white: white
+$color_blue_dianne_approx: #224052
+$black_22: rgba(0,0,0,0.22)
+$color_big_stone_approx: #172f3d
+$color_mystic_approx: #e1ecf2
+
+//fonts
+$font_0: 微軟正黑體
+
+::selection
+  background: $color_delta_approx
+
+body
+  background: $color_link_water_approx
+  font-family: $font_0
+
+
+.join_container
+  //display: flex
+  position: relative
+  margin: 20px auto
+  width: 70%
+  font-family: $font_0
+  //background-color: $red
+  height: 800px
+
+.join_login
+  color: $white
+  font-size: 50px
+  font-weight: bold
+  margin-left: 20px
+  margin-top: 20px
+
+.eula
+  //background-color: $red
+  color: $white
+  font-size: 14px
+  line-height: 1
+  margin-left: 22px
+  margin-top: 10px
+  letter-spacing: 1.5px
+
+.top
+  background-color: $color_blue_dianne_approx
+  box-shadow: 0 0 40px 16px $black_22
+  color: $white
+  position: absolute
+  width: 100%
+  height: 150px
+  margin: 0 auto
+
+.bottom
+  background-color: $white
+  //height: calc(100% - 40px)
+  top: 150px
+  left: 50%
+  position: absolute
+  width: 800px
+  padding-top: 20px
+  margin-left: -400px
+  height: 350px
+
+.form
+  margin: 0 auto
+  //position: absolute
+  //padding: 10px
+  width: 400px
+
+.line
+  display: block
+  margin-top: 10px
+  width: 100%
+  //padding: 10px
+
+label
+  color: $color_big_stone_approx
+  //display: block
+  font-size: 14px
+  height: 16px
+
+input
+  //background: transparent
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 10px
+  border: 0
+  background-color: $color_mystic_approx
+  color: $color_big_stone_approx
+  font-size: 20px
+  height: 30px
+  line-height: 30px
+  width: 300px
+
+input::-moz-focus-inner
+  border: 0
+
+#submit
+  font-family: $font_0
+  color: $color_blue_dianne_approx
+  margin-top: 40px
+  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: color 300ms
+  background-color: $color_link_water_approx
+  margin-left: 100px
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 50px
+  width: 90px
+  height: 35px
+

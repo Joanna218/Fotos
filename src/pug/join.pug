@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
+    link(rel="stylesheet", href="../css/join.css")
+
+  body
+    #wrapper
+      include ./shared/_header.pug
+      .join_container
+        .top
+          .join_login 註冊
+          .eula 即刻註冊享有Fotos的服務
+        .bottom
+          .form
+            form(action='#', method='post')
+              .line
+                label(for='id') 帳號：
+                input#id(type='text')
+              .line
+                label(for='password') 密碼：
+                input#password(type='password')
+              .line
+                label(for='repassword') 確認密碼：
+                input#repassword(type='password')
+              .line
+                label(for='name') 姓名：
+                input#name(type='text')
+              .line
+                label(for='email') 電子信箱：
+                input#email(type='email')
+              .line
+                label(for='address') 地址：
+                input#address(type='text')
+              input#submit(type='submit', value='註冊')
