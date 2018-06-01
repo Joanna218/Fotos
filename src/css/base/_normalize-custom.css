@@ -12,7 +12,8 @@ li {
 a {
   text-decoration: none;
   letter-spacing: 2px;
-  color: black; }
+  color: black;
+  line-height: normal; }
 
 :hover a {
   text-decoration: none;

@@ -8,6 +8,8 @@ html(lang="en")
 
     link(rel="stylesheet", href="../css/owl.carousel.min.css")
     link(rel="stylesheet", href="../css/owl.theme.default.min.css")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel="stylesheet", href="../css/Semantic/semantic.min.css")
     link(rel="stylesheet", href="../css/index.css")
   body
     //包住整個html
@@ -17,8 +19,14 @@ html(lang="en")
         .header_container
           .row1
             .login
-              a(href="#") 登入
               a(href="#") 註冊
+              a(href="#") 登入
+              a(href="#") 查訂單
+              a(href="#").glyphicon.glyphicon-shopping-cart.cart_size
+              .ui.icon.input
+                input.prompt.prompt_size(type="text", placeholder="Search...")
+                i.circular.search.link.icon
+                  a(href="http://www.google.com")
           .row2
             .logo
             .nav_bar

@@ -315,7 +315,8 @@ li {
 a {
   text-decoration: none;
   letter-spacing: 2px;
-  color: black; }
+  color: black;
+  line-height: normal; }
 
 :hover a {
   text-decoration: none;
@@ -430,6 +431,10 @@ a {
       #wrapper header .header_container .row1 .login a {
         padding: 5px;
         font-weight: bold; }
+      #wrapper header .header_container .row1 .login .cart_size {
+        font-size: 22px; }
+      #wrapper header .header_container .row1 .login .prompt_size {
+        width: 160px; }
   #wrapper header .header_container .row2 {
     display: -webkit-box;
     display: -ms-flexbox;
