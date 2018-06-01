@@ -1,0 +1,82 @@
+@import "base/_normalize"
+@import "base/_normalize-custom"
+@import "components/_header"
+@import "components/_footer"
+
+*
+  // border: 1px solid
+
+
+//colors
+$red: red
+$color_geyser_approx: #d9e4ea
+$color_chathams_blue_approx: #114b6b
+$color_hippie_blue_approx: #5694b6
+$color_gothic_approx: #6992a9
+$white: white
+$color_delta_approx: #a4a3a3
+
+//fonts
+$font_0: 微軟正黑體
+
+
+
+
+.mem_qu_container
+  font-family: $font_0
+  width: 90%
+  margin: 30px auto
+  display: flex
+  .left
+    width: 20%
+    background-color: $color_geyser_approx
+    .left_li
+      display: flex
+      flex-direction: column
+      margin-top: 50px
+      li
+        display: flex
+        justify-content: center
+        margin-top: 10px
+        a
+          color: #114b6b
+          &:hover
+            color: $color_hippie_blue_approx
+  .right
+    width: 75%
+    margin-left: auto
+    display: flex
+    flex-direction: column
+    .right1
+      // padding: 50px
+      line-height: 2
+      display: flex
+      flex-direction: column
+      a
+        color: #114b6b
+        text-decoration: none
+        font-weight: bold
+        &:hover
+          color: $color_hippie_blue_approx
+      .right_po
+        width: 90%
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+      .buy_problem
+        width: 120px
+        border-radius: 30px
+        margin-left: -50px
+        background-color: $color_gothic_approx
+        color: $white
+        padding: 8px 15px
+        font-weight: bold
+      .buy_qa
+        display: flex
+        flex-direction: column
+
+::selection
+  background: $color_delta_approx
+hr
+  // border: 1px solid
+  width: 100%
