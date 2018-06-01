@@ -47,69 +47,36 @@ html(lang="en")
       //內容開始
       .content
         ._container
-          ._container_title
-            .slogan
-              a 永遠都在你身邊
-              a.subtitle 用照片的故事來陪伴在你的身邊
-                span.bubble Hot
-          //- ._container_box
-        //- .slider_container
-        //-   .owl-carousel.owl-theme
-            //- img.item(src="https://cdn.citywonders.com/media/11725/bay-of-naples-view.jpg?anchor=center&mode=crop&quality=65&width=256&height=256")
-            //- img.item(src="https://www.nationalgallery.org.uk/server.iip?FIF=/fronts/N-1319-00-000028-WZ-PYR.tif&CNT=1&JTL=1,0")
-            //- img.item(src="https://www.usnews.com/img/college-photo_15500_256x256mm.jpg")
-            //- img.item(src="https://cdn.citywonders.com/media/11725/bay-of-naples-view.jpg?anchor=center&mode=crop&quality=65&width=256&height=256")
-            //- img.item(src="https://www.nationalgallery.org.uk/server.iip?FIF=/fronts/N-1319-00-000028-WZ-PYR.tif&CNT=1&JTL=1,0")
-            //- #carousel-example-generic.carousel.slide(data-ride='carousel')
-            //-     // Indicators
-            //-     ol.carousel-indicators
-            //-       li.active(data-target='#carousel-example-generic', data-slide-to='0')
-            //-       li(data-target='#carousel-example-generic', data-slide-to='1')
-            //-       li(data-target='#carousel-example-generic', data-slide-to='2')
-            //-     // Wrapper for slides
-            //-     .carousel-inner(role='listbox')
-            //-       .item.active
-            //-         img(src='http://home.bt.com/images/the-20-best-views-in-the-uk-revealed-136417214455702601-170411144310.jpg', width='100%')
-            //-         .carousel-caption
-            //-           h3 Title1
-            //-           p 内容1
-            //-       .item
-            //-         img(src='https://www.wavemaker.com/wp-content/uploads/blog-hawk-hill-view.jpg', width='100%')
-            //-         .carousel-caption
-            //-           h3 Title2
-            //-           p 内容2
-            //-       .item
-            //-         img(src='https://www.discoverwalks.com/blog/wp-content/uploads/2016/06/paris-view-big.jpg', width='100%')
-            //-         .carousel-caption
-            //-           h3 Title3
-            //-           p 内容3
-            //-     // Controls
-            //-     a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
-            //-       span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-            //-       span.sr-only Previous
-            //-     a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
-            //-       span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-            //-       span.sr-only Next
+          .slogan
+            a 永遠都在你身邊
+            a.subtitle 用照片的故事來陪伴在你的身邊
+              span.bubble Hot
+        .slider_container
+          .owl-carousel.owl-theme
+            img.item(src="https://cdn.citywonders.com/media/11725/bay-of-naples-view.jpg?anchor=center&mode=crop&quality=65&width=256&height=256")
+            img.item(src="https://www.nationalgallery.org.uk/server.iip?FIF=/fronts/N-1319-00-000028-WZ-PYR.tif&CNT=1&JTL=1,0")
+            img.item(src="https://www.usnews.com/img/college-photo_15500_256x256mm.jpg")
+            img.item(src="https://cdn.citywonders.com/media/11725/bay-of-naples-view.jpg?anchor=center&mode=crop&quality=65&width=256&height=256")
+            img.item(src="https://www.nationalgallery.org.uk/server.iip?FIF=/fronts/N-1319-00-000028-WZ-PYR.tif&CNT=1&JTL=1,0")
+            img.item(src="https://www.nationalgallery.org.uk/server.iip?FIF=/fronts/N-1319-00-000028-WZ-PYR.tif&CNT=1&JTL=1,0")
       .content.content2_bgc.img_fluid
         ._container
-          ._container_title
-            .slogan
-                a 用溫暖的手體會你的心
-                a.subtitle Fotos用熱忱的雙手提供最真摯的服務貼近你的心
-          ._container_box
-            .wrapper_box
-              .box
-                .service_img.service1
-                .service_title
-                  span 客製化服務
-              .box
-                .service_img.service2
-                .service_title
-                  span 即刻寄送
-              .box
-                .service_img.service3
-                .service_title
-                  span 電子明信片
+          .slogan
+              a 用溫暖的手體會你的心
+              a.subtitle Fotos用熱忱的雙手提供最真摯的服務貼近你的心
+        ._container_box
+          .box
+            .service_img.service1
+            .service_title
+              span 客製化服務
+          .box
+            .service_img.service2
+            .service_title
+              span 即刻寄送
+          .box
+            .service_img.service3
+            .service_title
+              span 電子明信片
       footer
         .footer_container
           .footer_logo
@@ -136,5 +103,39 @@ html(lang="en")
     //- script(src="../js/vendors.js")
     script(src="../js/jquery-3.3.1.min.js")
     script(src="../js/owl.carousel.js")
+    script(src="../js/slide.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
 
+
+
+
+//- #carousel-example-generic.carousel.slide(data-ride='carousel')
+  //-     // Indicators
+  //-     ol.carousel-indicators
+  //-       li.active(data-target='#carousel-example-generic', data-slide-to='0')
+  //-       li(data-target='#carousel-example-generic', data-slide-to='1')
+  //-       li(data-target='#carousel-example-generic', data-slide-to='2')
+  //-     // Wrapper for slides
+  //-     .carousel-inner(role='listbox')
+  //-       .item.active
+  //-         img(src='http://home.bt.com/images/the-20-best-views-in-the-uk-revealed-136417214455702601-170411144310.jpg', width='100%')
+  //-         .carousel-caption
+  //-           h3 Title1
+  //-           p 内容1
+  //-       .item
+  //-         img(src='https://www.wavemaker.com/wp-content/uploads/blog-hawk-hill-view.jpg', width='100%')
+  //-         .carousel-caption
+  //-           h3 Title2s
+  //-           p 内容2
+  //-       .item
+  //-         img(src='https://www.discoverwalks.com/blog/wp-content/uploads/2016/06/paris-view-big.jpg', width='100%')
+  //-         .carousel-caption
+  //-           h3 Title3
+  //-           p 内容3
+  //-     // Controls
+  //-     a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+  //-       span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+  //-       span.sr-only Previous
+  //-     a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+  //-       span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+  //-       span.sr-only Next

@@ -12,7 +12,7 @@ $max_with: 768px
 
 /*....... 共用css.................................*/
 *
-  border: 1px solid
+  // border: 1px solid
 
 
 %_container
@@ -33,22 +33,26 @@ $max_with: 768px
 .img_footer
   height: 400px
   background-image: url("../img/footer.png")
+
+._container
+  @extend %_container
+  padding: 30px 0
+  z-index: 1
 .slogan
-  width: 80%
   margin: 10px auto
   text-align: center
   font-size: 32px
   letter-spacing: 2px
   display: flex
   flex-direction: column
-  //做Hot
-  .subtitle
-    font-size: 20px
-    position: relative
-    &:hover .bubble
-      transition: opacity .5s, transform .5s
-      opacity: 1
-      transform: rotate(0deg)
+//做Hot
+.subtitle
+  font-size: 20px
+  position: relative
+  &:hover .bubble
+    transition: opacity .5s, transform .5s
+    opacity: 1
+    transform: rotate(0deg)
 //Hot
 .bubble
   position: absolute
@@ -123,7 +127,8 @@ $max_with: 768px
           height: 400px
           display: flex
           flex-direction: column
-          // border: 2px solid red
+          justify-content: center
+          align-items: center
           .buy
             padding: 10px
             margin: 10px auto
@@ -143,58 +148,51 @@ $max_with: 768px
 
 .content2_bgc
   background-image: url("../img/footer.png")
-  padding-top: 100px
+  // padding-top: 100px
   height: 500px
-._container
-  @extend %_container
-  // background-color: #fff
+._container_box
   background-color: white
-  z-index: 1
-  ._container_title
-    width: 60%
-    margin: 0 auto
-  ._container_box
-    width: 80%
-    margin: 0 auto
-    display: flex
-    .wrapper_box
+  display: flex
+  justify-content: space-around
+  align-items: center
+  width: 70%
+  margin: 0 auto
+  margin-top: 50px
+  .box
+    width: 25%
+    height: 200px
+    .service_img
+      width: 100%
+      height: 80%
+      background-size: contain
+      background-repeat: no-repeat
+      background-position: center
+    .service_title
+      width: 100%
+      height: 20%
       display: flex
-      justify-content: space-around
       align-items: center
-      width: 90%
-      margin: 0 auto
-      .box
-        width: 25%
-        height: 200px
-        .service_img
-          width: 100%
-          height: 80%
-          background-size: contain
-          background-repeat: no-repeat
-          background-position: center
-        .service_title
-          width: 100%
-          height: 20%
-          display: flex
-          align-items: center
-          justify-content: center
-        .service1
-          background-image: url("../img/service1.png")
-        .service2
-          background-image: url("../img/service2.png")
-        .service3
-          background-image: url("../img/service3.png")
-//...................slider_container.........
+      justify-content: center
+    .service1
+      background-image: url("../img/service1.png")
+    .service2
+      background-image: url("../img/service2.png")
+    .service3
+      background-image: url("../img/service3.png")
+
+  //...................slider_container.........
 .slider_container
-  width: 512px
+  width: 70%
   height: auto
+  // height: 500px
   margin: 0 auto 20px
   .slider_img
   .item
     // height: 10rem
-    // background: #4DC7A0
-    // padding: 1rem
-
+    background: #4DC7A0
+    padding: 1rem
+.owl-stage-outer
+  height: 300px
 .owl-theme .owl-dots .owl-dot span
   background-color: #eee
 

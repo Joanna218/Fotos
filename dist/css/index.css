@@ -326,7 +326,7 @@ a {
   background-color: #bbb; }
 
 /*....... 共用css.................................*/
-#wrapper header .header_container, ._container, footer .footer_container {
+._container, #wrapper header .header_container, footer .footer_container {
   width: 90%;
   margin: 0 auto;
   max-width: 1140px; }
@@ -345,8 +345,11 @@ a {
   height: 400px;
   background-image: url("../img/footer.png"); }
 
+._container {
+  padding: 30px 0;
+  z-index: 1; }
+
 .slogan {
-  width: 80%;
   margin: 10px auto;
   text-align: center;
   font-size: 32px;
@@ -358,19 +361,20 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
-  .slogan .subtitle {
-    font-size: 20px;
-    position: relative; }
-    .slogan .subtitle:hover .bubble {
-      -webkit-transition: opacity .5s, -webkit-transform .5s;
-      transition: opacity .5s, -webkit-transform .5s;
-      -o-transition: opacity .5s, transform .5s;
-      transition: opacity .5s, transform .5s;
-      transition: opacity .5s, transform .5s, -webkit-transform .5s;
-      opacity: 1;
-      -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-      transform: rotate(0deg); }
+
+.subtitle {
+  font-size: 20px;
+  position: relative; }
+  .subtitle:hover .bubble {
+    -webkit-transition: opacity .5s, -webkit-transform .5s;
+    transition: opacity .5s, -webkit-transform .5s;
+    -o-transition: opacity .5s, transform .5s;
+    transition: opacity .5s, transform .5s;
+    transition: opacity .5s, transform .5s, -webkit-transform .5s;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
 
 .bubble {
   position: absolute;
@@ -464,7 +468,13 @@ a {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
     #wrapper header .header_container .row3 ._container_row3 .buy {
       padding: 10px;
       margin: 10px auto;
@@ -483,64 +493,59 @@ a {
 
 .content2_bgc {
   background-image: url("../img/footer.png");
-  padding-top: 100px;
   height: 500px; }
 
-._container {
+._container_box {
   background-color: white;
-  z-index: 1; }
-  ._container ._container_title {
-    width: 60%;
-    margin: 0 auto; }
-  ._container ._container_box {
-    width: 80%;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    ._container ._container_box .wrapper_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px; }
+  ._container_box .box {
+    width: 25%;
+    height: 200px; }
+    ._container_box .box .service_img {
+      width: 100%;
+      height: 80%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    ._container_box .box .service_title {
+      width: 100%;
+      height: 20%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      width: 90%;
-      margin: 0 auto; }
-      ._container ._container_box .wrapper_box .box {
-        width: 25%;
-        height: 200px; }
-        ._container ._container_box .wrapper_box .box .service_img {
-          width: 100%;
-          height: 80%;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center; }
-        ._container ._container_box .wrapper_box .box .service_title {
-          width: 100%;
-          height: 20%;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          justify-content: center; }
-        ._container ._container_box .wrapper_box .box .service1 {
-          background-image: url("../img/service1.png"); }
-        ._container ._container_box .wrapper_box .box .service2 {
-          background-image: url("../img/service2.png"); }
-        ._container ._container_box .wrapper_box .box .service3 {
-          background-image: url("../img/service3.png"); }
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    ._container_box .box .service1 {
+      background-image: url("../img/service1.png"); }
+    ._container_box .box .service2 {
+      background-image: url("../img/service2.png"); }
+    ._container_box .box .service3 {
+      background-image: url("../img/service3.png"); }
 
 .slider_container {
-  width: 512px;
+  width: 70%;
   height: auto;
   margin: 0 auto 20px; }
+  .slider_container .item {
+    background: #4DC7A0;
+    padding: 1rem; }
+
+.owl-stage-outer {
+  height: 300px; }
 
 .owl-theme .owl-dots .owl-dot span {
   background-color: #eee; }
