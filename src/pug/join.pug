@@ -14,8 +14,10 @@ html(lang="en")
       include ./shared/_header.pug
       .join_container
         .top
-          .join_login 註冊
-          .eula 即刻註冊享有Fotos的服務
+          .join_login
+            a 註冊
+          .eula
+            a 即刻註冊享有Fotos的服務
         .bottom
           .form
             form(action='#', method='post')
@@ -24,26 +26,27 @@ html(lang="en")
                 input#id(type='text' required="required")
               .line
                 label(for='password') 密碼：
-                input#password(type='password')
+                input#password(type='password' required="required")
               .line
                 label(for='repassword') 確認密碼：
-                input#repassword(type='password')
+                input#repassword(type='password' required="required")
               .line
                 label(for='name') 姓名：
-                input#name(type='text')
+                input#name(type='text' required="required")
               .line
                 label(for='email') 電子信箱：
-                input#email(type='email')
+                input#email(type='email' required="required")
               .line
                 label(for='address') 地址：
-                input#address(type='text')
-              input#submit(type='submit', value='註冊')
-            .wrapper_button
-              .button
-                .text Submit
-              .progress-bar
-              svg(x='0px', y='0px', viewbox='0 0 25 30', style='enable-background:new 0 0 25 30;')
-                path.check(d='M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2')
+                input#address(type='text' required="required" )
+              .wrap_submit
+                input#submit(type='submit', value='註冊')
+          //-   .wrapper_button
+          //-     .button
+          //-       .text Submit
+          //-     .progress-bar
+          //-     svg(x='0px', y='0px', viewbox='0 0 25 30', style='enable-background:new 0 0 25 30;')
+          //-       path.check(d='M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2')
 
     cript(src="../js/jquery-3.3.1.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")

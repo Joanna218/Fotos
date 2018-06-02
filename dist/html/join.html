@@ -37,8 +37,8 @@
       </header>
       <div class="join_container">
         <div class="top">
-          <div class="join_login">註冊</div>
-          <div class="eula">即刻註冊享有Fotos的服務</div>
+          <div class="join_login"><a>註冊</a></div>
+          <div class="eula"><a>即刻註冊享有Fotos的服務</a></div>
         </div>
         <div class="bottom">
           <div class="form">
@@ -49,35 +49,28 @@
               </div>
               <div class="line">
                 <label for="password">密碼：</label>
-                <input id="password" type="password"/>
+                <input id="password" type="password" required="required"/>
               </div>
               <div class="line">
                 <label for="repassword">確認密碼：</label>
-                <input id="repassword" type="password"/>
+                <input id="repassword" type="password" required="required"/>
               </div>
               <div class="line">
                 <label for="name">姓名：</label>
-                <input id="name" type="text"/>
+                <input id="name" type="text" required="required"/>
               </div>
               <div class="line">
                 <label for="email">電子信箱：</label>
-                <input id="email" type="email"/>
+                <input id="email" type="email" required="required"/>
               </div>
               <div class="line">
                 <label for="address">地址：</label>
-                <input id="address" type="text"/>
+                <input id="address" type="text" required="required"/>
               </div>
-              <input id="submit" type="submit" value="註冊"/>
+              <div class="wrap_submit">
+                <input id="submit" type="submit" value="註冊"/>
+              </div>
             </form>
-            <div class="wrapper_button">
-              <div class="button">
-                <div class="text">Submit</div>
-              </div>
-              <div class="progress-bar"></div>
-              <svg x="0px" y="0px" viewbox="0 0 25 30" style="enable-background:new 0 0 25 30;">
-                <path class="check" d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2"></path>
-              </svg>
-            </div>
           </div>
         </div>
       </div>

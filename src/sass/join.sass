@@ -25,89 +25,99 @@ $font_0: 微軟正黑體
 body
   background: $color_link_water_approx
   font-family: $font_0
-
+  //  height: normal
 
 .join_container
-  //display: flex
+  display: flex
   position: relative
   margin: 20px auto
   width: 70%
   font-family: $font_0
-  //background-color: $red
-  height: 800px
-
-.join_login
-  color: $white
-  font-size: 50px
-  font-weight: bold
-  margin-left: 20px
-  margin-top: 20px
-
-.eula
-  //background-color: $red
-  color: $white
-  font-size: 14px
-  line-height: 1
-  margin-left: 22px
-  margin-top: 10px
-  letter-spacing: 1.5px
+  flex-direction: column
+  align-items: center
 
 .top
   background-color: $color_blue_dianne_approx
   box-shadow: 0 0 40px 16px $black_22
   color: $white
-  position: absolute
+  // position: absolute
   width: 100%
   height: 150px
   margin: 0 auto
 
 .bottom
+  width: 90%
+  height: 400px
+  display: flex
+  // padding-top: 20px
   background-color: $white
-  top: 150px
-  left: 50%
-  position: absolute
-  width: 800px
-  padding-top: 20px
-  margin-left: -400px
-  // height: 350px
+  // top: 150px
+  // left: 50%
+  // position: absolute
+  // margin-left: -400px
+.join_login
+
+  margin-left: 20px
+  margin-top: 20px
+  a
+    color: $white
+    font-size: 50px
+    font-weight: bold
+.eula
+  margin-left: 22px
+  margin-top: 10px
+  a
+    color: $white
+    font-size: 14px
+
+
 
 .form
-  margin: 0 auto
-  width: 400px
-
+  margin: 10px auto
+  width: 70%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
 .line
-  display: block
-  margin-top: 10px
-  width: 100%
+  display: flex
+  margin: 20px
+  // width: 100%
 
 label
   color: $color_big_stone_approx
   font-size: 14px
-  height: 16px
+  // height: 20px
+  letter-spacing: 2px
 
 input
   border-radius: 10px
   border: 0
   background-color: $color_mystic_approx
   color: $color_big_stone_approx
-  font-size: 20px
-  height: 30px
-  line-height: 30px
+  font-size: 16px
+  // height: 30px
+  // line-height: 30px
   width: 300px
 
 input::-moz-focus-inner
   border: 0
+.wrap_submit
+  display: flex
+  justify-content: center
+  align-items: center
 
 #submit
   font-family: $font_0
   color: $color_blue_dianne_approx
-  margin-top: 40px
+  margin-top: 10px
   transition: color 300ms
   background-color: $color_link_water_approx
-  margin-left: 100px
+  // margin-left: 100px
   border-radius: 50px
   width: 90px
   height: 35px
+  // display: flex
 
 //................................................................
 .wrapper_button

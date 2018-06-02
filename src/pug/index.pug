@@ -10,6 +10,7 @@ html(lang="en")
     link(rel="stylesheet", href="../css/owl.theme.default.min.css")
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
     link(rel="stylesheet", href="../css/Semantic/semantic.min.css")
+    link(rel="stylesheet", href="../css/aos.css")
     link(rel="stylesheet", href="../css/index.css")
   body
     //包住整個html
@@ -44,18 +45,18 @@ html(lang="en")
           .row3
             ._container_row3
               .slogan
-                a 用自己的方式看見世界
+                a(data-aos='fade-right') 用自己的方式看見世界
                 br
-                a 記下你每一瞬間
-              button.buy
-                a(href="#") 即刻選購
+                a(data-aos="fade-left") 記下你每一瞬間
+              button.buy(data-aos="flip-left"  data-aos-delay="800")
+                a(href="../html/shop.html") 即刻選購
       //header背景圖
       .banner
         .img_fluid.img_header
       //內容開始
       .content
         ._container
-          .slogan
+          .slogan(data-aos="flip-up" data-aos-duration="500")
             a 永遠都在你身邊
             a.subtitle 用照片的故事來陪伴在你的身邊
               span.bubble Hot
@@ -69,19 +70,19 @@ html(lang="en")
             img.item(src="https://www.nationalgallery.org.uk/server.iip?FIF=/fronts/N-1319-00-000028-WZ-PYR.tif&CNT=1&JTL=1,0")
       .content.content2_bgc.img_fluid
         ._container
-          .slogan
+          .slogan(data-aos="flip-up" data-aos-duration="500")
               a 用溫暖的手體會你的心
               a.subtitle Fotos用熱忱的雙手提供最真摯的服務貼近你的心
         ._container_box
-          .box
+          .box(data-aos="fade-up")
             .service_img.service1
             .service_title
               span 客製化服務
-          .box
+          .box(data-aos="fade-down")
             .service_img.service2
             .service_title
               span 即刻寄送
-          .box
+          .box(data-aos="fade-up")
             .service_img.service3
             .service_title
               span 電子明信片
@@ -112,6 +113,7 @@ html(lang="en")
     script(src="../js/jquery-3.3.1.min.js")
     script(src="../js/owl.carousel.js")
     script(src="../js/slide.js")
+    script(src="../js/aos.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
 
 
