@@ -322,6 +322,10 @@ a {
   text-decoration: none;
   color: black; }
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 header .header_container {
   width: 90%;
   margin: 0 auto;
@@ -334,6 +338,8 @@ header .header_container {
   background-size: cover; }
 
 header {
+  width: 100%;
+  z-index: 99;
   background-color: #f2f7fa; }
   header .header_container .row1 {
     display: -webkit-box;
@@ -345,6 +351,10 @@ header {
       header .header_container .row1 .login a {
         padding: 5px;
         font-weight: bold; }
+      header .header_container .row1 .login .cart_size {
+        font-size: 22px; }
+      header .header_container .row1 .login .prompt_size {
+        width: 160px; }
   header .header_container .row2 {
     display: -webkit-box;
     display: -ms-flexbox;
