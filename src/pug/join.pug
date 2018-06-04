@@ -22,25 +22,40 @@ html(lang="en")
           .form
             form(action='#', method='post')
               .line
-                label(for='id') 帳號：
-                input#id(type='text' required="required")
+                .right
+                  label(for='name') 姓名
+                .left
+                  input#name(type='text' required="required")
               .line
-                label(for='password') 密碼：
-                input#password(type='password' required="required")
+                .right
+                  label(for='id') 帳號
+                .left
+                  input#id(type='text' required="required")
               .line
-                label(for='repassword') 確認密碼：
-                input#repassword(type='password' required="required")
+                .right
+                  label(for='password') 密碼
+                .left
+                  input#password(type='password' required="required")
               .line
-                label(for='name') 姓名：
-                input#name(type='text' required="required")
+                .right
+                  label(for='repassword') 確認密碼
+                .left
+                  input#repassword(type='password' required="required")
               .line
-                label(for='email') 電子信箱：
-                input#email(type='email' required="required")
+                .right
+                  label(for='email') 電子信箱
+                .left
+                  input#email(type='email' required="required")
               .line
-                label(for='address') 地址：
-                input#address(type='text' required="required" )
+                .right
+                  label(for='address') 地址
+                .left
+                  input#address(type='text' required="required" )
               .wrap_submit
                 input#submit(type='submit', value='註冊')
+              .wrap_login
+                span 已經擁有帳戶？
+                a(href="../html/login.html") 登入
           //-   .wrapper_button
           //-     .button
           //-       .text Submit

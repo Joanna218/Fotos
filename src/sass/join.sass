@@ -40,7 +40,7 @@ body
   background-color: $color_blue_dianne_approx
   box-shadow: 0 0 40px 16px $black_22
   color: $white
-  // position: absolute
+
   width: 100%
   height: 150px
   margin: 0 auto
@@ -49,14 +49,8 @@ body
   width: 90%
   height: 400px
   display: flex
-  // padding-top: 20px
   background-color: $white
-  // top: 150px
-  // left: 50%
-  // position: absolute
-  // margin-left: -400px
 .join_login
-
   margin-left: 20px
   margin-top: 20px
   a
@@ -73,22 +67,26 @@ body
 
 
 .form
-  margin: 10px auto
-  width: 70%
+  margin: 0 auto
+  width: 90%
   display: flex
   flex-direction: column
   justify-content: center
   align-items: center
 .line
   display: flex
-  margin: 20px
-  // width: 100%
-
+  margin: 10px
+  .right
+    display: flex
+    justify-content: center
+    align-items: center
+  .left
+    margin-left: auto
 label
   color: $color_big_stone_approx
-  font-size: 14px
-  // height: 20px
+  font-size: 16px
   letter-spacing: 2px
+  margin: 0
 
 input
   border-radius: 10px
@@ -96,29 +94,31 @@ input
   background-color: $color_mystic_approx
   color: $color_big_stone_approx
   font-size: 16px
-  // height: 30px
-  // line-height: 30px
+  height: 30px
   width: 300px
-
+  margin-left: 10px
 input::-moz-focus-inner
   border: 0
 .wrap_submit
   display: flex
   justify-content: center
   align-items: center
-
+  flex-direction: column
 #submit
   font-family: $font_0
   color: $color_blue_dianne_approx
-  margin-top: 10px
   transition: color 300ms
   background-color: $color_link_water_approx
-  // margin-left: 100px
   border-radius: 50px
   width: 90px
   height: 35px
-  // display: flex
-
+.wrap_login
+  display: flex
+  justify-content: center
+  align-content: center
+  margin: 10px 0
+  a
+    color: $color_blue_dianne_approx
 //................................................................
 .wrapper_button
   width: 100px

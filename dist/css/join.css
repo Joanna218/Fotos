@@ -447,8 +447,8 @@ body {
     font-size: 14px; }
 
 .form {
-  margin: 10px auto;
-  width: 70%;
+  margin: 0 auto;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -467,12 +467,25 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px; }
+  margin: 10px; }
+  .line .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .line .left {
+    margin-left: auto; }
 
 label {
   color: #172f3d;
-  font-size: 14px;
-  letter-spacing: 2px; }
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin: 0; }
 
 input {
   border-radius: 10px;
@@ -480,7 +493,9 @@ input {
   background-color: #e1ecf2;
   color: #172f3d;
   font-size: 16px;
-  width: 300px; }
+  height: 30px;
+  width: 300px;
+  margin-left: 10px; }
 
 input::-moz-focus-inner {
   border: 0; }
@@ -494,12 +509,15 @@ input::-moz-focus-inner {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 #submit {
   font-family: 微軟正黑體;
   color: #224052;
-  margin-top: 10px;
   -webkit-transition: color 300ms;
   -o-transition: color 300ms;
   transition: color 300ms;
@@ -507,6 +525,19 @@ input::-moz-focus-inner {
   border-radius: 50px;
   width: 90px;
   height: 35px; }
+
+.wrap_login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  margin: 10px 0; }
+  .wrap_login a {
+    color: #224052; }
 
 .wrapper_button {
   width: 100px;
