@@ -326,7 +326,7 @@ a {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-header .header_container, #wrapper .banner_nav ._container_nav, #wrapper .content ._container_content {
+header .header_container, #wrapper .banner_nav ._container_nav, #wrapper .content ._container_content, #wrapper .content ._container_content .box .box_container {
   width: 90%;
   margin: 0 auto;
   max-width: 1140px; }
@@ -388,7 +388,10 @@ header {
   height: 100px;
   background-color: #bbb; }
 
-header .header_container, #wrapper .banner_nav ._container_nav, #wrapper .content ._container_content {
+* {
+  border: 1px solid; }
+
+header .header_container, #wrapper .banner_nav ._container_nav, #wrapper .content ._container_content, #wrapper .content ._container_content .box .box_container {
   width: 90%;
   margin: 0 auto;
   max-width: 1140px; }
@@ -434,6 +437,48 @@ header .header_container, #wrapper .banner_nav ._container_nav, #wrapper .conten
   -ms-flex-pack: center;
   justify-content: center; }
   #wrapper .content ._container_content .box {
-    width: 30%;
+    width: calc( 90% / 4);
     height: 350px;
-    margin: 1%; }
+    margin: 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    #wrapper .content ._container_content .box .box_container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 90%;
+      background-color: pink;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      #wrapper .content ._container_content .box .box_container .product_img {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 200px;
+        height: 200px;
+        margin-top: 10px; }
+      #wrapper .content ._container_content .box .box_container .product_title {
+        width: 90%;
+        height: 30px;
+        margin: 0 auto;
+        margin-top: 10px; }
+      #wrapper .content ._container_content .box .box_container .product_price {
+        margin-top: 10px;
+        width: 90%;
+        height: 30px; }
