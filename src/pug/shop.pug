@@ -6,8 +6,6 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Document
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
     link(rel="stylesheet", href="../css/Semantic/semantic.min.css")
     link(rel="stylesheet", href="../css/shop.css")
 
@@ -15,57 +13,58 @@ html(lang="en")
     #wrapper
       include ./shared/_header.pug
       .banner_nav
-        ._container_nav
-          nav
-            li
-              a(href="#") ALL
-            li
-              a(href="#") 風景
-            li
-              a(href="#") 夜景
-            li
-              a(href="#") 黑白
-            li
-              a(href="#") 美食
+        ._container_nav.filters
+          nav.button-group.js-radio-button-group(data-filter-group="color")
+            button.button.is-checked( data-filter="") 全部
+            button.button(data-filter=".red") 風景
+            button.button(data-filter=".blue") 夜景
+            button.button(data-filter=".yellow") 美食
       .content
         ._container_content
-          .box
+          .box.red
             .box_container
-              .product_img
-              .product_title
-              .product_price
-          .box
+              .product_img img
+              .product_title title
+              .product_price price
+          .box.blue
             .box_container
-              .product_img
-              .product_title
-              .product_price
-          .box
+              .product_img img
+              .product_title title
+              .product_price price
+          .box.yellow
             .box_container
-              .product_img
-              .product_title
-              .product_price
-          .box
+              .product_img img
+              .product_title title
+              .product_price price
+          .box.red
             .box_container
-              .product_img
-              .product_title
-              .product_price
-          .box
+              .product_img img
+              .product_title title
+              .product_price price
+          .box.blue
             .box_container
-              .product_img
-              .product_title
-              .product_price
-          .box
+              .product_img img
+              .product_title title
+              .product_price price
+          .box.yellow
             .box_container
-              .product_img
-              .product_title
-              .product_price
-          .box
+              .product_img img
+              .product_title title
+              .product_price price
+          .box.red
             .box_container
-              .product_img
-              .product_title
-              .product_price
-          .box
+              .product_img img
+              .product_title title
+              .product_price price
+          .box.blue
             .box_container
-              .product_img
-              .product_title
-              .product_price
+              .product_img img
+              .product_title title
+              .product_price price
+
+
+
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
+    script(src="../js/isotope.pkgd.min.js")
+    script(src="../js/shop.js")

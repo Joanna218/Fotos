@@ -20,55 +20,84 @@
         justify-content: center
         // background-color: red
         margin: 30px 0
-        li
+        .button
           display: flex
           align-items: center
           justify-content: center
-          border-radius: 25px
-          width: 100px
-          border: 1px solid
-          margin: 5px
-          // background-color: blue
-          a
-            padding: 10px
-            border-radius: 25px
+          display: inline-block
+          padding: 0.5em 1.0em
+          background: transparent
+          border: none
+          border-radius: 7px
+          // background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) )
+          color: #222
+          font-size: 16px
+          font-weight: bold
+          text-shadow: 0 1px white
+          cursor: pointer
+          margin: 0 10px
+          letter-spacing: 2px
+          border: 1px solid #ccc
+          &:hover
+            background-color: #eee
+            text-shadow: 0 1px hsla(0, 0%, 100%, 0.5)
+            color: #222
+          &:active
+            box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8)
+            background-color: #28f
+            border: 1px solid #337ab7
+          &.is-checked
+            background-color: #337ab7
+        .button.is-checked
+          color: #fff
+          text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8)
 
-  .content
-    ._container_content
-      @extend %_container
+//...................content....................
+
+.content
+  @extend %_container
+  display: flex
+  justify-content: center
+  align-items: center
+  ._container_content
+    display: flex
+    flex-wrap: wrap
+    align-items: stretch
+    align-content: center
+    justify-content: center
+    width: 90%
+    .box
+      width: calc( 100% / 4 )
+      height: 350px
+      margin: 0
       display: flex
-      flex-wrap: wrap
-      align-items: stretch
-      align-content: center
+      flex-direction: column
+      align-items: center
       justify-content: center
-      .box
-        width: calc( 90% / 4 )
-        height: 350px
-        margin: 0 10px
+      .box_container
+        @extend %_container
         display: flex
+        height: 90%
         flex-direction: column
         align-items: center
-        justify-content: center
-        .box_container
-          @extend %_container
+        .product_img
           display: flex
-          height: 90%
-          background-color: pink
-          flex-direction: column
-          align-items: center
-          .product_img
-            display: flex
-            width: 200px
-            height: 200px
-            margin-top: 10px
-          .product_title
-            width: 90%
-            height: 30px
-            margin: 0 auto
-            margin-top: 10px
-          .product_price
-            margin-top: 10px
-            width: 90%
-            height: 30px
+          width: 200px
+          height: 200px
+          width: 100%
+        .product_title
+          width: 90%
+          height: 30px
+          margin: 0 auto
+          margin-top: 10px
+        .product_price
+          margin-top: 10px
+          width: 90%
+          height: 30px
 
-
+.red
+  background-color: red
+.blue
+  background-color: blue
+.yellow
+  background-color: yellow

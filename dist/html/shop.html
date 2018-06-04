@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/Semantic/semantic.min.css"/>
     <link rel="stylesheet" href="../css/shop.css"/>
   </head>
@@ -38,76 +36,79 @@
         </div>
       </header>
       <div class="banner_nav">
-        <div class="_container_nav">
-          <nav>
-            <li><a href="#">ALL</a></li>
-            <li><a href="#">風景</a></li>
-            <li><a href="#">夜景</a></li>
-            <li><a href="#">黑白</a></li>
-            <li><a href="#">美食</a></li>
+        <div class="_container_nav filters">
+          <nav class="button-group js-radio-button-group" data-filter-group="color">
+            <button class="button is-checked" data-filter="">全部</button>
+            <button class="button" data-filter=".red">風景</button>
+            <button class="button" data-filter=".blue">夜景</button>
+            <button class="button" data-filter=".yellow">美食</button>
           </nav>
         </div>
       </div>
       <div class="content">
         <div class="_container_content">
-          <div class="box">
+          <div class="box red">
             <div class="box_container">
-              <div class="product_img"></div>
-              <div class="product_title"></div>
-              <div class="product_price"></div>
+              <div class="product_img">img</div>
+              <div class="product_title">title</div>
+              <div class="product_price">price</div>
             </div>
           </div>
-          <div class="box">
+          <div class="box blue">
             <div class="box_container">
-              <div class="product_img"></div>
-              <div class="product_title"></div>
-              <div class="product_price"></div>
+              <div class="product_img">img</div>
+              <div class="product_title">title</div>
+              <div class="product_price">price</div>
             </div>
           </div>
-          <div class="box">
+          <div class="box yellow">
             <div class="box_container">
-              <div class="product_img"></div>
-              <div class="product_title"></div>
-              <div class="product_price"></div>
+              <div class="product_img">img</div>
+              <div class="product_title">title</div>
+              <div class="product_price">price</div>
             </div>
           </div>
-          <div class="box">
+          <div class="box red">
             <div class="box_container">
-              <div class="product_img"></div>
-              <div class="product_title"></div>
-              <div class="product_price"></div>
+              <div class="product_img">img</div>
+              <div class="product_title">title</div>
+              <div class="product_price">price</div>
             </div>
           </div>
-          <div class="box">
+          <div class="box blue">
             <div class="box_container">
-              <div class="product_img"></div>
-              <div class="product_title"></div>
-              <div class="product_price"></div>
+              <div class="product_img">img</div>
+              <div class="product_title">title</div>
+              <div class="product_price">price</div>
             </div>
           </div>
-          <div class="box">
+          <div class="box yellow">
             <div class="box_container">
-              <div class="product_img"></div>
-              <div class="product_title"></div>
-              <div class="product_price"></div>
+              <div class="product_img">img</div>
+              <div class="product_title">title</div>
+              <div class="product_price">price</div>
             </div>
           </div>
-          <div class="box">
+          <div class="box red">
             <div class="box_container">
-              <div class="product_img"></div>
-              <div class="product_title"></div>
-              <div class="product_price"></div>
+              <div class="product_img">img</div>
+              <div class="product_title">title</div>
+              <div class="product_price">price</div>
             </div>
           </div>
-          <div class="box">
+          <div class="box blue">
             <div class="box_container">
-              <div class="product_img"></div>
-              <div class="product_title"></div>
-              <div class="product_price"></div>
+              <div class="product_img">img</div>
+              <div class="product_title">title</div>
+              <div class="product_price">price</div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/isotope.pkgd.min.js"></script>
+    <script src="../js/shop.js"></script>
   </body>
 </html>
