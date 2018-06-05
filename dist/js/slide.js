@@ -14,7 +14,7 @@ $(function() {
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
-        // nav: true,
+        nav: true,
         responsiveClass: true,
         // center: true,
         responsive: {

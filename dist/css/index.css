@@ -340,7 +340,7 @@ a {
 
 .img_header {
   height: 700px;
-  background-image: url("../img/header.png"); }
+  background-image: url("../img/background.png"); }
 
 .img_footer {
   height: 400px;
@@ -362,20 +362,23 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+  .slogan a {
+    text-shadow: 0.01em 0.01em 0.5em white; }
 
 .subtitle {
   font-size: 20px;
   position: relative; }
-  .subtitle:hover .bubble {
-    -webkit-transition: opacity .5s, -webkit-transform .5s;
-    transition: opacity .5s, -webkit-transform .5s;
-    -o-transition: opacity .5s, transform .5s;
-    transition: opacity .5s, transform .5s;
-    transition: opacity .5s, transform .5s, -webkit-transform .5s;
-    opacity: 1;
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg); }
+
+.slogan_bubble:hover .bubble {
+  -webkit-transition: opacity .5s, -webkit-transform .5s;
+  transition: opacity .5s, -webkit-transform .5s;
+  -o-transition: opacity .5s, transform .5s;
+  transition: opacity .5s, transform .5s;
+  transition: opacity .5s, transform .5s, -webkit-transform .5s;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg); }
 
 .bubble {
   position: absolute;
@@ -385,7 +388,6 @@ a {
   border-radius: 50%;
   font-size: 10px;
   top: -38px;
-  right: 90px;
   opacity: 0;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -466,7 +468,6 @@ a {
   #wrapper header .header_container .row3 ._container_row3 {
     width: 80%;
     margin: 0 auto;
-    height: 400px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -497,7 +498,7 @@ a {
         color: white; }
 
 .content2_bgc {
-  background-image: url("../img/footer.png");
+  background-image: url("../img/middle.png");
   height: 500px; }
 
 ._container_box {
@@ -512,19 +513,21 @@ a {
   align-items: center;
   width: 70%;
   margin: 0 auto;
-  margin-top: 50px; }
+  padding: 30px 0;
+  -webkit-box-shadow: 0px 1px 4px 4px rgba(89, 88, 88, 0.1);
+  box-shadow: 0px 1px 4px 4px rgba(89, 88, 88, 0.1); }
   ._container_box .box {
-    width: 25%;
-    height: 200px; }
+    width: 18%;
+    height: 180px; }
     ._container_box .box .service_img {
       width: 100%;
-      height: 80%;
+      height: 70%;
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center; }
     ._container_box .box .service_title {
       width: 100%;
-      height: 20%;
+      height: 30%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -541,16 +544,21 @@ a {
     ._container_box .box .service3 {
       background-image: url("../img/service3.png"); }
 
+.box2 {
+  width: 2px;
+  height: 150px;
+  border: 1px solid #2c2d2d; }
+
 .slider_container {
   width: 70%;
   height: auto;
   margin: 0 auto 20px; }
   .slider_container .item {
-    background: #4DC7A0;
+    background: #eee;
     padding: 1rem; }
 
 .owl-stage-outer {
-  height: 300px; }
+  height: 200px; }
 
 .owl-theme .owl-dots .owl-dot span {
   background-color: #eee; }
