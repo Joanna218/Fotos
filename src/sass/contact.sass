@@ -1,0 +1,139 @@
+@import "base/_normalize"
+@import "base/_normalize-custom"
+@import "components/_header"
+@import "components/_footer"
+
+*
+  // border: 1px solid
+
+.contact_container
+  background-color: #d9e8f1
+  height: 500px
+  display: flex
+  justify-content: center
+  align-items: center
+  .wrap_content
+    display: flex
+    width: 60%
+    margin: 0 auto
+    background-color: white
+    .content_l
+      width: 40%
+      display: flex
+      flex-direction: column
+      margin-left: 20px
+      padding-top: 80px
+      .title
+        color:#172f3d
+        font-size: 45px
+        font-weight: bold
+      .info
+        color: #2e5972
+        font-size: 14px
+        line-height: 1.5
+        margin-top: 55px
+    .content_r
+      width: 60%
+      margin-left: 10px
+      .line
+        display: flex
+        margin: 10px
+        .left
+          display: flex
+          align-items: center
+        .right
+          // margin-left: auto
+      .line_content
+        flex-direction: column
+      .line_textarea
+        justify-content: center
+        width: 70%
+//.............
+.type_text,select,textarea
+  color: #2e5972
+  font-size: 15px
+  height: 30px
+  // line-height: 38px
+  background-color: #d9e8f1
+  border-radius: 20px
+  padding-left: 10px
+textarea
+  justify-content: center
+  align-items: center
+  height: 150px
+  width: 100%
+.submit
+  color:  #2e5972
+  font-size: 15px
+  width: 60px
+  height: 30px
+  background-color: #d9e8f1
+  border-radius: 20px
+  text-align: center
+
+input,select
+  border: none
+hr
+  border: 1px dotted #172f3d
+  height: 320px
+///////////////////////////////
+
+
+.wrapper_button
+  width: 100px
+  height: 50px
+  position: relative
+  margin: 0 auto
+.button
+  background: #2B2D2F
+  height: 40px
+  width: 100px
+  text-align: center
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  left: 0
+  right: 0
+  margin: 0 auto
+  cursor: pointer
+  border-radius: 4px
+
+
+.text
+  font: bold 1.25rem/1 poppins
+  color: #71DFBE
+  position: absolute
+  top: 50%
+  transform: translateY(-52%)
+  left: 0
+  right: 0
+
+
+.progress-bar
+  position: absolute
+  height: 20px
+  width: 0
+  right: 0
+  top: 50%
+  left: 50%
+  border-radius: 200px
+  transform: translateY(-50%) translateX(-50%)
+  background: lighten(#2B2D2F, 15%)
+
+
+svg
+  width: 30px
+  position: absolute
+  top: 50%
+  transform: translateY(-50%) translateX(-50%)
+  left: 50%
+  right: 0
+
+
+.check
+  fill: none
+  stroke: #FFFFFF
+  stroke-width: 3
+  stroke-linecap: round
+  stroke-linejoin: round
+

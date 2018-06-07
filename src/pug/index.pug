@@ -80,6 +80,47 @@ html(lang="en")
             //- img.item(src="https://cdn.citywonders.com/media/11725/bay-of-naples-view.jpg?anchor=center&mode=crop&quality=65&width=256&height=256")
             //- img.item(src="https://www.nationalgallery.org.uk/server.iip?FIF=/fronts/N-1319-00-000028-WZ-PYR.tif&CNT=1&JTL=1,0")
             //- img.item(src="https://www.nationalgallery.org.uk/server.iip?FIF=/fronts/N-1319-00-000028-WZ-PYR.tif&CNT=1&JTL=1,0")
+
+    #carousel-example-generic.carousel.slide(data-ride='carousel')
+      // Indicators
+      ol.carousel-indicators
+        li.active(data-target='#carousel-example-generic', data-slide-to='0')
+        li(data-target='#carousel-example-generic', data-slide-to='1')
+        li(data-target='#carousel-example-generic', data-slide-to='2')
+      // Wrapper for slides
+      .carousel-inner(role='listbox')
+        .item.active
+          img(src='http://home.bt.com/images/the-20-best-views-in-the-uk-revealed-136417214455702601-170411144310.jpg', width='100%')
+          .carousel-caption
+            h3 Title1
+            p 内容1
+        .item
+          img(src='https://www.wavemaker.com/wp-content/uploads/blog-hawk-hill-view.jpg', width='100%')
+          .carousel-caption
+            h3 Title2s
+            p 内容2
+        .item
+          img(src='https://www.discoverwalks.com/blog/wp-content/uploads/2016/06/paris-view-big.jpg', width='100%')
+          .carousel-caption
+            h3 Title3
+            p 内容3
+      // Controls
+      a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+        span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+        span.sr-only Previous
+      a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+        span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+        span.sr-only Next
+
+
+
+
+
+
+
+
+
+
       .content.content2_bgc.img_fluid
         ._container
           .slogan(data-aos="flip-up" data-aos-duration="500")
@@ -133,33 +174,3 @@ html(lang="en")
 
 
 
-//- #carousel-example-generic.carousel.slide(data-ride='carousel')
-  //-     // Indicators
-  //-     ol.carousel-indicators
-  //-       li.active(data-target='#carousel-example-generic', data-slide-to='0')
-  //-       li(data-target='#carousel-example-generic', data-slide-to='1')
-  //-       li(data-target='#carousel-example-generic', data-slide-to='2')
-  //-     // Wrapper for slides
-  //-     .carousel-inner(role='listbox')
-  //-       .item.active
-  //-         img(src='http://home.bt.com/images/the-20-best-views-in-the-uk-revealed-136417214455702601-170411144310.jpg', width='100%')
-  //-         .carousel-caption
-  //-           h3 Title1
-  //-           p 内容1
-  //-       .item
-  //-         img(src='https://www.wavemaker.com/wp-content/uploads/blog-hawk-hill-view.jpg', width='100%')
-  //-         .carousel-caption
-  //-           h3 Title2s
-  //-           p 内容2
-  //-       .item
-  //-         img(src='https://www.discoverwalks.com/blog/wp-content/uploads/2016/06/paris-view-big.jpg', width='100%')
-  //-         .carousel-caption
-  //-           h3 Title3
-  //-           p 内容3
-  //-     // Controls
-  //-     a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
-  //-       span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-  //-       span.sr-only Previous
-  //-     a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
-  //-       span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-  //-       span.sr-only Next

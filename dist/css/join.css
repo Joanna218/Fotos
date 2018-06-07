@@ -468,7 +468,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: 10px; }
-  .line .right {
+  .line .left {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -478,7 +478,7 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-  .line .left {
+  .line .right {
     margin-left: auto; }
 
 label {

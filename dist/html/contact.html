@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../css/Semantic/semantic.min.css"/>
-    <link rel="stylesheet" href="../css/join.css"/>
+    <link rel="stylesheet" href="../css/contact.css"/>
   </head>
   <body>
     <div id="wrapper">
@@ -35,66 +35,69 @@
           </div>
         </div>
       </header>
-      <div class="join_container">
-        <div class="top">
-          <div class="join_login"><a>註冊</a></div>
-          <div class="eula"><a>即刻註冊享有Fotos的服務</a></div>
-        </div>
-        <div class="bottom">
-          <div class="form">
-            <form action="#" method="post">
+      <div class="contact_container">
+        <div class="wrap_content">
+          <div class="content_l">
+            <div class="title">聯絡我們</div>
+            <div class="info">客服人員將會在收到訊息後的24小時內，回覆您的訊息謝謝您對Fotos的支持！</div>
+          </div>
+          <hr/>
+          <div class="content_r">
+            <form method="get" action="#">
               <div class="line">
-                <div class="right">
-                  <label for="name">姓名</label>
-                </div>
                 <div class="left">
-                  <input id="name" type="text" required="required"/>
+                  <label>帳號：</label>
                 </div>
-              </div>
-              <div class="line">
                 <div class="right">
-                  <label for="id">帳號</label>
-                </div>
-                <div class="left">
-                  <input id="id" type="text" required="required"/>
+                  <input class="type_text" type="text" name="id" value="甲班資料庫匯入" disabled=""/>
                 </div>
               </div>
               <div class="line">
-                <div class="right">
-                  <label for="password">密碼</label>
-                </div>
                 <div class="left">
-                  <input id="password" type="password" required="required"/>
+                  <label>信箱：</label>
+                </div>
+                <div class="right">
+                  <input class="type_text" type="text" name="id" value=""/>
                 </div>
               </div>
               <div class="line">
-                <div class="right">
-                  <label for="repassword">確認密碼</label>
-                </div>
                 <div class="left">
-                  <input id="repassword" type="password" required="required"/>
+                  <label>手機：</label>
+                </div>
+                <div class="right">
+                  <input class="type_text" type="text" name="id" value=""/>
                 </div>
               </div>
               <div class="line">
-                <div class="right">
-                  <label for="email">電子信箱</label>
-                </div>
                 <div class="left">
-                  <input id="email" type="email" required="required"/>
+                  <label for="topic">主旨：</label>
                 </div>
-              </div>
-              <div class="line">
                 <div class="right">
-                  <label for="address">地址</label>
-                </div>
-                <div class="left">
-                  <input id="address" type="text" required="required"/>
+                  <select>
+                    <option selected="">請選擇</option>
+                    <option>意見回饋</option>
+                    <option>商品瑕疵</option>
+                    <option>操作問題</option>
+                    <option>其他</option>
+                  </select>
+                  <input class="type_text" id="topic" type="text" name="topic" size="18"/>
                 </div>
               </div>
-              <div class="wrap_submit">
-                <input id="submit" type="submit" value="註冊"/>
+              <div class="line line_content">
+                <label>內容：</label>
               </div>
-              <div class="wrap_login"><span>已經擁有帳戶？</span><a href="../html/login.html">登入</a></div>
+              <div class="line line_textarea">
+                <textarea></textarea>
+              </div>
+              <div class="line wrapper_button">
+                <button class="button" type="submit">
+                  <div class="text">提交</div>
+                </button>
+                <div class="progress-bar"></div>
+                <svg x="0px" y="0px" viewbox="0 0 25 30" style="enable-background:new 0 0 25 30;">
+                  <path class="check" d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2"></path>
+                </svg>
+              </div>
             </form>
           </div>
         </div>
