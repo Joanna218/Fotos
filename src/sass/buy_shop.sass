@@ -1,0 +1,97 @@
+@import "base/_normalize"
+@import "base/_normalize-custom"
+
+*
+  border: 1px solid
+
+%_container
+  width: 90%
+  margin: 0 auto
+  max-width: 1140px
+  // border: 3px solid red
+
+
+.buy_shop_container
+  @extend %_container
+  .top
+    display: flex
+    justify-content: center
+    background-color: #eee
+    .left
+      display: flex
+      flex-direction: column
+      width: 40%
+      .row1
+        .big_box
+          // width: 500px
+          height: 380px
+      .row2
+        display: flex
+        .sm_box
+          width: 66px
+          height: 66px
+          margin-right: 10px
+    .right
+      display: flex
+      flex-direction: column
+      width: 50%
+      margin-left: 20px
+      .line
+        display: flex
+        margin-top: 10px
+        span
+          color: #4a4e5c
+          font-size: 20px
+  .bottom
+    height: 100px
+    ul
+      display: flex
+      li
+        margin-right: 1px
+        a
+          font-size: 2em
+          font-weight: bold
+          color: #FFF
+          display: block
+          padding: 15px 20px
+          background: #C15757
+          &:hover
+            background:#D26161
+            color:#FFF
+        .current
+          background: #F5F4F2
+          color: #C15757
+    #tab1,#tab2
+      padding: 30px 20px
+      background: #F5F4F2
+      p
+        margin-top: 20px
+        line-height: 2em
+        color: #C15757
+      strong
+        font-size: 4em
+        font-weight: bold
+        color: #D6AF62
+
+  ////////////////////////////////////////
+.product_name
+  font-size: 30px
+  margin: 0
+.slide_info
+  width: 65%
+  margin-left: 50px
+  .slide_line
+    display: flex
+    .info_name
+      font-size: 20px
+      display: flex
+      align-items: center
+    .plus1,.plus2,.plus3
+      width: 10%
+      font-size: 20px
+      margin-left: auto
+      text-align: center
+      border-radius: 50%
+  .info_detail
+    display: none
+
