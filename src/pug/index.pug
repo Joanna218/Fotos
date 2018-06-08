@@ -24,10 +24,10 @@ html(lang="en")
               a(href="../html/login.html") 登入
               a(href="#") 查訂單
               a(href="#").glyphicon.glyphicon-shopping-cart.cart_size
-              .ui.icon.input
-                input.prompt.prompt_size(type="text", placeholder="Search...")
-                i.circular.search.link.icon
-                  a(href="http://www.google.com")
+              form(action="search.jsp" method="POST" id="search-form")
+                .ui.icon.input
+                  input.prompt.prompt_size(type="text", name="search", placeholder="Search...")
+                  i.circular.search.link.icon
           .row2
             .logo
             .nav_bar
@@ -84,17 +84,17 @@ html(lang="en")
           // Wrapper for slides
           .carousel-inner(role='listbox')
             .item.active
-              img(src='https://i.imgur.com/iyU1xSW.png', width='100%')
+              img(src='../img/ad1.png', width='100%')
               //- .carousel-caption
               //-   h3 Title1
               //-   p 内容1
             .item
-              img(src='https://i.imgur.com/M0bzIrB.png', width='100%')
+              img(src='../img/ad2.png', width='100%')
               //- .carousel-caption
               //-   h3 Title2s
               //-   p 内容2
             .item
-              img(src='https://i.imgur.com/DyHktgU.png', width='100%')
+              img(src='../img/ad3.png', width='100%')
               //- .carousel-caption
               //-   h3 Title3
               //-   p 内容3

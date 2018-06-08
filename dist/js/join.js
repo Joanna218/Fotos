@@ -210,7 +210,7 @@
 // }
 $(function() {
     var basicTimeline = anime.timeline({
-        autoplay: false
+        autoplay: false,
     });
 
     var pathEls = $(".check");
@@ -259,8 +259,13 @@ $(function() {
             targets: pathEl,
             strokeDashoffset: [offset, 0],
             duration: 200,
+            opacity: 1,
             easing: "easeInOutSine"
-        });
+        })
+        .complete = function() {
+            $('#contact-form').submit();
+        }
+
 
     $(".button").click(function() {
         basicTimeline.play();

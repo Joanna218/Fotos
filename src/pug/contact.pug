@@ -18,22 +18,22 @@ html(lang="en")
             .info 客服人員將會在收到訊息後的24小時內，回覆您的訊息謝謝您對Fotos的支持！
           hr
           .content_r
-            form(method='get', action='#')
+            form(action="contact.jsp" method="POST" id="contact-form")
               .line
                 .left
                   label 帳號：
                 .right
-                  input.type_text(type='text', name='id', value='甲班資料庫匯入', disabled='')
+                  input.type_text(type='text', name='id', value='甲班資料庫匯入' , autocomplete="off" , disabled='')
               .line
                 .left
                   label 信箱：
                 .right
-                  input.type_text(type='text', name='id', value='')
+                  input.type_text(type='text', name='id' , autocomplete="off" , value='')
               .line
                 .left
                   label 手機：
                 .right
-                  input.type_text(type='text', name='id', value='')
+                  input.type_text(type='text', name='id' , autocomplete="off" , value='')
               .line
                 .left
                   label(for='topic') 主旨：
@@ -44,22 +44,17 @@ html(lang="en")
                     option 商品瑕疵
                     option 操作問題
                     option 其他
-                  input#topic.type_text(type='text', name='topic', size='18')
+                  input#topic.type_text(type='text', name='topic', size='18', autocomplete="off")
               .line.line_content
                 label 內容：
               .line.line_textarea
                 textarea
-              .line.wrapper_button 與line同層
-                button.button(type='submit')
+              .line.wrapper_button
+                .button
                   .text 提交
                 .progress-bar
                 svg(x='0px', y='0px', viewbox='0 0 25 30', style='enable-background:new 0 0 25 30;')
                   path.check(d='M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2')
-
-              //- input.submit(type='submit', name='submit', value='提交')
-
-
-
     script(src="../js/jquery-3.3.1.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js")

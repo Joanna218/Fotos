@@ -306,8 +306,12 @@ template {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  height: auto; }
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, '微軟正黑體'; }
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, '微軟正黑體';
+  height: auto; }
 
 li {
   list-style: none; }
@@ -321,6 +325,16 @@ a {
 :hover a {
   text-decoration: none;
   color: black; }
+
+button,
+input,
+textarea,
+select:focus {
+  outline: 0; }
+
+input,
+button {
+  border: none; }
 
 * {
   border: 1px solid; }
@@ -391,12 +405,12 @@ a {
         display: block;
         padding: 15px 20px;
         background: #C15757; }
-        .buy_shop_container .bottom ul li a:hover {
+        .buy_shop_container .bottom ul li a.current {
+          background: #F5F4F2;
+          color: #C15757; }
+        .buy_shop_container .bottom ul li a:not(.current):hover {
           background: #D26161;
           color: #FFF; }
-      .buy_shop_container .bottom ul li .current {
-        background: #F5F4F2;
-        color: #C15757; }
   .buy_shop_container .bottom #tab1, .buy_shop_container .bottom #tab2 {
     padding: 30px 20px;
     background: #F5F4F2; }

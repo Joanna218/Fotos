@@ -16,9 +16,11 @@
         <div class="header_container">
           <div class="row1">
             <div class="login"><a href="../html/join.html">註冊</a><a href="../html/login.html">登入</a><a href="#">查訂單</a><a class="glyphicon glyphicon-shopping-cart cart_size" href="#"></a>
-              <div class="ui icon input">
-                <input class="prompt prompt_size" type="text" placeholder="Search..."/><i class="circular search link icon"><a href="http://www.google.com"></a></i>
-              </div>
+              <form action="search.jsp" method="POST" id="search-form">
+                <div class="ui icon input">
+                  <input class="prompt prompt_size" type="text" name="search" placeholder="Search..."/><i class="circular search link icon"></i>
+                </div>
+              </form>
             </div>
           </div>
           <div class="row2">
@@ -43,13 +45,13 @@
           </div>
           <hr/>
           <div class="content_r">
-            <form method="get" action="#">
+            <form action="contact.jsp" method="POST" id="contact-form">
               <div class="line">
                 <div class="left">
                   <label>帳號：</label>
                 </div>
                 <div class="right">
-                  <input class="type_text" type="text" name="id" value="甲班資料庫匯入" disabled=""/>
+                  <input class="type_text" type="text" name="id" value="甲班資料庫匯入" autocomplete="off" disabled=""/>
                 </div>
               </div>
               <div class="line">
@@ -57,7 +59,7 @@
                   <label>信箱：</label>
                 </div>
                 <div class="right">
-                  <input class="type_text" type="text" name="id" value=""/>
+                  <input class="type_text" type="text" name="id" autocomplete="off" value=""/>
                 </div>
               </div>
               <div class="line">
@@ -65,7 +67,7 @@
                   <label>手機：</label>
                 </div>
                 <div class="right">
-                  <input class="type_text" type="text" name="id" value=""/>
+                  <input class="type_text" type="text" name="id" autocomplete="off" value=""/>
                 </div>
               </div>
               <div class="line">
@@ -80,7 +82,7 @@
                     <option>操作問題</option>
                     <option>其他</option>
                   </select>
-                  <input class="type_text" id="topic" type="text" name="topic" size="18"/>
+                  <input class="type_text" id="topic" type="text" name="topic" size="18" autocomplete="off"/>
                 </div>
               </div>
               <div class="line line_content">
@@ -89,10 +91,10 @@
               <div class="line line_textarea">
                 <textarea></textarea>
               </div>
-              <div class="line wrapper_button">與line同層
-                <button class="button" type="submit">
+              <div class="line wrapper_button">
+                <div class="button">
                   <div class="text">提交</div>
-                </button>
+                </div>
                 <div class="progress-bar"></div>
                 <svg x="0px" y="0px" viewbox="0 0 25 30" style="enable-background:new 0 0 25 30;">
                   <path class="check" d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2"></path>

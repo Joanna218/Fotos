@@ -39,4 +39,38 @@ $(function() {
         easing: 'ease-in-sine',
         delay: 100,
     });
+
+
+    $('.header_container .search').on('click', function() {
+        const inputSearch = $('.prompt').val()
+        if (!inputSearch) return;
+
+        console.log(inputSearch)
+        $('#search-form').submit()
+    })
+
+    /*
+    $('.header_container .prompt').keypress(function(event) {
+        const inputSearch = $('.prompt').val()
+        if (event.keyCode == 13 && inputSearch) {
+            searchData(inputSearch);
+        }
+    });
+
+    function searchData(inputSearch) {
+
+      $.ajax({
+        url: "http://localhost:7881/dist/search.jsp",
+        type: "post",
+        data: inputSearch,
+        dataType: "json",
+        success: function (res) {
+          console.log(res)
+        },
+        error: function (err) {
+          console.log(err)
+        }
+      })
+  }
+  */
 })

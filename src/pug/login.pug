@@ -32,11 +32,11 @@ html(lang="en")
           .form
             form(action='#', method='post')
               label(for='id') 帳號
-              input#id(type='text')
+              input.login_input#id(type='text' ,name="login_id" ,value="" ,autocomplete="off" , required="required")
               label(for='password') 密碼
-              input#password(type='password')
+              input.login_input#password(type='password' ,name="login_password" ,value="" ,autocomplete="off" , required="required")
               .wrapper_submit
-                input#submit(type='submit', value='登入')
-                input#submit(type='submit', value='註冊')
+                button.submit(type='submit') 登入
+                button.submit(onclick="location.href='../html/join.html'",type="button") 註冊
 script(src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js')
 script(src='../js/login.js')

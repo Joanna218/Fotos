@@ -7,10 +7,10 @@ header
         a(href="../html/login.html") 登入
         a(href="#") 查訂單
         a(href="#").glyphicon.glyphicon-shopping-cart.cart_size
-        .ui.icon.input
-          input.prompt.prompt_size(type="text", placeholder="Search...")
-          i.circular.search.link.icon
-            a(href="http://www.google.com")
+        form(action="search.jsp" method="POST" id="search-form")
+          .ui.icon.input
+            input.prompt.prompt_size(type="text", name="search", placeholder="Search...")
+            i.circular.search.link.icon
     .row2
       .logo
       .nav_bar

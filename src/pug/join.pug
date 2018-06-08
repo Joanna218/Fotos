@@ -25,43 +25,37 @@ html(lang="en")
                 .right
                   label(for='name') 姓名
                 .left
-                  input#name(type='text' required="required")
+                  input.join_input(type='text',autocomplete="off",name="join_name",value="", required="required")
               .line
                 .right
                   label(for='id') 帳號
                 .left
-                  input#id(type='text' required="required")
+                  input.join_input(type='text',name="join_id",value="",autocomplete="off", required="required")
               .line
                 .right
                   label(for='password') 密碼
                 .left
-                  input#password(type='password' required="required")
+                  input.join_input(type='password',name="join_password",value="",autocomplete="off", required="required")
               .line
                 .right
                   label(for='repassword') 確認密碼
                 .left
-                  input#repassword(type='password' required="required")
+                  input.join_input(type='password',name="join_repassword",value="",autocomplete="off", required="required")
               .line
                 .right
                   label(for='email') 電子信箱
                 .left
-                  input#email(type='email' required="required")
+                  input.join_input(type='email',name="join_email",value="",autocomplete="off", required="required")
               .line
                 .right
                   label(for='address') 地址
                 .left
-                  input#address(type='text' required="required" )
+                  input.join_input(type='text',name="join_address",value="",autocomplete="off", required="required" )
               .wrap_submit
                 input#submit(type='submit', value='註冊')
               .wrap_login
                 span 已經擁有帳戶？
                 a(href="../html/login.html") 登入
-            //- .wrapper_button
-            //-   .button
-            //-     .text Submit
-            //-   .progress-bar
-            //-   svg(x='0px', y='0px', viewbox='0 0 25 30', style='enable-background:new 0 0 25 30;')
-            //-     path.check(d='M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2')
 
     script(src="../js/jquery-3.3.1.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
