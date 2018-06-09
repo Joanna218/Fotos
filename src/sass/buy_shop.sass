@@ -5,7 +5,7 @@
   border: 1px solid
 
 %_container
-  width: 90%
+  width: 80%
   margin: 0 auto
   max-width: 1140px
   // border: 3px solid red
@@ -16,12 +16,13 @@
   .top
     display: flex
     justify-content: center
-    background-color: #eee
+    // background-color: #eee
     .left
       display: flex
       flex-direction: column
-      width: 40%
+      width: 50%
       .row1
+        margin-top: 10px
         .big_box
           // width: 500px
           height: 380px
@@ -31,69 +32,202 @@
           width: 66px
           height: 66px
           margin-right: 10px
+          a
+            &:hover
+              transition: opacity .3s
+              opacity: .5
     .right
       display: flex
       flex-direction: column
-      width: 50%
+      width: 45%
       margin-left: 20px
       .line
         display: flex
         margin-top: 10px
+        align-items: center
         span
           color: #4a4e5c
-          font-size: 20px
+          // font-size: 20px
+        .label_color
+          color: white
+        .count
+          display: flex
+          border: 1px solid #d4d9de
+          border-radius: 4px
+          .minus,.add,.num
+            font-size: 30px
+            padding: 0px 5px
+            text-align: center
+          .minus,.add
+            width: 35px
+            cursor: pointer
+            user-select: none
+            transition-duration: 0.5s
+          .minus
+            border-right: 1px solid #d4d9de
+            color: #aaa
+            background-color: #f0f0f0
+            &:hover
+              background-color: #eee
+              color: #333
+          .add
+            border-left: 1px solid #d4d9de
+            color: #4e82a1
+            &:hover
+              background-color: #e7f1f7
+          .num
+            width: 80px
+
   .bottom
-    height: 100px
+    padding: 30px 20px
+
+    margin-top: 30px
     ul
       display: flex
+      margin: 0
+      padding: 0
       li
         margin-right: 1px
+        width: 50%
         a
           font-size: 2em
           font-weight: bold
           color: #FFF
           display: block
           padding: 15px 20px
-          background: #C15757
+          background: #5f8aa3
+          text-align: center
           &.current
             background: #F5F4F2
-            color: #C15757
+            color: #5f8aa3
           &:not(.current)
             &:hover
-              background: #D26161
+              background: #81a6bc
               color: #FFF
-
-    #tab1,#tab2
-      padding: 30px 20px
-      background: #F5F4F2
-      p
-        margin-top: 20px
-        line-height: 2em
-        color: #C15757
-      strong
-        font-size: 4em
-        font-weight: bold
-        color: #D6AF62
-
-  ////////////////////////////////////////
+//.....................................
+.wrap_mes
+  display: flex
+  // width: 90%
+  height: 100px
+  margin: 0 auto
+  .left
+    width: 20%
+    display: flex
+    flex-direction: column
+    .user_like
+      margin-bottom: 20px
+  .right
+    width: 80%
+    .mes_top
+      margin-bottom: 20px
+#tab1,#tab2
+  padding: 30px 20px
+  background: #F5F4F2
+  p
+    margin-top: 20px
+    line-height: 2em
+    color: #131313
+  strong
+    font-size: 4em
+    font-weight: bold
+    color: #5f8aa3
+select
+  width: 100px
+  background-color: #fff
+  border-radius: 4px
+  padding: 5px
+  //.........................................
 .product_name
   font-size: 30px
   margin: 0
 .slide_info
   width: 65%
-  margin-left: 50px
   .slide_line
     display: flex
+  .slide_bgcolor
+    color: #467895
     .info_name
       font-size: 20px
       display: flex
       align-items: center
     .plus1,.plus2,.plus3
-      width: 10%
+      width: 30px
       font-size: 20px
       margin-left: auto
       text-align: center
+      vertical-align: center
       border-radius: 50%
-  .info_detail
-    display: none
+      // border: 1px solid
+      &:hover
+        cursor: pointer
+.info2,.info3
+  display: none
+.p_po
+  margin-top: 5px
 
+.easyzoom
+    float: left
+
+.easyzoom img
+    display: block
+
+/* Shrink wrap strategy 2 */
+.easyzoom
+    // display: inline-block
+
+.easyzoom img
+    vertical-align: bottom
+
+
+.heart_pos
+  display: flex
+  justify-content: center
+  align-items: center
+  .color_heart
+    color: #ff5353
+    margin-left: 20px
+    &:hover
+      cursor: pointer
+
+.btn_add_car
+  background-color: #5e89a2
+  color: #ffffff
+  cursor: pointer
+  border-radius: 4px
+  padding: 10px
+  padding-right: 20px
+  padding-left: 20px
+  font-size: 15px
+
+//..........................
+#bg
+  position: fixed
+  left: 0
+  top: 0
+  height: 100%
+  width: 100%
+  background: rgba(0, 0, 0, .4)
+#alertBox
+  margin: 200px auto 0
+  text-align: center
+  padding-top: 25px
+  width: 300px
+  height: 85px
+  background: #FFF
+  border-radius: 3px
+  box-shadow: 2px 2px rgba(0, 0, 0, .3)
+#alertBox p
+  font-size: 1.4em
+  margin-bottom: 20px
+#ok,#alertBox
+  padding: 5px 20px
+  font-size: 1em
+#ok
+  cursor: pointer
+  border: none
+  color: #FFF
+  background: #45ABB5
+  border-radius: 3px
+  &:hover
+  background: #3A8E96
+  transition: background .3s
