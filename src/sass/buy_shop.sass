@@ -1,16 +1,24 @@
 @import "base/_normalize"
 @import "base/_normalize-custom"
-
+@import "components/_header"
 *
-  border: 1px solid
+  // border: 1px solid
 
 %_container
   width: 80%
   margin: 0 auto
   max-width: 1140px
   // border: 3px solid red
-
-
+.big_img
+  max-width: 100%
+  height: auto
+  display: block
+.hr_color
+  border: 1px solid #5f8aa3
+.sm_img_border
+  border: 1px solid
+hr
+  margin-top: 10px
 .buy_shop_container
   @extend %_container
   .top
@@ -23,24 +31,34 @@
       width: 50%
       .row1
         margin-top: 10px
+        display: flex
+        justify-content: center
+        align-items: center
         .big_box
-          // width: 500px
-          height: 380px
+          width: 600px
+          height: 450px
+          display: flex
+          justify-content: center
+          align-items: center
+          img
+            border: 1px solid
       .row2
         display: flex
         .sm_box
-          width: 66px
-          height: 66px
+          width: 80px
+          height: 60px
           margin-right: 10px
           a
             &:hover
               transition: opacity .3s
               opacity: .5
+
     .right
       display: flex
       flex-direction: column
       width: 45%
-      margin-left: 20px
+      padding-left: 100px
+      // margin-left: 50px
       .line
         display: flex
         margin-top: 10px
@@ -63,6 +81,7 @@
             cursor: pointer
             user-select: none
             transition-duration: 0.5s
+            padding: 5px
           .minus
             border-right: 1px solid #d4d9de
             color: #aaa
@@ -97,6 +116,7 @@
           padding: 15px 20px
           background: #5f8aa3
           text-align: center
+          text-decoration: none
           &.current
             background: #F5F4F2
             color: #5f8aa3
@@ -105,6 +125,7 @@
               background: #81a6bc
               color: #FFF
 //.....................................
+
 .wrap_mes
   display: flex
   // width: 90%
@@ -141,7 +162,7 @@ select
   font-size: 30px
   margin: 0
 .slide_info
-  width: 65%
+  width: 70%
   .slide_line
     display: flex
   .slide_bgcolor
@@ -150,34 +171,41 @@ select
       font-size: 20px
       display: flex
       align-items: center
+      &:hover
+        cursor: pointer
     .plus1,.plus2,.plus3
+      position: relative
       width: 30px
       font-size: 20px
       margin-left: auto
       text-align: center
-      vertical-align: center
       border-radius: 50%
       // border: 1px solid
       &:hover
         cursor: pointer
+    .plus1
+      &:before
+        content: '+'
+        line-height: 30px
+        font-size: 20px
+
+      &.is-active
+        &:before
+          content: '-'
+    .plus2,.plus3
+      &:before
+        content: '-'
+        line-height: 30px
+        font-size: 20px
+
+      &.is-active
+        &:before
+          content: '+'
+
 .info2,.info3
   display: none
 .p_po
-  margin-top: 5px
-
-.easyzoom
-    float: left
-
-.easyzoom img
-    display: block
-
-/* Shrink wrap strategy 2 */
-.easyzoom
-    // display: inline-block
-
-.easyzoom img
-    vertical-align: bottom
-
+  // margin-top: 5px
 
 .heart_pos
   display: flex
@@ -207,6 +235,7 @@ select
   height: 100%
   width: 100%
   background: rgba(0, 0, 0, .4)
+  display: none
 #alertBox
   margin: 200px auto 0
   text-align: center

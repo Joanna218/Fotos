@@ -1,36 +1,44 @@
- let flag = 0;
  $(function() {
-     // 數量計數器
-     //要關上
      $('.plus1').on('click', function() {
-         if (flag == 0) {
-             $('.info1').slideUp(function() {
-                 $('.plus1').replaceWith('<div class="plus1">-</div>');
-                 flag = 1;
-                 console.log(flag);
-             })
-         } else if (flag == 1) {
-             //flag = 1; // 打開
-             $('.info1').slideDown(function() {
-                 $('.plus1').replaceWith('<div class="plus1">+</div>');
-                 flag = 0;
-                 console.log(flag);
-             })
-         }
-     });
-     $('.plus2').click(function() {
-         $('.info2').slideToggle()
-     });
-     $('.plus3').click(function() {
-         $('.info3').slideToggle()
-     });
+         $(this).toggleClass('is-active')
+         $('.info1').slideToggle()
 
+     })
+     $('.info_name1').on('click', function() {
+         $('.plus1').toggleClass('is-active')
+         $('.info1').slideToggle()
+
+     })
+
+     $('.plus2').on('click', function() {
+         $(this).toggleClass('is-active')
+         $('.info2').slideToggle()
+
+     })
+     $('.info_name2').on('click', function() {
+         $('.plus2').toggleClass('is-active')
+         $('.info2').slideToggle()
+
+     })
+     $('.plus3').on('click', function() {
+         $(this).toggleClass('is-active')
+         $('.info3').slideToggle()
+
+     })
+     $('.info_name3').on('click', function() {
+         $('.plus3').toggleClass('is-active')
+         $('.info3').slideToggle()
+
+     })
 
      //......................................
      //商品評論頁籤
-     $('.contents div[id != "tab1"]').hide();
-     $("a").click(function() {
-         $(".contents div").hide();
+     //  $('.contents div[id != "tab1"]').hide();
+     $('#tab2').hide();
+     $(".critical").click(function() {
+         //  $(".contents div").hide();
+         $('#tab1').hide()
+         $('#tab2').hide()
 
          // 顯示出選擇頁籤的對應內容
          var res = $(this).attr("href");
@@ -70,42 +78,30 @@
 
      //............................
      //加入購物車
-     // 隱藏背景與訊息對話框
-     $("#bg").hide();
-
-     // 點按「Click Me!」按鈕
      $(".btn_add_car").click(function() {
          // 淡入顯示背景與訊息對話框
          $("#bg").fadeIn(300);
          $("#bg").delay(1000).fadeOut(300);
      });
 
-     // 點按「OK」按鈕
-     //  $("#ok").click(function() {
-     //      // 淡出隱藏背景與訊息對話框
-     //      $("#bg").fadeOut(300);
-     //  });
-
      //..................................................
 
 
-     // $(".sm_box a").click(function() {
-     //     $(".big_box img").attr("src", $(this).attr("href"));
-     //     return false;
-     // });
+     $(".sm_box a").click(function() {
+         const bigImagePath = $(this).data('standard')
+
+         $(".big_box img").attr("src", bigImagePath);
+         return false;
+     });
 
 
 
 
      //.......................................
-
-
-
-     // // clone the text
-     // $(".zoomer:first").anythingZoomer({
-     //     clone: true
-     // });
-
-     // $(".zoomer:last").anythingZoomer();
+     $('.sm_box a img').click(function() {
+         $('.sm_box a img').removeClass('sm_img_border');
+         $(this).addClass('sm_img_border');
+         console.log('ff');
+     });
 
  });
