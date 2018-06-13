@@ -72,6 +72,10 @@
       flex-direction: column
       align-items: center
       justify-content: center
+      &:hover
+        cursor: pointer
+      &:hover .box_bg
+        opacity: 1
       .box_container
         @extend %_container
         display: flex
@@ -82,6 +86,7 @@
         box-shadow: 0px 1px 4px 4px rgba(89, 88, 88,.08)
         .product_img
           display: flex
+          position: relative
           justify-content: center
           align-items: center
           width: 100%
@@ -90,7 +95,7 @@
           width: 90%
           height: 30px
           margin: 0 auto
-          margin-top: 20px
+          margin-top: 25px
           text-align: center
           color: #565656
 		      font-size: 16px
@@ -106,3 +111,86 @@
 
 img
   border: 1px solid #dadbdb
+.box_bg
+  background-color: rgba(0, 0, 0, .1)
+  width: 100%
+  position: absolute
+  height: 130%
+  opacity: 0
+  transition-duration: .5s
+.shop_add_car
+  background-color: #5e89a2
+  color: #ffffff
+  cursor: pointer
+  border-radius: 4px
+  padding: 10px
+  letter-spacing: 2px
+  padding-right: 20px
+  padding-left: 20px
+  left: 50px
+  bottom: 10px
+  position: absolute
+.shop_add_love
+  background-color: #5e89a2
+  color: #ffffff
+  cursor: pointer
+  border-radius: 4px
+  padding: 10px
+  letter-spacing: 2px
+  padding-right: 20px
+  padding-left: 20px
+  position: absolute
+  right: 50px
+  bottom: 10px
+.img-fluid
+  max-width: 100%
+  height: auto
+  display: block
+//..........................................
+#bg
+  position: fixed
+  left: 0
+  top: 0
+  height: 100%
+  width: 100%
+  background: rgba(0, 0, 0, .4)
+  display: none
+#alertBox
+  margin: 200px auto 0
+  text-align: center
+  padding-top: 25px
+  width: 300px
+  height: 85px
+  background: #FFF
+  border-radius: 3px
+  box-shadow: 2px 2px rgba(0, 0, 0, .3)
+  padding: 5px 20px
+  font-size: 1em
+  transition: background .3s
+#alertBox p
+  font-size: 1.4em
+  margin-bottom: 20px
+//.......................................
+#bg2
+  position: fixed
+  left: 0
+  top: 0
+  height: 100%
+  width: 100%
+  background: rgba(0, 0, 0, .4)
+  display: none
+#alertBox2
+  margin: 200px auto 0
+  text-align: center
+  padding-top: 25px
+  width: 300px
+  height: 85px
+  background: #FFF
+  border-radius: 3px
+  box-shadow: 2px 2px rgba(0, 0, 0, .3)
+  padding: 5px 20px
+  font-size: 1em
+#alertBox2 p
+  font-size: 1.4em
+  margin-bottom: 20px
+

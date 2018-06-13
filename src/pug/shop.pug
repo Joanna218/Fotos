@@ -6,6 +6,7 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Document
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel="stylesheet", href="../css/fonts/css/fontawesome-all.min.css")
     link(rel="stylesheet", href="../css/Semantic/semantic.min.css")
     link(rel="stylesheet", href="../css/shop.css")
 
@@ -22,61 +23,53 @@ html(lang="en")
       .content
         ._container_content
           form.shop_form
-            a(href="#")
-              .box.view
-                .box_container
-                  .product_img img
-                  .product_title title
-                  .product_price price
-            a(href="#")
-              .box.viewnight
-                .box_container
-                  .product_img img
-                  .product_title title
-                  .product_price price
-            a(href="#")
-              .box.food
-                .box_container
-                  .product_img img
-                  .product_title title
-                  .product_price price
-            a(href="#")
-              .box.view
-                .box_container
-                  .product_img img
-                  .product_title title
-                  .product_price price
-            a(href="#")
-              .box.viewnight
-                .box_container
-                  .product_img img
-                  .product_title title
-                  .product_price price
-            a(href="#")
-              .box.food
-                .box_container
-                  .product_img img
-                  .product_title title
-                  .product_price price
-            a(href="#")
-              .box.view
-                .box_container
-                  .product_img img
-                  .product_title title
-                  .product_price price
-            a(href="#")
-              .box.viewnight
-                .box_container
-                  .product_img img
-                  .product_title title
-                  .product_price price
-            a(href="#")
-              .box.food
-                .box_container
-                  .product_img img
-                  .product_title title
-                  .product_price price
+            .box.viewnight
+              input(type="hidden" name="" value="")
+              .box_container
+                .product_img
+                  img.img-fluid(src="../img/item/11.png", width="200" height="150")
+                  .box_bg
+                    button.shop_add_car(type="button",value="",name="btn_car")
+                      i.fas.fa-shopping-cart
+                    button.shop_add_love(type="button",value="",name="btn_love")
+                      i.far.fa-heart
+                .product_title title
+                .product_price price
+            .box.view
+              input(type="hidden" name="" value="")
+              .box_container
+                .product_img
+                  img.img-fluid(src="../img/item/1.png", width="200" height="150")
+                  .box_bg
+                    button.shop_add_car(type="button",value="",name="btn_car")
+                      i.fas.fa-shopping-cart
+                    button.shop_add_love(type="button",value="",name="btn_love")
+                      i.far.fa-heart
+                .product_title title
+                .product_price price
+            .box.food
+              input(type="hidden" name="" value="")
+              .box_container
+                .product_img
+                  img.img-fluid(src="../img/item/22.png", width="200" height="150")
+                  .box_bg
+                    button.shop_add_car(type="button",value="",name="btn_car")
+                      i.fas.fa-shopping-cart
+                    button.shop_add_love(type="button",value="",name="btn_love")
+                      i.far.fa-heart
+                .product_title title
+                .product_price price
 
+      #bg
+        #alertBox
+          span
+            i.fas.fa-cart-plus.fa-3x
+          p 加入成功!
+      #bg2
+        #alertBox2
+          span
+            i.fas.fa-cart-plus.fa-3x
+          p 收藏成功!
 
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
