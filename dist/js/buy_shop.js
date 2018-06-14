@@ -83,6 +83,12 @@
          $("#bg").fadeIn(300);
          $("#bg").delay(1000).fadeOut(300);
      });
+     //收藏
+     $(".heart_pos").click(function() {
+         // 淡入顯示背景與訊息對話框
+         $("#bg2").fadeIn(300);
+         $("#bg2").delay(1000).fadeOut(300);
+     });
 
      //..................................................
 
@@ -103,5 +109,31 @@
          $(this).addClass('sm_img_border');
          console.log('ff');
      });
+     //..........................
+     $('.heart_pos').click(function() {
+         $('.color_heart').css('color', 'red');
+     });
+     //............
+     //星星評論
+     $('#rate_1').click(function() {
 
+         console.log('1');
+     });
+     $('#rate_2').click(function() {
+         console.log('2');
+     });
+     $('#rate_3').click(function() {
+         console.log('3');
+     });
+     $('#rate_4').click(function() {
+         console.log('4');
+     });
+     $('#rate_5').click(function() {
+         console.log('5');
+     });
  });
+
+ var css = document.getElementById('css');
+ var d = document.getElementById('#rate_1');
+ var c = css.sheet;
+ c.insertRule("'#rate_1'#rate_1::before{color:blue;}", 0);

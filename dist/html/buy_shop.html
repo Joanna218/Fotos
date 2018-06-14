@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/Semantic/semantic.min.css"/>
     <link rel="stylesheet" href="../css/fonts/css/fontawesome-all.min.css"/>
     <link rel="stylesheet" href="../css/buy_shop.css"/>
+    <style id="css"></style>
   </head>
   <body>
     <div id="wrapper">
@@ -72,12 +73,14 @@
             <div class="line">
               <div class="count">
                 <div class="minus">-</div>
-                <input class="num" type="text" name="count_num" value="5"/>
+                <input class="num" type="text" name="count_num" value="1"/>
                 <div class="add">+</div>
               </div>
             </div>
             <div class="line">
-              <button class="btn_add_car" type="button" value="" name="btn_car">加入購物車</button><span class="heart_pos"><i class="far fa-heart fa-2x color_heart"></i></span>
+              <button class="btn_add_car" type="button" value="" name="btn_car">加入購物車</button>
+              <input type="hidden" name="" value=""/>
+              <div class="heart_pos"><i class="far fa-heart fa-2x color_heart"></i></div>
             </div>
             <div class="line">
               <div class="slide_info">
@@ -88,7 +91,7 @@
                 </div>
                 <div class="slide_line">
                   <div class="info_detail info1">
-                    <p class="p_po">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia labore modi aliquid totam, optio soluta eum pariatur ducimus maxime? Consequuntur quis</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia labore modi aliquid totam, optio soluta eum pariatur ducimus maxime? Consequuntur quis</p>
                   </div>
                 </div>
                 <hr class="line_hr"/>
@@ -98,7 +101,7 @@
                 </div>
                 <div class="slide_line">
                   <div class="info_detail info2">
-                    <p class="p_po">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam culpa molestiae hic numquam fugiat quam quae, taque fugit sit dolorum eius ullam.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam culpa molestiae hic numquam fugiat quam quae, taque fugit sit dolorum eius ullam.</p>
                   </div>
                 </div>
                 <hr class="line_hr"/>
@@ -108,7 +111,7 @@
                 </div>
                 <div class="slide_line">
                   <div class="info_detail info3">
-                    <p class="p_po">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum voluptas itaque numquam, at dolorum, magni voluptatum</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum voluptas itaque numquam, at dolorum, magni voluptatum</p>
                   </div>
                 </div>
                 <hr class="line_hr"/>
@@ -123,15 +126,36 @@
           </ul>
           <div class="contents">
             <div id="tab1">
-              <p><strong>會員評論</strong></p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p><strong>會員評論</strong>
+                <div class="mes">
+                  <div class="write_container">
+                    <form action="#" method="post">
+                      <div class="write_id">帳號：
+                        <input type="text" value="aaa" name="user_id" disabled="disabled"/>
+                      </div>
+                      <div class="total_score">總體評分</div>
+                      <div id="rating_bar"><span id="rate_5">
+                          <input type="text" value="2" name="start" hidden="hidden"/></span><span id="rate_4">
+                          <input type="text" value="4" name="start" hidden="hidden"/></span><span id="rate_3">
+                          <input type="text" value="6" name="start" hidden="hidden"/></span><span id="rate_2">
+                          <input type="text" value="8" name="start" hidden="hidden"/></span><span id="rate_1">
+                          <input type="text" value="10" name="start" hidden="hidden"/></span></div>
+                      <div class="write_textarea">
+                        <textarea></textarea>
+                      </div>
+                      <div class="send">
+                        <button class="btn_send" type="submit">送出</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </p>
             </div>
             <div id="tab2">
               <p><strong>查看評論</strong>
                 <div class="mes">
                   <div class="wrap_mes">
                     <div class="left">
-                      <div class="user_like">愛心條</div>
                       <div class="user_id">使用者帳號 Joanna</div>
                       <div class="user_time">時間 2018/06/10</div>
                     </div>
@@ -143,7 +167,6 @@
                   <hr class="hr_color"/>
                   <div class="wrap_mes">
                     <div class="left">
-                      <div class="user_like">愛心條</div>
                       <div class="user_id">使用者帳號 Joanna</div>
                       <div class="user_time">時間 2018/06/10</div>
                     </div>
@@ -162,6 +185,11 @@
       <div id="bg">
         <div id="alertBox"><span><i class="fas fa-cart-plus fa-3x"></i></span>
           <p>加入成功!</p>
+        </div>
+      </div>
+      <div id="bg2">
+        <div id="alertBox2"><span><i class="fas fa-heart fa-3x"></i></span>
+          <p>收藏成功!</p>
         </div>
       </div>
     </div>
