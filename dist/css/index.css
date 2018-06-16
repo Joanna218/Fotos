@@ -584,29 +584,33 @@ form {
   color: pink; }
 
 footer {
-  background-color: #80afca;
-  height: 400px; }
+  background-color: #80afca; }
   footer .footer_container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     left: 0px;
-    bottom: 0px;
-    padding-top: 100px; }
+    bottom: 0px; }
     footer .footer_container .footer_logo {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       width: 20%;
-      -webkit-box-pack: start;
-      -ms-flex-pack: start;
-      justify-content: flex-start;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      footer .footer_container .footer_logo .visit_num {
+        margin-top: 10px; }
     footer .footer_container .footer_info {
       margin-left: 10%;
-      width: 60%;
+      width: 80%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
@@ -624,19 +628,13 @@ footer {
         footer .footer_container .footer_info .info_box a {
           text-align: center;
           padding: 5px; }
-        footer .footer_container .footer_info .info_box .email_paper {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          justify-content: center; }
-          footer .footer_container .footer_info .info_box .email_paper input {
-            margin: 1px;
-            width: 140px; }
-          footer .footer_container .footer_info .info_box .email_paper button {
-            background-color: black;
-            border: 1px solid; }
-            footer .footer_container .footer_info .info_box .email_paper button a {
-              font-size: 14px;
-              color: white; }
+        footer .footer_container .footer_info .info_box span {
+          text-align: center; }
+        footer .footer_container .footer_info .info_box .maps {
+          margin-top: 10px;
+          margin-left: 10px; }
+
+.footer_copy_right {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.2; }

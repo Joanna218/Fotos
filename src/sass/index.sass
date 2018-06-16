@@ -12,7 +12,7 @@ $max_with: 768px
 
 /*....... 共用css.................................*/
 *
-  // border: 1px solidr
+  // border: 1px solid
 
 
 %_container
@@ -218,22 +218,24 @@ form
 footer
   background-color: #80afca
   // opacity: .9
-  height: 400px
+  // height: 400px
   .footer_container
     @extend %_container
     display: flex
     left: 0px
     bottom: 0px
-    padding-top: 100px
+    // padding-top: 100px
     .footer_logo
       display: flex
       width: 20%
-      justify-content: flex-start
+      justify-content: center
       align-items: center
-
+      flex-direction: column
+      .visit_num
+        margin-top: 10px
     .footer_info
       margin-left: 10%
-      width: 60%
+      width: 80%
       display: flex
       .info_box
         width: 33.33%
@@ -244,18 +246,18 @@ footer
         a
           text-align: center
           padding: 5px
-        .email_paper
-          display: flex
-          justify-content: center
-          input
-            margin: 1px
-            width: 140px
-          button
-            background-color: black
-            border: 1px solid
-            a
-              font-size: 14px
-              color: white
+        span
+          text-align: center
+        .maps
+          margin-top: 10px
+          margin-left: 10px
+
+.footer_copy_right
+  text-align: center
+  font-size: 20px
+  line-height: 1.2
+
+
 
 
 // %item

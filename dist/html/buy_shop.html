@@ -127,26 +127,34 @@
           <div class="contents">
             <div id="tab1">
               <p><strong>會員評論</strong>
-                <div class="mes">
-                  <div class="write_container">
+                <div class="wrapp_write">
+                  <div class="write_left">
                     <form action="#" method="post">
                       <div class="write_id">帳號：
                         <input type="text" value="aaa" name="user_id" disabled="disabled"/>
                       </div>
                       <div class="total_score">總體評分</div>
-                      <div id="rating_bar"><span id="rate_5">
-                          <input type="text" value="2" name="start" hidden="hidden"/></span><span id="rate_4">
-                          <input type="text" value="4" name="start" hidden="hidden"/></span><span id="rate_3">
-                          <input type="text" value="6" name="start" hidden="hidden"/></span><span id="rate_2">
-                          <input type="text" value="8" name="start" hidden="hidden"/></span><span id="rate_1">
-                          <input type="text" value="10" name="start" hidden="hidden"/></span></div>
-                      <div class="write_textarea">
+                      <div class="rating_bar"><span class="rating">
+                          <input id="rating5" type="radio" name="rating" value="10"/>
+                          <label for="rating5">5</label>
+                          <input id="rating4" type="radio" name="rating" value="8"/>
+                          <label for="rating4">4</label>
+                          <input id="rating3" type="radio" name="rating" value="6"/>
+                          <label for="rating3">3</label>
+                          <input id="rating2" type="radio" name="rating" value="4"/>
+                          <label for="rating2">2</label>
+                          <input id="rating1" type="radio" name="rating" value="2"/>
+                          <label for="rating1">1</label></span></div>
+                      <div class="write_textarea"><span>內容</span>
                         <textarea></textarea>
                       </div>
                       <div class="send">
                         <button class="btn_send" type="submit">送出</button>
                       </div>
                     </form>
+                  </div>
+                  <div class="write_right">
+                    <div class="write_right_wrap"><img src="../img/item/1.png" alt="" width="100%" height="100%"/></div>
                   </div>
                 </div>
               </p>

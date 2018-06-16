@@ -413,7 +413,8 @@ header {
   display: -ms-flexbox;
   display: flex; }
   .mem_qu_container .left {
-    width: 20%;
+    padding: 50px;
+    padding-top: 10px;
     background-color: #d9e4ea; }
     .mem_qu_container .left .left_li {
       display: -webkit-box;
@@ -431,9 +432,14 @@ header {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        margin-top: 10px; }
+        margin-top: 10px;
+        border-bottom-style: dashed;
+        border-bottom-color: #6d92a6;
+        border-bottom-width: thin;
+        margin-bottom: 10px; }
         .mem_qu_container .left .left_li li a {
-          color: #114b6b; }
+          color: #114b6b;
+          padding: 10px; }
           .mem_qu_container .left .left_li li a:hover {
             color: #5694b6; }
   .mem_qu_container .right {

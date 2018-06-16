@@ -92,27 +92,32 @@ html(lang="en")
             #tab1
               p
                 strong 會員評論
-                .mes
-                  .write_container
+                .wrapp_write
+                  .write_left
                     form(action="#", method="post")
                       .write_id 帳號：
                         input(type="text" value="aaa" name="user_id" disabled)
                       .total_score 總體評分
-                      #rating_bar
-                        span#rate_5
-                          input(type="text", value="2",name="start", hidden)
-                        span#rate_4
-                          input(type="text", value="4",name="start", hidden)
-                        span#rate_3
-                          input(type="text", value="6",name="start", hidden)
-                        span#rate_2
-                          input(type="text", value="8",name="start", hidden)
-                        span#rate_1
-                          input(type="text", value="10",name="start", hidden)
+                      .rating_bar
+                        span.rating
+                          input#rating5(type='radio', name='rating', value='10')
+                          label(for='rating5') 5
+                          input#rating4(type='radio', name='rating', value='8')
+                          label(for='rating4') 4
+                          input#rating3(type='radio', name='rating', value='6')
+                          label(for='rating3') 3
+                          input#rating2(type='radio', name='rating', value='4', )
+                          label(for='rating2') 2
+                          input#rating1(type='radio', name='rating', value='2')
+                          label(for='rating1') 1
                       .write_textarea
+                        span 內容
                         textarea
                       .send
                         button.btn_send(type="submit") 送出
+                  .write_right
+                    .write_right_wrap
+                      img(src="../img/item/1.png", alt="" width="100%" height="100%")
             #tab2
               p
                 strong 查看評論

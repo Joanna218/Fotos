@@ -114,26 +114,5 @@
          $('.color_heart').css('color', 'red');
      });
      //............
-     //星星評論
-     $('#rate_1').click(function() {
 
-         console.log('1');
-     });
-     $('#rate_2').click(function() {
-         console.log('2');
-     });
-     $('#rate_3').click(function() {
-         console.log('3');
-     });
-     $('#rate_4').click(function() {
-         console.log('4');
-     });
-     $('#rate_5').click(function() {
-         console.log('5');
-     });
  });
-
- var css = document.getElementById('css');
- var d = document.getElementById('#rate_1');
- var c = css.sheet;
- c.insertRule("'#rate_1'#rate_1::before{color:blue;}", 0);
