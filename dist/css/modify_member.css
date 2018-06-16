@@ -414,33 +414,33 @@ header {
 body {
   background-color: #d9e8f1; }
 
-#wrapper {
+.wrap_modify_member {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  #wrapper .wrap_left {
+  .wrap_modify_member .wrap_left {
     width: 20%;
     height: auto;
     background-color: #224052;
     -webkit-box-shadow: 5px 0px 20px #888888;
     box-shadow: 5px 0px 20px #888888; }
-    #wrapper .wrap_left .left_container {
+    .wrap_modify_member .wrap_left .left_container {
       width: 50%;
       margin: 0 auto;
       margin-top: 50px; }
-      #wrapper .wrap_left .left_container li {
+      .wrap_modify_member .wrap_left .left_container li {
         line-height: 3;
         text-align: center;
         border-bottom-style: dashed;
         border-bottom-color: white;
         border-bottom-width: thin; }
-        #wrapper .wrap_left .left_container li a {
+        .wrap_modify_member .wrap_left .left_container li a {
           color: white;
           text-decoration: none; }
-          #wrapper .wrap_left .left_container li a:hover {
+          .wrap_modify_member .wrap_left .left_container li a:hover {
             color: #c2d8e6;
             text-decoration: none; }
-  #wrapper .content {
+  .wrap_modify_member .content {
     width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -449,7 +449,7 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
-    #wrapper .content .content_right {
+    .wrap_modify_member .content .content_right {
       background-color: white;
       width: 75%;
       margin: 0 auto;
@@ -460,19 +460,19 @@ body {
       padding-left: 50px;
       padding-right: 50px;
       padding-bottom: 15px; }
-      #wrapper .content .content_right h1 {
+      .wrap_modify_member .content .content_right h1 {
         color: #1d455d;
         font-size: 45px;
         padding-top: 30px;
         font-family: "微軟正黑體"; }
-      #wrapper .content .content_right .info {
+      .wrap_modify_member .content .content_right .info {
         padding-top: 10px;
         line-height: 30px;
         font-size: 16px; }
-      #wrapper .content .content_right hr {
+      .wrap_modify_member .content .content_right hr {
         margin-top: 20px;
         margin-bottom: 30px; }
-      #wrapper .content .content_right .form {
+      .wrap_modify_member .content .content_right .form {
         margin: 0 auto;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -481,10 +481,10 @@ body {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column; }
-        #wrapper .content .content_right .form form {
+        .wrap_modify_member .content .content_right .form form {
           width: 80%;
           margin: 0 auto; }
-          #wrapper .content .content_right .form form .line {
+          .wrap_modify_member .content .content_right .form form .line {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -495,7 +495,7 @@ body {
             -webkit-box-align: center;
             -ms-flex-align: center;
             align-items: center; }
-            #wrapper .content .content_right .form form .line .left {
+            .wrap_modify_member .content .content_right .form form .line .left {
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex;
@@ -506,15 +506,15 @@ body {
               -webkit-box-align: end;
               -ms-flex-align: end;
               align-items: flex-end; }
-              #wrapper .content .content_right .form form .line .left label {
+              .wrap_modify_member .content .content_right .form form .line .left label {
                 color: #172f3d;
                 font-size: 16px;
                 letter-spacing: 2px;
                 margin: 0; }
-            #wrapper .content .content_right .form form .line .right {
+            .wrap_modify_member .content .content_right .form form .line .right {
               width: 70%;
               margin-left: auto; }
-              #wrapper .content .content_right .form form .line .right select {
+              .wrap_modify_member .content .content_right .form form .line .right select {
                 margin-left: 10px;
                 font-family: "微軟正黑體";
                 border: 0;
@@ -527,7 +527,7 @@ body {
                 padding-left: 10px;
                 padding-right: 10px;
                 width: 85px; }
-              #wrapper .content .content_right .form form .line .right .member_input {
+              .wrap_modify_member .content .content_right .form form .line .right .member_input {
                 border-radius: 10px;
                 border: 0;
                 background-color: #e1ecf2;
@@ -536,7 +536,7 @@ body {
                 margin-left: 10px;
                 padding: 5px;
                 width: 250px; }
-            #wrapper .content .content_right .form form .line #submit {
+            .wrap_modify_member .content .content_right .form form .line #submit {
               font-family: "微軟正黑體";
               color: #224052;
               -webkit-transition: color 300ms;
