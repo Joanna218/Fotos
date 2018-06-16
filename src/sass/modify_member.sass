@@ -1,0 +1,123 @@
+@import "base/_normalize"
+@import "base/_normalize-custom"
+@import "components/_header"
+@import "components/_footer"
+
+*
+  // border: 1px solid
+    font-family: "微軟正黑體"
+
+::selection
+  background: #a4a3a3
+body
+  background-color: #d9e8f1
+  // position: relative
+  // font-family: "微軟正黑體"
+  // height: 105%
+
+#wrapper
+  display: flex
+  .wrap_left
+    width: 20%
+    height: auto
+    background-color: #224052
+    box-shadow: 5px 0px 20px #888888
+    .left_container
+      width: 50%
+      margin: 0 auto
+      margin-top: 50px
+      li
+        line-height: 3
+        text-align: center
+        border-bottom-style: dashed
+        border-bottom-color: white
+        border-bottom-width: thin
+        a
+          color: white
+          text-decoration: none
+          &:hover
+            color: #c2d8e6
+            text-decoration: none
+  .content
+    width: 80%
+    display: flex
+    flex-direction: column
+    .content_right
+      background-color: white
+      width: 75%
+      margin: 0 auto
+      margin-top: 10px
+      box-shadow: 0px 0px 20px #888888
+      padding-top: 15px
+      padding-left: 50px
+      padding-right: 50px
+      padding-bottom: 15px
+      h1
+        color: #1d455d
+        font-size: 45px
+        padding-top: 30px
+        font-family: "微軟正黑體"
+      .info
+        padding-top: 10px
+        line-height: 30px
+        font-size: 16px
+      hr
+        margin-top: 20px
+        margin-bottom: 30px
+      .form
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        form
+          width: 80%
+          margin: 0 auto
+          .line
+            display: flex
+            margin: 10px
+            justify-content: center
+            align-items: center
+            .left
+              display: flex
+              width: 30%
+              justify-content: flex-end
+              align-items: flex-end
+              label
+                color: #172f3d
+                font-size: 16px
+                letter-spacing: 2px
+                margin: 0
+            .right
+              width: 70%
+              margin-left: auto
+              select
+                margin-left: 10px
+                font-family: "微軟正黑體"
+                border: 0
+                color: #2e5972
+                font-size: 15px
+                height: 30px
+                line-height: 38px
+                background-color: #d9e8f1
+                border-radius: 20px
+                padding-left: 10px
+                padding-right: 10px
+                width: 85px
+              .member_input
+                border-radius: 10px
+                border: 0
+                background-color: #e1ecf2
+                font-size: 16px
+                height: 30px
+                margin-left: 10px
+                padding: 5px
+                width: 250px
+
+            #submit
+              font-family: "微軟正黑體"
+              color: #224052
+              transition: color 300ms
+              background-color: #d9e8f1
+              border-radius: 50px
+              width: 90px
+              height: 35px
+

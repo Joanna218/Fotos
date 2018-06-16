@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/Semantic/semantic.min.css"/>
+    <link rel="stylesheet" href="../css/modify_member.css"/>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="wrap_left">
+        <div class="left_container">
+          <li><a href="../html/modify_member.html">修改會員資料</a></li>
+          <li><a href="../html/ship.html">追蹤訂單</a></li>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content_right">
+          <h1>修改會員資料</h1>
+          <p class="info">歡迎蒞臨會員中心，基本資料修改、優惠查詢、追蹤訂單...等功能，在此提供服務會員資料皆作為運送與優惠券發放之使用，不會另作其他用途，敬請放心填寫。</p>
+          <hr/>
+          <div class="form">
+            <form action="#" method="post">
+              <div class="line">
+                <div class="left">
+                  <label for="id">帳號：</label>
+                </div>
+                <div class="right">
+                  <input class="member_input" type="text" disabled=""/>
+                </div>
+                <!-- 給甲班彙整資料-->
+              </div>
+              <div class="line">
+                <div class="left">
+                  <label for="password">密碼：</label>
+                </div>
+                <div class="right">
+                  <input class="member_input" type="password"/>
+                </div>
+              </div>
+              <div class="line">
+                <div class="left">
+                  <label for="repassword">確認密碼：</label>
+                </div>
+                <div class="right">
+                  <input class="member_input" type="password"/>
+                </div>
+              </div>
+              <div class="line">
+                <div class="left">
+                  <label for="name">姓名：</label>
+                </div>
+                <div class="right">
+                  <input class="member_input" type="text"/>
+                </div>
+              </div>
+              <div class="line">
+                <div class="left">
+                  <label for="sexual">性別：</label>
+                </div>
+                <div class="right">
+                  <select>
+                    <option>男</option>
+                    <option>女</option>
+                  </select>
+                </div>
+              </div>
+              <div class="line">
+                <div class="left">
+                  <label for="birth">生日：</label>
+                </div>
+                <div class="right">
+                  <input class="member_input" type="date"/>
+                </div>
+              </div>
+              <div class="line">
+                <div class="left">
+                  <label for="email">電子信箱：</label>
+                </div>
+                <div class="right">
+                  <input class="member_input" type="email"/>
+                </div>
+              </div>
+              <div class="line">
+                <div class="left">
+                  <label for="address">地址：</label>
+                </div>
+                <div class="right">
+                  <input class="member_input" type="text"/>
+                </div>
+              </div>
+              <div class="line">
+                <input id="submit" type="submit" value="修改"/>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+    <script src="../js/modify_member.js"></script>
+  </body>
+</html>
