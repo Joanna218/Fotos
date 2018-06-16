@@ -48,6 +48,18 @@ html(lang="en")
                   input.join_input(type='email',name="join_email",value="",autocomplete="off", required="required")
               .line
                 .right
+                  label(for='sexual') 性別
+                .left
+                  select.join_input
+                    option 男
+                    option 女
+              .line
+                .right
+                  label(for='birth') 生日
+                .left
+                  input.join_input(type='date')
+              .line
+                .right
                   label(for='address') 地址
                 .left
                   input.join_input(type='text',name="join_address",value="",autocomplete="off", required="required" )

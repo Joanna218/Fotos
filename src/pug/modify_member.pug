@@ -17,7 +17,7 @@ html(lang="en")
             li
               a(href='../html/modify_member.html') 修改會員資料
             li
-              a(href='../html/ship.html') 追蹤訂單
+              a(href='../html/track.html') 追蹤訂單
         .content
           .content_right
             h1 修改會員資料
@@ -25,6 +25,11 @@ html(lang="en")
             hr
             .form
               form(action='#', method='post')
+                .line
+                  .left
+                    label(for='name') 姓名：
+                  .right
+                    input.member_input(type='text')
                 .line
                   .left
                     label(for='id') 帳號：
@@ -41,11 +46,6 @@ html(lang="en")
                     label(for='repassword') 確認密碼：
                   .right
                     input.member_input(type='password')
-                .line
-                  .left
-                    label(for='name') 姓名：
-                  .right
-                    input.member_input(type='text')
                 .line
                   .left
                     label(for='sexual') 性別：

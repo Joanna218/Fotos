@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel="stylesheet", href="../css/Semantic/semantic.min.css")
+    link(rel="stylesheet", href="../css/track.css")
+  body
+    #wrapp
+      include ./shared/_header.pug
+      .wrap_modify_member
+        .wrap_left
+          .left_container
+            li
+              a(href='../html/modify_member.html') 修改會員資料
+            li
+              a(href='../html/track.html') 追蹤訂單
+        .content
+          .content_right
+            h1 追蹤訂單
+            p.info 所有訂單會需3-5個工作天，如需更改寄送地址，請在下訂後3天內進行更改，如有不便敬請見諒。
+            br
+            hr
+            .form
+              table
+                tr
+                  th 訂單編號
+                  th 購買日期
+                  th 總金額
+                  th 詳細清單
+                tr
+                  td 8451
+                  td 8745
+                  td 78451
+                  td +
+                tr
+                td 8451
+                td 8745
+                td 78451
+                td +

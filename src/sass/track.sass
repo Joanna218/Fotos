@@ -1,0 +1,81 @@
+@import "base/_normalize"
+@import "base/_normalize-custom"
+@import "components/_header"
+@import "components/_footer"
+
+*
+  // border: 1px solid
+  font-family: "微軟正黑體"
+body
+  background-color: #d9e8f1
+.wrap_modify_member
+  display: flex
+  height: 800px
+  .wrap_left
+    width: 20%
+    height: auto
+    background-color: #224052
+    box-shadow: 5px 0px 10px #888888
+    .left_container
+      width: 80%
+      margin: 0 auto
+      margin-top: 50px
+      padding: 0 30px
+      li
+        line-height: 3
+        text-align: center
+        border-bottom-style: dashed
+        border-bottom-color: white
+        border-bottom-width: thin
+        a
+          color: white
+          text-decoration: none
+          &:hover
+            color: #c2d8e6
+            text-decoration: none
+  .content
+    width: 80%
+    display: flex
+    flex-direction: column
+    .content_right
+      background-color: white
+      width: 75%
+      margin: 0 auto
+      margin-top: 20px
+      box-shadow: 0px 0px 20px #888888
+      padding-top: 15px
+      padding-left: 50px
+      padding-right: 50px
+      padding-bottom: 30px
+      h1
+        color: #1d455d
+        font-size: 45px
+        padding-top: 30px
+        font-family: "微軟正黑體"
+      .info
+        padding-top: 10px
+        line-height: 30px
+        font-size: 16px
+      hr
+        margin-top: 20px
+        margin-bottom: 30px
+      .form
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        width: 500px
+th
+  padding: 10px
+  width: 1000px
+  border-bottom-style: dashed
+  border-bottom-color: #224052
+  border-bottom-width: thin
+  color: #172f3d
+  text-align: center
+td
+  color: #172f3d
+  padding: 10px
+  text-align: center
+  border-bottom-style: dashed
+  border-bottom-color: #224052
+  border-bottom-width: thin
