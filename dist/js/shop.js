@@ -9,6 +9,7 @@ $(function() {
 
     $('.filters').on('click', '.button', function() {
         var $this = $(this);
+        $('.a').css('visibility', 'visible');
         // get group key
         var $buttonGroup = $this.parents('.button-group');
         var filterGroup = $buttonGroup.attr('data-filter-group');
