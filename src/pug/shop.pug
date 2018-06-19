@@ -22,54 +22,119 @@ html(lang="en")
             button.button(data-filter=".food") 美食
       .content
         ._container_content
-          form.shop_form
-            .box.viewnight
-              input(type="hidden" name="" value="")
-              .box_container
+          .box.viewnight
+            .box_container
+              form(action="#", method="post").shop_form
                 .product_img
                   img.img-fluid(src="../img/item/11.png", width="200" height="150")
                   .box_bg
                     button.shop_add_car(type="button",value="",name="btn_car")
                       i.fas.fa-shopping-cart
-                    button.shop_add_love(type="button",value="",name="btn_love")
+                    button.shop_add_love(type="submit",value="",name="btn_love")
                       i.far.fa-heart
                 .product_title title
                 .product_price price
-            .box.view
-              input(type="hidden" name="" value="")
-              .box_container.a
-                .product_img
-                  img.img-fluid(src="../img/item/1.png", width="200" height="150")
-                  .box_bg
-                    button.shop_add_car(type="button",value="",name="btn_car")
-                      i.fas.fa-shopping-cart
-                    button.shop_add_love(type="button",value="",name="btn_love")
-                      i.far.fa-heart
-                .product_title title
-                .product_price price
-            .box.food
-              input(type="hidden" name="" value="")
-              .box_container.a
-                .product_img
-                  img.img-fluid(src="../img/item/22.png", width="200" height="150")
-                  .box_bg
-                    button.shop_add_car(type="button",value="",name="btn_car")
-                      i.fas.fa-shopping-cart
-                    button.shop_add_love(type="button",value="",name="btn_love")
-                      i.far.fa-heart
-                .product_title title
-                .product_price price
+          .bg
+            .alertBox
+              .sm_icon
+                span.sm_icon_xx x
+              .line
+                .right
+                  img(src="../img/item/1.png", width="160" height="120")
+                .left
+                  span 商品名
+                  span.alert_price $$$$
+              form.alert_form(action="#", method="post")
+                .line2
+                  span 數量
+                  .count
+                    .minus -
+                    input.num(type="text",name="count_num",value="1")
+                    .add +
+                  button.alert_box_addcar(type="submit",value="",name="btn_car") 加入購物車
+          #bg
+            #alertBox
+              span
+                i.fas.fa-heart.fa-3x
+              p 收藏成功!
 
-      #bg
-        #alertBox
-          span
-            i.fas.fa-cart-plus.fa-3x
-          p 加入成功!
-      #bg2
-        #alertBox2
-          span
-            i.fas.fa-heart.fa-3x
-          p 收藏成功!
+
+          .box.view
+            .box_container
+              form(action="#", method="post").shop_form
+                .product_img
+                  img.img-fluid(src="../img/item/12.png", width="200" height="150")
+                  .box_bg
+                    button.shop_add_car(type="button",value="",name="btn_car")
+                      i.fas.fa-shopping-cart
+                    button.shop_add_love(type="submit",value="",name="btn_love")
+                      i.far.fa-heart
+                .product_title title
+                .product_price price
+          .bg
+            .alertBox
+              .sm_icon
+                span.sm_icon_xx x
+              .line
+                .right
+                  img(src="../img/item/1.png", width="160" height="120")
+                .left
+                  span 商品名
+                  span.alert_price $$$$
+              form.alert_form(action="#", method="post")
+                .line2
+                  span 數量
+                  .count
+                    .minus -
+                    input.num(type="text",name="count_num",value="1")
+                    .add +
+                  button.alert_box_addcar(type="submit",value="",name="btn_car") 加入購物車
+          #bg
+            #alertBox
+              span
+                i.fas.fa-heart.fa-3x
+              p 收藏成功!
+
+
+          .box.food
+            .box_container
+              form(action="#", method="post").shop_form
+                .product_img
+                  img.img-fluid(src="../img/item/12.png", width="200" height="150")
+                  .box_bg
+                    button.shop_add_car(type="button",value="",name="btn_car")
+                      i.fas.fa-shopping-cart
+                    button.shop_add_love(type="submit",value="",name="btn_love")
+                      i.far.fa-heart
+                .product_title title
+                .product_price price
+          .bg
+            .alertBox
+              .sm_icon
+                span.sm_icon_xx x
+              .line
+                .right
+                  img(src="../img/item/1.png", width="160" height="120")
+                .left
+                  span 商品名
+                  span.alert_price $$$$
+              form.alert_form(action="#", method="post")
+                .line2
+                  span 數量
+                  .count
+                    .minus -
+                    input.num(type="text",name="count_num",value="1")
+                    .add +
+                  button.alert_box_addcar(type="submit",value="",name="btn_car") 加入購物車
+          #bg
+            #alertBox
+              span
+                i.fas.fa-heart.fa-3x
+              p 收藏成功!
+
+
+
+
       include ./shared/_footer.pug
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")

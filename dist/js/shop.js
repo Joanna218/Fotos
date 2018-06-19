@@ -44,15 +44,15 @@ $(function() {
     //加入購物車
     $(".shop_add_car").click(function() {
         // 淡入顯示背景與訊息對話框
-        $("#bg").fadeIn(300);
-        $("#bg").delay(1000).fadeOut(300);
+        $(".bg").fadeIn(300);
+        // $(".bg").delay(1000).fad。eOut(300);
         return false;
     });
     //收藏
     $(".shop_add_love").click(function() {
         // 淡入顯示背景與訊息對話框
-        $("#bg2").fadeIn(300);
-        $("#bg2").delay(1000).fadeOut(300);
+        $("#bg").fadeIn(300);
+        $("#bg").delay(1000).fadeOut(300);
         return false;
     });
     //.........................................
@@ -60,4 +60,32 @@ $(function() {
     $('.box').click(function() {
         window.location.href = '../html/buy_shop.html';
     });
+    //...................................
+    //數量
+    //計數器加減數量
+    $(".minus").on('click', function() {
+        var value = $(".num").val();
+        value--;
+        if (value < 2) {
+            var little = 1;
+            $(".num").val(little);
+        } else {
+            $(".num").val(value);
+        }
+        console.log(value);
+    });
+
+
+    $(".add").on('click', function() {
+        var value = $(".num").val();
+        value++;
+        $(".num").val(value);
+        console.log(value);
+    });
+    //..........................
+    //叉叉消失alertbox
+    $('.sm_icon_xx').click(function() {
+        $('.bg').hide();
+    });
+    ///...
 })
