@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel="stylesheet", href="../css/Semantic/semantic.min.css")
+    link(rel="stylesheet", href="../css/cart.css")
+  body
+    #wrapper
+      include ./shared/_header.pug
+    .cart
+      .cart_container
+        .cart_l
+          .title 購物車
+          .info 進行結帳前，請再次確認您的尺寸、數量。
+        hr
+        .cart_r
+          table
+            tr
+              th 序號
+              th 商品名稱
+              th 數量
+              th 單價
+              th 金額
+              th
+            tr
+              form(action="#" method="POST" id="cart-form")
+                td 1
+                td CYCU紀念明信片1
+                td.td_poscenter
+                  .count
+                    .minus -
+                    input.num(type="text",name="count_num",value="1")
+                    .add +
+                td
+                  input.single_price(type="text" name="single_price" value="100")
+                td
+                  input.total_price(type="text" name="total_price" value="100")
+                td
+                  input.delete(type="submit", value="刪除")
+            tr
+              form(action="#" method="POST" id="cart-form")
+                td 1
+                td CYCU紀念明信片1
+                td.td_poscenter
+                  .count
+                    .minus -
+                    input.num(type="text",name="count_num",value="1")
+                    .add +
+                td
+                  input.single_price(type="text" name="single_price" value="100")
+                td
+                  input.total_price(type="text" name="total_price" value="100")
+                td
+                  input.delete(type="submit", value="刪除")
+    include ./shared/_footer.pug
+    script(src="../js/jquery-3.3.1.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js")
+    script(src="../js/cart.js")
