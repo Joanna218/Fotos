@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel="stylesheet", href="../css/Semantic/semantic.min.css")
+    link(rel="stylesheet", href="../css/cashier.css")
+  body
+    #wrapper
+      include ./shared/_header.pug
+      .cashier_container
+        .top
+          .cashier_checkout
+            a 結帳
+          .eula
+            a 現在，立刻擁有Fotos的商品。
+        .bottom
+          .form_container
+            form(action='#', method='post')
+              .cashier
+                h2 商品清單
+                table
+                  tr
+                    th 序號
+                    th 商品名稱
+                    th 數量
+                    th 單價
+                    th 金額
+                  tr
+                    td 1
+                    td CYCU紀念明信片(1)
+                    td 2
+                    td $$單價
+                    td $220
+                  tr
+                    td 2
+                    td CYCU紀念明信片(2)
+                    td 2
+                    td $$單價
+                    td $220
+                  tr
+                    td.colspan(colspan='5') 總金額：7000元
+                  tr
+                    td.colspan(colspan='5') 折扣： 100元
+              hr
+              h2 付款方式
+              .wrap_radio
+                input.radio(type='radio', id='線上刷卡', name='payment', value='線上刷卡')
+                label.label(name='線上刷卡', for='線上刷卡') 線上刷卡
+              .wrap_radio
+                input.radio(type='radio', id='貨到付款', name='payment', value='貨到付款')
+                label.label(name='貨到付款', for='貨到付款') 貨到付款
+              hr
+              h2 運送方式
+              .wrap_radio
+                input.radio(type='radio', id='全家', name='shipment', value='全家')
+                label.label(name='全家', for='全家') 全家
+              .wrap_radio
+                input.radio#7-ELEVEN(type='radio', name='shipment', value='7-ELEVEN')
+                label.label(name='7-ELEVEN', for='7-ELEVEN') 7-ELEVEN
+              .wrap_radio
+                input.radio(type='radio', id='宅配地址', name='shipment', value='宅配地址')
+                label.label(name='宅配地址', for='宅配地址') 宅配地址　
+                input.ship(type='text', name='shipment', value='資料庫匯入')
+              hr
+              h2 聯絡資訊
+              .wrap_radio
+                label.label(name='姓名', for='姓名') 姓名：
+                input.ship(type='text', name='name', id='姓名', value='資料庫匯出')
+              br
+              .wrap_radio
+                label.label(name='手機', for='手機') 手機：
+                input.ship(type='text', name='name', id='手機', value='資料庫匯出')
+              .wrap_submit
+                input.submit(type='submit', name='submit', value='結帳')
+      include ./shared/_footer.pug
+    script(src="../js/jquery-3.3.1.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js")
+    //- script(src="../js/cart.js")
