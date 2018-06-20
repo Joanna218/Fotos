@@ -485,22 +485,17 @@ header .header_container, footer .footer_container, .cart .cart_container {
 
 .cart {
   background-color: #d9e8f1;
-  height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  display: flex; }
   .cart .cart_container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 70%;
-    background-color: white; }
+    width: 85%;
+    background-color: white;
+    margin-top: 80px;
+    margin-bottom: 80px; }
     .cart .cart_container .cart_l {
       width: 30%;
       display: -webkit-box;
@@ -540,7 +535,7 @@ header .header_container, footer .footer_container, .cart .cart_container {
           text-align: center; }
         .cart .cart_container .cart_r table td {
           color: #2e5972;
-          padding: 10px;
+          padding: 5px;
           text-align: center;
           border-bottom-style: dashed;
           border-bottom-color: #224052;

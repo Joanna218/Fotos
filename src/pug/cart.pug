@@ -27,14 +27,14 @@ html(lang="en")
               th 金額
               th
             tr
-              form(action="#" method="POST" id="cart-form")
+              form(action="#1" method="POST" id="cart-form")
                 td 1
                 td CYCU紀念明信片1
                 td.td_poscenter
                   .count
-                    .minus -
+                    .minus.current_minus -
                     input.num(type="text",name="count_num",value="1")
-                    .add +
+                    .add.current_add +
                 td
                   input.single_price(type="text" name="single_price" value="100")
                 td
@@ -42,7 +42,7 @@ html(lang="en")
                 td
                   input.delete(type="submit", value="刪除")
             tr
-              form(action="#" method="POST" id="cart-form")
+              form(action="#2" method="POST" id="cart-form")
                 td 1
                 td CYCU紀念明信片1
                 td.td_poscenter
