@@ -1,6 +1,7 @@
 @import "base/_normalize"
 @import "base/_normalize-custom"
 @import "components/_footer"
+@import "mixin/mixin"
 
 
 $font_base_size: 10px
@@ -45,13 +46,14 @@ $max_with: 768px
   letter-spacing: 2px
   display: flex
   flex-direction: column
+  flex-wrap: nowrap
   a
    text-shadow: 0.01em 0.01em 0.5em white
 //做Hot
 .subtitle
   font-size: 20px
   position: relative
-.slogan_bubble
+.content
   &:hover .bubble
     transition: opacity .5s, transform .5s
     opacity: 1
@@ -81,10 +83,18 @@ $max_with: 768px
     bottom: -19px
     left: 8px
 .logo
+  background-image: url("../img/mobile.png")
+  display: none
+.logo_row2,.logo_footer
+  background-image: url("../img/logo.png")
+.logo,.logo_row2,.logo_footer
   width: 180px
   height: 80px
-  background-image: url("../img/logo.png")
   background-size: cover
+.header_toggle
+  order: 1
+  display: none
+  background-color: transparent
 form
   display: inline-block
 /* ............................................... */
@@ -131,7 +141,7 @@ form
                 font-weight: bold
       .row3
         ._container_row3
-          width: 80%
+          width: 90%
           margin: 0 auto
           // height: 300px
           display: flex
@@ -204,7 +214,7 @@ form
   .item
     // height: 10rem
     background: #eee
-    padding: 1rem
+    padding: 4px
 .owl-stage-outer
   height: 200px
 .owl-theme .owl-dots .owl-dot span
@@ -212,8 +222,112 @@ form
 
 .slick-prev:before, .slick-next:before
   color: pink
-
-
+//.................................RWD.............
+#wrapper
+  header
+    .header_container
+      .row1
+        .logo
+          @include respond-to('pad')
+            display: block
+          @include respond-to('md')
+            // display: none
+        .login
+          @include respond-to('md')
+            display: none
+        .header_toggle
+          @include respond-to('pad')
+            display: block
+          @include respond-to('md')
+            margin-left: auto
+            padding: 10px
+      .row2
+        .logo_row2
+          @include respond-to('pad')
+            display: none
+        .nav_bar
+          @include respond-to('pad')
+            width: 100%
+            margin-left: 0px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+          nav
+            @include respond-to('pad')
+              width: 100%
+              flex-direction: column
+              justify-content: center
+              align-items: center
+            li
+              @include respond-to('pad')
+                width: 100%
+                border-bottom: 1px solid
+      .row3
+        .slogan
+          .row3_size1
+            @include respond-to('md')
+              font-size: 23px
+          .row3_size2
+            @include respond-to('md')
+              font-size: 20px
+  ._container
+    .slogan
+      .firsttitle
+        @include respond-to('md')
+          font-size: 26px
+      .subtitle
+        @include respond-to('md')
+          font-size: 18px
+  ._container_box
+    @include respond-to('md')
+      display: flex
+      flex-direction: column
+      .box
+        width: 60%
+      .box2
+        width: 60%
+        height: 0px
+  .content2_bgc
+    @include respond-to('md')
+      height: auto
+      padding-bottom: 30px
+      .box2
+        margin: 10px 0px
+  footer
+    @include respond-to('md')
+      .footer_container
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .footer_logo
+          @include respond-to('md')
+            .logo_footer
+              background-image: url("../img/mobile.png")
+              margin-top: 10px
+          @include respond-to('md')
+            .visit_num
+              width: 180px
+        .footer_info
+          @include respond-to('md')
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin-left: 0px
+            .info_box
+              @include respond-to('md')
+                border-left: none
+                border-bottom: 1px solid
+                width: 100%
+                margin: 0
+                margin-top: 20px
+              .maps
+                margin-left: 0px
+                margin-bottom: 20px
+      .footer_copy_right
+        span
+          @include respond-to('md')
+            font-size: 12px
 //................ footer......
 // footer
 //   background-color: #80afca

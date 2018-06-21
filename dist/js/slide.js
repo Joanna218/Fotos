@@ -36,7 +36,7 @@ $(function() {
     AOS.init({
         offset: 100,
         duration: 600,
-        easing: 'ease-in-sine',
+        easing: 'ease-out-back',
         delay: 100,
     });
 

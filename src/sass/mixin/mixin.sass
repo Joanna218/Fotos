@@ -1,0 +1,22 @@
+$break-small: 768px
+$break-middle: 992px
+$break-large: 1200px
+
+
+=respond-to($media)
+  @if $media == pc
+    @media only screen and ( max-width: $break-large )
+      @content
+  @else if $media == pad
+    @media only screen and ( max-width: $break-middle )
+      @content
+  @else if $media == md
+    @media only screen and ( max-width: $break-small )
+      @content
+
+
+//  320                767               1023
+//   |------------------|-----------------|------------------------>
+//   mb 320 - 767
+//   pad 768 - 1023
+//   pc  1024 ->

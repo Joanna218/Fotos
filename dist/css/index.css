@@ -445,7 +445,9 @@ footer .footer_container, ._container, #wrapper header .header_container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap; }
   .slogan a {
     text-shadow: 0.01em 0.01em 0.5em white; }
 
@@ -453,7 +455,7 @@ footer .footer_container, ._container, #wrapper header .header_container {
   font-size: 20px;
   position: relative; }
 
-.slogan_bubble:hover .bubble {
+.content:hover .bubble {
   -webkit-transition: opacity .5s, -webkit-transform .5s;
   transition: opacity .5s, -webkit-transform .5s;
   -o-transition: opacity .5s, transform .5s;
@@ -494,10 +496,23 @@ footer .footer_container, ._container, #wrapper header .header_container {
     left: 8px; }
 
 .logo {
+  background-image: url("../img/mobile.png");
+  display: none; }
+
+.logo_row2, .logo_footer {
+  background-image: url("../img/logo.png"); }
+
+.logo, .logo_row2, .logo_footer {
   width: 180px;
   height: 80px;
-  background-image: url("../img/logo.png");
   background-size: cover; }
+
+.header_toggle {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  display: none;
+  background-color: transparent; }
 
 form {
   display: inline-block; }
@@ -553,7 +568,7 @@ form {
             padding: 15px 15px 10px 15px;
             font-weight: bold; }
   #wrapper header .header_container .row3 ._container_row3 {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -642,7 +657,7 @@ form {
   margin: 0 auto 20px; }
   .slider_container .item {
     background: #eee;
-    padding: 1rem; }
+    padding: 4px; }
 
 .owl-stage-outer {
   height: 200px; }
@@ -652,3 +667,147 @@ form {
 
 .slick-prev:before, .slick-next:before {
   color: pink; }
+
+@media only screen and (max-width: 992px) {
+  #wrapper header .header_container .row1 .logo {
+    display: block; } }
+
+@media only screen and (max-width: 768px) {
+  #wrapper header .header_container .row1 .login {
+    display: none; } }
+
+@media only screen and (max-width: 992px) {
+  #wrapper header .header_container .row1 .header_toggle {
+    display: block; } }
+
+@media only screen and (max-width: 768px) {
+  #wrapper header .header_container .row1 .header_toggle {
+    margin-left: auto;
+    padding: 10px; } }
+
+@media only screen and (max-width: 992px) {
+  #wrapper header .header_container .row2 .logo_row2 {
+    display: none; } }
+
+@media only screen and (max-width: 992px) {
+  #wrapper header .header_container .row2 .nav_bar {
+    width: 100%;
+    margin-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; } }
+
+@media only screen and (max-width: 992px) {
+  #wrapper header .header_container .row2 .nav_bar nav {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; } }
+
+@media only screen and (max-width: 992px) {
+  #wrapper header .header_container .row2 .nav_bar nav li {
+    width: 100%;
+    border-bottom: 1px solid; } }
+
+@media only screen and (max-width: 768px) {
+  #wrapper header .header_container .row3 .slogan .row3_size1 {
+    font-size: 23px; } }
+
+@media only screen and (max-width: 768px) {
+  #wrapper header .header_container .row3 .slogan .row3_size2 {
+    font-size: 20px; } }
+
+@media only screen and (max-width: 768px) {
+  #wrapper ._container .slogan .firsttitle {
+    font-size: 26px; } }
+
+@media only screen and (max-width: 768px) {
+  #wrapper ._container .slogan .subtitle {
+    font-size: 18px; } }
+
+@media only screen and (max-width: 768px) {
+  #wrapper ._container_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    #wrapper ._container_box .box {
+      width: 60%; }
+    #wrapper ._container_box .box2 {
+      width: 60%;
+      height: 0px; } }
+
+@media only screen and (max-width: 768px) {
+  #wrapper .content2_bgc {
+    height: auto;
+    padding-bottom: 30px; }
+    #wrapper .content2_bgc .box2 {
+      margin: 10px 0px; } }
+
+@media only screen and (max-width: 768px) {
+  #wrapper footer .footer_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; } }
+  @media only screen and (max-width: 768px) and (max-width: 768px) {
+    #wrapper footer .footer_container .footer_logo .logo_footer {
+      background-image: url("../img/mobile.png");
+      margin-top: 10px; } }
+  @media only screen and (max-width: 768px) and (max-width: 768px) {
+    #wrapper footer .footer_container .footer_logo .visit_num {
+      width: 180px; } }
+  @media only screen and (max-width: 768px) and (max-width: 768px) {
+    #wrapper footer .footer_container .footer_info {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-left: 0px; } }
+  @media only screen and (max-width: 768px) and (max-width: 768px) and (max-width: 768px) {
+    #wrapper footer .footer_container .footer_info .info_box {
+      border-left: none;
+      border-bottom: 1px solid;
+      width: 100%;
+      margin: 0;
+      margin-top: 20px; } }
+  @media only screen and (max-width: 768px) and (max-width: 768px) {
+      #wrapper footer .footer_container .footer_info .info_box .maps {
+        margin-left: 0px;
+        margin-bottom: 20px; } }
+
+@media only screen and (max-width: 768px) and (max-width: 768px) {
+  #wrapper footer .footer_copy_right span {
+    font-size: 12px; } }
