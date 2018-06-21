@@ -349,7 +349,8 @@ header .header_container, footer .footer_container {
   width: 180px;
   height: 80px;
   background-image: url("../img/logo.png");
-  background-size: cover; }
+  background-size: cover;
+  margin-bottom: 15px; }
 
 form {
   display: inline-block; }
@@ -454,7 +455,8 @@ footer {
           text-align: center;
           padding: 5px; }
         footer .footer_container .footer_info .info_box span {
-          padding: 5px; }
+          padding: 5px;
+          text-align: center; }
         footer .footer_container .footer_info .info_box .maps {
           margin-top: 10px;
           margin-left: 30px; }
@@ -466,11 +468,15 @@ footer {
 
 .footer_title {
   font-weight: bold;
-  text-align: center;
-  margin-left: 10px; }
+  text-align: center; }
 
 .footer_adder {
-  margin-left: 30px; }
+  width: 100%; }
+
+.footer_copy_right {
+  padding-bottom: 10px; }
+  .footer_copy_right span {
+    font-size: 18px; }
 
 * {
   font-family: "微軟正黑體"; }
@@ -551,6 +557,7 @@ body {
 
 th {
   padding: 10px;
+  font-size: 16px;
   width: 1000px;
   border-bottom-style: dashed;
   border-bottom-color: #224052;
@@ -565,3 +572,15 @@ td {
   border-bottom-style: dashed;
   border-bottom-color: #224052;
   border-bottom-width: thin; }
+
+.detail {
+  display: none; }
+
+.plus:hover {
+  cursor: pointer; }
+
+.plus:before {
+  content: '+'; }
+
+.plus.is-active:before {
+  content: '-'; }

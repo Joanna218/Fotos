@@ -349,7 +349,8 @@ header .header_container, footer .footer_container, .cashier_container .bottom .
   width: 180px;
   height: 80px;
   background-image: url("../img/logo.png");
-  background-size: cover; }
+  background-size: cover;
+  margin-bottom: 15px; }
 
 form {
   display: inline-block; }
@@ -454,7 +455,8 @@ footer {
           text-align: center;
           padding: 5px; }
         footer .footer_container .footer_info .info_box span {
-          padding: 5px; }
+          padding: 5px;
+          text-align: center; }
         footer .footer_container .footer_info .info_box .maps {
           margin-top: 10px;
           margin-left: 30px; }
@@ -466,11 +468,15 @@ footer {
 
 .footer_title {
   font-weight: bold;
-  text-align: center;
-  margin-left: 10px; }
+  text-align: center; }
 
 .footer_adder {
-  margin-left: 30px; }
+  width: 100%; }
+
+.footer_copy_right {
+  padding-bottom: 10px; }
+  .footer_copy_right span {
+    font-size: 18px; }
 
 header .header_container, footer .footer_container, .cashier_container .bottom .form_container {
   width: 80%;

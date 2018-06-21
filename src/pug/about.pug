@@ -10,6 +10,8 @@ html(lang="en")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js")
     link(rel="stylesheet", href="../css/Semantic/semantic.min.css")
+    link(rel="stylesheet", href="../css/fonts/css/fontawesome-all.min.css")
+    link(rel="stylesheet", href="../css/aos.css")
     link(rel="stylesheet", href="../css/about.css")
   body
     #wrapper
@@ -17,9 +19,9 @@ html(lang="en")
       section#cd-timeline.cd-container
         .cd-timeline-block
           .cd-timeline-img.cd-picture
-          .cd-timeline-content
+          .cd-timeline-content(data-aos="fade-left")
             h1 品牌理念
-            p
+            p(data-aos="fade-down" data-aos-delay="800")
               | 也許，美麗的瞬間就在某一個剎那、某一個時間點。
               br
               | Fotos以美麗一瞬間為品牌理念，提升照片帶給觀看者感受瞬間即美的感受。
@@ -45,25 +47,86 @@ html(lang="en")
               | 期望每一位消費者都能自在地在網頁中探索自己，感受Fotos的熱忱之心。
         .cd-timeline-block
           .cd-timeline-img.cd-picture
-          .cd-timeline-content
+          .cd-timeline-content(data-aos="fade-left")
             h1 關於我們
-            p
+            p(data-aos="fade-down" data-aos-delay="800")
               | Fotos創立於2018年，我們的使命在於提供顧客「平價且高品質」的產品。
               br
               | 我們知道如果要提供顧客便宜、品質又好的商品，企業必須有效的管理成本及運用創新的製造方法，我們秉持著這樣的信念，最有效的利用原料，尋找更經濟、更有效率及更有創意的製作或包裝方式，降低成本，回饋給大家!Fotos以簡單、基本為發展概念，為了彰顯人本身的個性和特質，設計上免去多餘的裝飾，同時強化材質觸感，利用基本元素襯托出個人自身的風采。
         .cd-timeline-block
           .cd-timeline-img.cd-picture
-          .cd-timeline-content
+          .cd-timeline-content(data-aos="fade-left" data-aos-delay="800")
             h1 成員介紹
             .big_box
-              .box
+              .box(data-aos="zoom-out-up"  data-aos-delay="500")
                 .top
+                  img.img-fluid(src="../img/lin.png" alt="這次合作很開心能和大家一起合作，一起分工")
                 .bottom
-                  .name 姓名
-                  .interest ffff
-                  .feedback ffff
+                  .name 林靜妤
+                  .interest Joanna
+                  .link
+                    span
+                      a(href="https://www.facebook.com/lin.yu.585" target="_blank")
+                        i.fab.fa-facebook-f
+                    span
+                      a(href="#")
+                        i.fab.fa-instagram
+                    span
+                      a(href="#")
+                        i.fab.fa-linkedin-in
+              .box(data-aos="zoom-out-up"  data-aos-delay="800")
+                .top
+                  img.img-fluid(src="../img/tsai.png" alt="這次合作很開心能和大家一起合作，一起分工")
+                .bottom
+                  .name 蔡汶樺
+                  .interest Peter
+                  .link
+                    span
+                      a(href="https://www.facebook.com/profile.php?id=100000300346904" target="_blank")
+                        i.fab.fa-facebook-f
+                    span
+                      a(href="#")
+                        i.fab.fa-instagram
+                    span
+                      a(href="#")
+                        i.fab.fa-linkedin-in
+              .box(data-aos="zoom-out-up"  data-aos-delay="1000")
+                .top
+                  img.img-fluid(src="../img/liu.png" alt="這次合作很開心能和大家一起合作，一起分工")
+                .bottom
+                  .name 劉星瑜
+                  .interest Iddolor
+                  .link
+                    span
+                      a(href="https://www.facebook.com/profile.php?id=100002657026665" target="_blank")
+                        i.fab.fa-facebook-f
+                    span
+                      a(href="#")
+                        i.fab.fa-instagram
+                    span
+                      a(href="#")
+                        i.fab.fa-linkedin-in
+              .box(data-aos="zoom-out-up"  data-aos-delay="1400")
+                .top
+                  img.img-fluid(src="../img/chi.png" alt="這次合作很開心能和大家一起合作，一起分工")
+                .bottom
+                  .name 劉琦葳
+                  .interest Kiwi
+                  .link
+                    span
+                      a(href="https://www.facebook.com/profile.php?id=100002471231107" target="_blank")
+                        i.fab.fa-facebook-f
+                    span
+                      a(href="#")
+                        i.fab.fa-instagram
+                    span
+                      a(href="#")
+                        i.fab.fa-linkedin-in
+
+
       include ./shared/_footer.pug
     script(src="../js/jquery-3.3.1.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js")
-    //- script(src="../js/join.js")
+    script(src="../js/aos.js")
+    script(src="../js/about.js")

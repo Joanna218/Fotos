@@ -11,7 +11,8 @@ header .header_container {
   width: 180px;
   height: 80px;
   background-image: url("../img/logo.png");
-  background-size: cover; }
+  background-size: cover;
+  margin-bottom: 15px; }
 
 form {
   display: inline-block; }

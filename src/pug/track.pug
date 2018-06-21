@@ -35,9 +35,26 @@ html(lang="en")
                   td 8451
                   td 8745
                   td 78451
-                  td +
+                  td.plus
+
+                tr.detail
+                  td 照片
+                  td 商品名稱
+                  td 數量
+                  td 單價
+                tr.detail
+                  td picture
+                  td product_name
+                  td product_number
+                  td product_price
+
                 tr
                 td 8451
                 td 8745
                 td 78451
-                td +
+                td.plus
+      include ./shared/_footer.pug
+    script(src="../js/jquery-3.3.1.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js")
+    script(src="../js/track.js")
