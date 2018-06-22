@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../css/fonts/css/fontawesome-all.min.css"/>
     <link rel="stylesheet" href="../css/Semantic/semantic.min.css"/>
-    <link rel="stylesheet" href="../css/shop.css"/>
+    <link rel="stylesheet" href="../css/fonts/css/fontawesome-all.min.css"/>
+    <link rel="stylesheet" href="../css/search.css"/>
   </head>
   <body>
     <div id="wrapper">
@@ -38,19 +38,9 @@
           </div>
         </div>
       </header>
-      <div class="banner_nav">
-        <div class="_container_nav filters">
-          <nav class="button-group js-radio-button-group" data-filter-group="color">
-            <button class="button is-checked" data-filter="">全部</button>
-            <button class="button" data-filter=".view">風景</button>
-            <button class="button" data-filter=".viewnight">夜景</button>
-            <button class="button" data-filter=".food">美食</button>
-          </nav>
-        </div>
-      </div>
       <div class="content">
         <div class="_container_content">
-          <div class="box viewnight">
+          <div class="box">
             <div class="box_container">
               <form class="shop_form" action="#" method="post">
                 <div class="product_img"><img class="img-fluid" src="../img/item/1.png" width="200" height="150"/>
@@ -60,8 +50,8 @@
                     <button class="shop_add_love" type="submit" value="" name="btn_love"><i class="far fa-heart"></i></button>
                   </div>
                 </div>
-                <div class="product_title">title</div>
-                <div class="product_price">price</div>
+                <div class="product_title">title1</div>
+                <div class="product_price">price1</div>
               </form>
             </div>
           </div>
@@ -89,7 +79,7 @@
               <p>收藏成功!</p>
             </div>
           </div>
-          <div class="box view">
+          <div class="box">
             <div class="box_container">
               <form class="shop_form" action="#" method="post">
                 <div class="product_img"><img class="img-fluid" src="../img/item/2.png" width="200" height="150"/>
@@ -99,8 +89,8 @@
                     <button class="shop_add_love" type="submit" value="" name="btn_love"><i class="far fa-heart"></i></button>
                   </div>
                 </div>
-                <div class="product_title">title</div>
-                <div class="product_price">price</div>
+                <div class="product_title">title2</div>
+                <div class="product_price">price2</div>
               </form>
             </div>
           </div>
@@ -110,6 +100,84 @@
               <div class="line">
                 <div class="right"><img src="../img/item/2.png" width="160" height="120"/></div>
                 <div class="left"><span>商品名2</span><span class="alert_price">$$$$2</span></div>
+              </div>
+              <form class="alert_form" action="#" method="post">
+                <div class="line2"><span>數量</span>
+                  <div class="count">
+                    <div class="minus">-</div>
+                    <input class="num" type="text" name="count_num" value="1"/>
+                    <div class="add">+</div>
+                  </div>
+                  <button class="alert_box_addcar" type="submit" value="" name="btn_car">加入購物車</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div id="bg">
+            <div id="alertBox"><span><i class="fas fa-heart fa-3x"></i></span>
+              <p>收藏成功!</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box_container">
+              <form class="shop_form" action="#" method="post">
+                <div class="product_img"><img class="img-fluid" src="../img/item/3.png" width="200" height="150"/>
+                  <div class="box_bg">
+                    <input style="width:100%;height:100%;opacity:0.00001;" type="submit" value="" name="item_img"/>
+                    <button class="shop_add_car ad3" type="button" value="" name="btn_car"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="shop_add_love" type="submit" value="" name="btn_love"><i class="far fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="product_title">title2</div>
+                <div class="product_price">price2</div>
+              </form>
+            </div>
+          </div>
+          <div class="bg bg3">
+            <div class="alertBox">
+              <div class="sm_icon"><span class="sm_icon_xx">x</span></div>
+              <div class="line">
+                <div class="right"><img src="../img/item/3.png" width="160" height="120"/></div>
+                <div class="left"><span>商品名3</span><span class="alert_price">$$$$3</span></div>
+              </div>
+              <form class="alert_form" action="#" method="post">
+                <div class="line2"><span>數量</span>
+                  <div class="count">
+                    <div class="minus">-</div>
+                    <input class="num" type="text" name="count_num" value="1"/>
+                    <div class="add">+</div>
+                  </div>
+                  <button class="alert_box_addcar" type="submit" value="" name="btn_car">加入購物車</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div id="bg">
+            <div id="alertBox"><span><i class="fas fa-heart fa-3x"></i></span>
+              <p>收藏成功!</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box_container">
+              <form class="shop_form" action="#" method="post">
+                <div class="product_img"><img class="img-fluid" src="../img/item/4.png" width="200" height="150"/>
+                  <div class="box_bg">
+                    <input style="width:100%;height:100%;opacity:0.00001;" type="submit" value="" name="item_img"/>
+                    <button class="shop_add_car ad4" type="button" value="" name="btn_car"><i class="fas fa-shopping-cart"></i></button>
+                    <button class="shop_add_love" type="submit" value="" name="btn_love"><i class="far fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="product_title">title2</div>
+                <div class="product_price">price2</div>
+              </form>
+            </div>
+          </div>
+          <div class="bg bg4">
+            <div class="alertBox">
+              <div class="sm_icon"><span class="sm_icon_xx">x</span></div>
+              <div class="line">
+                <div class="right"><img src="../img/item/4.png" width="160" height="120"/></div>
+                <div class="left"><span>商品名4</span><span class="alert_price">$$$$4</span></div>
               </div>
               <form class="alert_form" action="#" method="post">
                 <div class="line2"><span>數量</span>
