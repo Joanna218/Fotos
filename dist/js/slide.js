@@ -37,7 +37,7 @@ $(function() {
         offset: 100,
         duration: 600,
         easing: 'ease-out-back',
-        delay: 100,
+        //delay: 100,
     });
 
 

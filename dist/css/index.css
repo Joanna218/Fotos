@@ -455,17 +455,6 @@ footer .footer_container, ._container, #wrapper header .header_container {
   font-size: 20px;
   position: relative; }
 
-.content:hover .bubble {
-  -webkit-transition: opacity .5s, -webkit-transform .5s;
-  transition: opacity .5s, -webkit-transform .5s;
-  -o-transition: opacity .5s, transform .5s;
-  transition: opacity .5s, transform .5s;
-  transition: opacity .5s, transform .5s, -webkit-transform .5s;
-  opacity: 1;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg); }
-
 .bubble {
   position: absolute;
   padding: 10px;
@@ -474,10 +463,6 @@ footer .footer_container, ._container, #wrapper header .header_container {
   border-radius: 50%;
   font-size: 10px;
   top: -38px;
-  opacity: 0;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
   -webkit-transition: opacity .5s, -webkit-transform .5s;
   transition: opacity .5s, -webkit-transform .5s;
   -o-transition: opacity .5s, transform .5s;
