@@ -42,6 +42,7 @@
           <div class="left_container">
             <li><a href="../html/modify_member.html">修改會員資料</a></li>
             <li><a href="../html/track.html">追蹤訂單</a></li>
+            <li><a href="../html/mylove.html">我的最愛</a></li>
           </div>
         </div>
         <div class="content">
@@ -49,7 +50,7 @@
             <h1>追蹤訂單</h1>
             <p class="info">所有訂單會需3-5個工作天，如需更改寄送地址，請在下訂後3天內進行更改，如有不便敬請見諒。</p><br/>
             <hr/>
-            <div class="form">
+            <form class="form" action="" method="post">
               <table>
                 <tr>
                   <th>訂單編號</th>
@@ -61,7 +62,7 @@
                   <td>8451</td>
                   <td>8745</td>
                   <td>78451</td>
-                  <td class="plus is-actives"></td>
+                  <td class="plus"></td>
                 </tr>
                 <tr class="detail_title">
                   <td>照片</td>
@@ -94,7 +95,8 @@
                   <td>product_price2</td>
                 </tr>
               </table>
-            </div>
+              <button class="checkout" type="submit" value="" name="btn_checkout">結帳</button>
+            </form>
           </div>
         </div>
       </div>
@@ -119,5 +121,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
     <script src="../js/track.js"></script>
+    <script src="../js/search.js"></script>
   </body>
 </html>

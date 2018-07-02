@@ -18,13 +18,15 @@ html(lang="en")
               a(href='../html/modify_member.html') 修改會員資料
             li
               a(href='../html/track.html') 追蹤訂單
+            li
+              a(href='../html/mylove.html') 我的最愛
         .content
           .content_right
             h1 追蹤訂單
             p.info 所有訂單會需3-5個工作天，如需更改寄送地址，請在下訂後3天內進行更改，如有不便敬請見諒。
             br
             hr
-            .form
+            form(action="", method="post").form
               table
                 tr
                   th 訂單編號
@@ -35,7 +37,7 @@ html(lang="en")
                   td 8451
                   td 8745
                   td 78451
-                  td.plus.is-actives
+                  td.plus
 
                 tr.detail_title
                   td 照片
@@ -64,10 +66,11 @@ html(lang="en")
                   td product_name2
                   td product_number2
                   td product_price2
-
+              button.checkout(type="submit",value="",name="btn_checkout") 結帳
 
       include ./shared/_footer.pug
     script(src="../js/jquery-3.3.1.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js")
     script(src="../js/track.js")
+    script(src="../js/search.js")

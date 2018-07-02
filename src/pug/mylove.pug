@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel="stylesheet", href="../css/Semantic/semantic.min.css")
+    link(rel="stylesheet", href="../css/mylove.css")
+  body
+    #wrapp
+      include ./shared/_header.pug
+      .wrap_modify_member
+        .wrap_left
+          .left_container
+            li
+              a(href='../html/modify_member.html') 修改會員資料
+            li
+              a(href='../html/track.html') 追蹤訂單
+            li
+              a(href='../html/mylove.html') 我的最愛
+        .content
+          .content_right
+            h1 我的最愛
+            p.info Fotos為您保留你所喜愛的項目，讓你購物更加便利。
+            br
+            hr
+            .wrap_love
+              form(action="", method="post")
+                .line
+                  .img
+                    img(src="../img/item/1.png", alt="" width="160px" height="120px")
+                  .info
+                    .title 旅人
+                    .price $100
+                    button.delete(type="submit",value="",name="btn_delete") 刪除
+                hr
+                .line
+                  .img
+                    img(src="../img/item/2.png", alt="" width="160px" height="120px")
+                  .info
+                    .title 環遊世界吃吃吃
+                    .price %200
+                    button.delete(type="submit",value="",name="btn_delete") 刪除
+      include ./shared/_footer.pug
+    script(src="../js/jquery-3.3.1.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js")
+    script(src="../js/track.js")
+    script(src="../js/search.js")
