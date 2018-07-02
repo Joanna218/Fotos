@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel="stylesheet", href="../css/Semantic/semantic.min.css")
+    link(rel="stylesheet", href="../css/join.css")
+
+  body
+    #wrapper
+      include ./shared/_header.pug
+      .join_container
+        .top
+          .join_login
+            a 註冊
+          .eula
+            a 即刻註冊享有Fotos的服務
+        .bottom
+          .form
+            form(action='#', method='post')
+              .line
+                .right
+                  label(for='name') 姓名
+                .left
+                  input.join_input(type='text',autocomplete="off",name="join_name",value="", required="required")
+              .line
+                .right
+                  label(for='id') 帳號
+                .left
+                  input.join_input(type='text',name="join_id",value="",autocomplete="off", required="required")
+              .line
+                .right
+                  label(for='password') 密碼
+                .left
+                  input.join_input(type='password',name="join_password",value="",autocomplete="off", required="required")
+              .line
+                .right
+                  label(for='repassword') 確認密碼
+                .left
+                  input.join_input(type='password',name="join_repassword",value="",autocomplete="off", required="required")
+              .line
+                .right
+                  label(for='email') 電子信箱
+                .left
+                  input.join_input(type='email',name="join_email",value="",autocomplete="off", required="required")
+              .line
+                .right
+                  label(for='sexual') 性別
+                .left
+                  select.join_input
+                    option 男
+                    option 女
+              .line
+                .right
+                  label(for='birth') 生日
+                .left
+                  input.join_input(type='date')
+              .line
+                .right
+                  label(for='address') 地址
+                .left
+                  input.join_input(type='text',name="join_address",value="",autocomplete="off", required="required" )
+              .wrap_submit
+                input#submit(type='submit', value='註冊')
+              .wrap_login
+                span 已經擁有帳戶？
+                a(href="../html/login.html") 登入
+      include ./shared/_footer.pug
+    script(src="../js/jquery-3.3.1.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js")
+    script(src="../js/join.js")
+    script(src="../js/search.js")

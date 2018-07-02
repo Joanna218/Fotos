@@ -5,5 +5,151 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Document
-    link(rel="stylesheet", href="dist/css/index.css")
+
+    link(rel="stylesheet", href="../css/owl.carousel.min.css")
+    link(rel="stylesheet", href="../css/owl.theme.default.min.css")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel="stylesheet", href="../css/Semantic/semantic.min.css")
+    link(rel="stylesheet", href="../css/aos.css")
+    link(rel="stylesheet", href="../css/index.css")
   body
+    //包住整個html
+    #wrapper
+      header
+        //置中header
+        .header_container
+          .row1
+            a(href="../html/index.html")
+              .logo
+            .login
+              a(href="../html/join.html") 註冊
+              a(href="../html/login.html") 登入
+              a(href="#") 會員中心
+              a(href="#").glyphicon.glyphicon-shopping-cart.cart_size
+              form(action="search.jsp" method="POST" id="search-form")
+                .ui.icon.input
+                  input.prompt.prompt_size(type="text", name="search", placeholder="Search...")
+                  i.circular.search.link.icon
+            button.header_toggle
+              img(src="../img/button.png")
+          .row2
+            .logo_row2
+            .nav_bar
+              nav
+                li
+                  a(href="../html/index.html") 首頁
+                li
+                  a(href="../html/shop.html") 商店
+                li
+                  a(href="../html/about.html") 關於
+                li
+                  a(href="#") 聯絡我們
+                li
+                  a(href="../html/buy_qu.html") 常見問題
+          .row3
+            ._container_row3
+              .slogan
+                a.row3_size1(data-aos='fade-right') 用自己的方式看見世界
+                br
+                a.row3_size2(data-aos="fade-left") 記下你每一瞬間
+              button.buy(data-aos="flip-left"  data-aos-delay="800")
+                a(href="../html/shop.html") 即刻選購
+      //header背景圖
+      .banner
+        .img_fluid.img_header
+      //內容開始
+      .content
+        ._container.slogan_bubble
+          .slogan
+            a.firsttitle 永遠都在你身邊
+            a.subtitle 用照片的故事來陪伴在你的身邊
+              span.bubble Hot
+        .slider_container
+          .owl-carousel.owl-theme
+            img.item(src="../img/item/1.png")
+            img.item(src="../img/item/2.png")
+            img.item(src="../img/item/3.png")
+            img.item(src="../img/item/4.png")
+            img.item(src="../img/item/5.png")
+            img.item(src="../img/item/6.png")
+
+        #carousel-example-generic.carousel.slide(data-ride='carousel')
+          // Indicators
+          ol.carousel-indicators
+            li.active(data-target='#carousel-example-generic', data-slide-to='0')
+            li(data-target='#carousel-example-generic', data-slide-to='1')
+            li(data-target='#carousel-example-generic', data-slide-to='2')
+          // Wrapper for slides
+          .carousel-inner(role='listbox')
+            .item.active
+              img(src='../img/ad3.png', width='100%')
+            .item
+              img(src='../img/ad1.png', width='100%')
+            .item
+              img(src='../img/ad2.png', width='100%')
+          // Controls
+          a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+            span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+            span.sr-only Previous
+          a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+            span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+            span.sr-only Next
+
+      .content.content2_bgc.img_fluid
+        ._container
+          .slogan(data-aos="flip-up" data-aos-duration="500")
+              a.firsttitle 用溫暖的手體會你的心
+              a.subtitle Fotos用熱忱的雙手提供最真摯的服務貼近你的心
+        ._container_box
+          .box(data-aos="zoom-in")
+            .service_img.service1
+            .service_title
+              span 客製化服務
+          .box2
+          .box(data-aos="zoom-in")
+            .service_img.service2
+            .service_title
+              span 即刻寄送
+          .box2
+          .box(data-aos="zoom-in")
+            .service_img.service3
+            .service_title
+              span 電子明信片
+
+      footer
+        .footer_container
+          .footer_logo
+            .logo_footer
+            span.visit_num 訪客人數： 2220 人
+          .footer_info
+            .info_box
+              span.footer_title 網站地圖
+              a(href="../html/index.html") 首頁
+              a(href="../html/shop.html") 商店
+              a(href="../html/about.html") 關於
+              a(href="../html/contact.html") 聯絡我們
+              a(href="../html/buy_qu.html") 常見問題
+            .info_box
+                span.footer_title  聯絡我們
+                span
+                span
+                span
+                span.footer_adder 地址：桃園市中壢區中北路200號
+                span.footer_adder 電話：+886-3-265-9999
+            .info_box.box_map
+                  span.footer_title 地圖
+                  .maps
+                    iframe(src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBdr2bAntGk98dXnpM08SQ82mqt52a5CJI&q=中原大學資管樓",  width="100%" height="100%" margin-left="2px" frameborder="0" allowfullscreen )
+        .footer_copy_right
+          span Copyright © 2018 Fotos Company. All rights reserved.
+
+    script(src="../js/jquery-3.3.1.min.js")
+    script(src="../js/owl.carousel.js")
+    script(src="../js/slide.js")
+    script(src="../js/aos.js")
+    script(src="../js/index.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
+    script(src="../js/search.js")
+
+
+

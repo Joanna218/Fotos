@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/Semantic/semantic.min.css"/>
+    <link rel="stylesheet" href="../css/login.css"/>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <!--置中header-->
+        <div class="header_container">
+          <div class="row1">
+            <div class="login"><a href="../html/join.html">註冊</a><a href="../html/login.html">登入</a><a href="#">會員中心</a><a class="glyphicon glyphicon-shopping-cart cart_size" href="#"></a>
+              <form action="search.jsp" method="POST" id="search-form">
+                <div class="ui icon input">
+                  <input class="prompt prompt_size" type="text" name="search" placeholder="Search..."/><i class="circular search link icon"></i>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row2"><a href="../html/index.html">
+              <div class="logo"></div></a>
+            <div class="nav_bar">
+              <nav>
+                <li><a href="../html/index.html">首頁</a></li>
+                <li><a href="../html/shop.html">商店</a></li>
+                <li><a href="../html/about.html">關於</a></li>
+                <li><a href="../html/contact.html">聯絡我們</a></li>
+                <li><a href="../html/buy_qu.html">常見問題</a></li>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="page">
+        <div class="page_container">
+          <div class="left">
+            <div class="page_login">登入</div>
+            <div class="eula">親愛的會員感謝您對於Fotos的支持，登入後立即享有最佳的服務體驗。</div>
+          </div>
+          <div class="right">
+            <svg viewbox="0 0 320 300">
+              <defs>
+                <lineargradient id="line" inkscape:collect="always" x1="13" y1="193" x2="307" y2="193" gradientunits="userSpaceOnUse">
+                  <stop id="stop876" style="stop-color:#b9e2fa;" offset="0"></stop>
+                  <stop id="stop878" style="stop-color:#b9e2fa;" offset="1"></stop>
+                </lineargradient>
+              </defs>
+              <path d="m 40,120.00016 239.99984,-3.2e-4               c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35               h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215               c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25               h 168.57143"></path>
+            </svg>
+            <div class="form">
+              <form action="#" method="post">
+                <label for="id">帳號</label>
+                <input class="login_input" id="id" type="text" name="login_id" value="" autocomplete="off" required="required"/>
+                <label for="password">密碼</label>
+                <input class="login_input" id="password" type="password" name="login_password" value="" autocomplete="off" required="required"/>
+                <div class="wrapper_submit">
+                  <button class="submit" type="submit">登入</button>
+                  <button class="submit" onclick="location.href='../html/join.html'" type="button">註冊</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer_container">
+          <div class="footer_logo"><a href="../html/index.html">
+              <div class="logo"></div></a><span class="visit_num">訪客人數： 2220 人</span></div>
+          <div class="footer_info">
+            <div class="info_box"><span class="footer_title">網站地圖</span><a href="../html/index.html">首頁</a><a href="../html/shop.html">商店</a><a href="../html/about.html">關於</a><a href="../html/contact.html">聯絡我們</a><a href="../html/buy_qu.html">常見問題</a></div>
+            <div class="info_box"><span class="footer_title"> 聯絡我們</span><span></span><span></span><span></span><span class="footer_adder">地址：桃園市中壢區中北路200號</span><span class="footer_adder">電話：+886-3-265-9999</span></div>
+            <div class="info_box box_map"><span class="footer_title">地圖</span>
+              <div class="maps">
+                <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBdr2bAntGk98dXnpM08SQ82mqt52a5CJI&amp;q=中原大學資管樓" width="100%" height="100%" margin-left="2px" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_copy_right"><span>Copyright © 2018 Fotos Company. All rights reserved.</span></div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/search.js"></script>
+  </body>
+</html>

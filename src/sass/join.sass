@@ -1,0 +1,195 @@
+@import "base/_normalize"
+@import "base/_normalize-custom"
+@import "components/_header"
+@import "components/_footer"
+
+*
+  // border: 1px solid
+
+//colors
+$color_delta_approx: #a4a3a3
+$color_link_water_approx: #d9e8f1
+$red: red
+$white: white
+$color_blue_dianne_approx: #224052
+$black_22: rgba(0,0,0,0.22)
+$color_big_stone_approx: #172f3d
+$color_mystic_approx: #e1ecf2
+
+//fonts
+$font_0: 微軟正黑體
+
+::selection
+  background: $color_delta_approx
+
+body
+  background: $color_link_water_approx
+  font-family: $font_0
+
+
+.join_container
+  display: flex
+  position: relative
+  margin: 40px auto
+  width: 70%
+  font-family: $font_0
+  flex-direction: column
+  align-items: center
+
+.top
+  background-color: $color_blue_dianne_approx
+  box-shadow: 0 0 40px 16px $black_22
+  color: $white
+  width: 100%
+  height: 150px
+  margin: 0 auto
+
+.bottom
+  width: 90%
+  height: auto
+  display: flex
+  background-color: $white
+.join_login
+  margin-left: 20px
+  margin-top: 20px
+  a
+    color: $white
+    font-size: 50px
+    font-weight: bold
+.eula
+  margin-left: 22px
+  margin-top: 10px
+  a
+    color: $white
+    font-size: 14px
+
+
+
+.form
+  margin: 0 auto
+  width: 90%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding-top: 40px
+  padding-bottom: 40px
+.line
+  display: flex
+  margin: 10px
+  .left
+    display: flex
+    justify-content: center
+    align-items: center
+  .right
+    margin-left: auto
+label
+  color: $color_big_stone_approx
+  font-size: 16px
+  letter-spacing: 2px
+  margin: 0
+
+.join_input
+  border-radius: 10px
+  border: 0
+  background-color: $color_mystic_approx
+  color: $color_big_stone_approx
+  font-size: 16px
+  height: 30px
+  width: 300px
+  margin-left: 10px
+  padding: 5px
+input::-moz-focus-inner
+  border: 0
+.wrap_submit
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+#submit
+  font-family: $font_0
+  color: $color_blue_dianne_approx
+  transition: color 300ms
+  background-color: $color_link_water_approx
+  border-radius: 50px
+  width: 90px
+  height: 35px
+.wrap_login
+  display: flex
+  justify-content: center
+  align-content: center
+  margin: 10px 0
+  a
+    color: $color_blue_dianne_approx
+//................................................................
+.wrapper_button
+  width: 100px
+  height: 100px
+  position: relative
+  margin: 0 auto
+.button
+  background: #2B2D2F
+  height: 80px
+  width: 100px
+  text-align: center
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  left: 0
+  right: 0
+  margin: 0 auto
+  cursor: pointer
+  border-radius: 4px
+
+
+.text
+  font: bold 1.25rem/1 poppins
+  color: #71DFBE
+  position: absolute
+  top: 50%
+  transform: translateY(-52%)
+  left: 0
+  right: 0
+
+
+.progress-bar
+  position: absolute
+  height: 20px
+  width: 0
+  right: 0
+  top: 50%
+  left: 50%
+  border-radius: 200px
+  transform: translateY(-50%) translateX(-50%)
+  background: lighten(#2B2D2F, 15%)
+
+
+svg
+  width: 30px
+  position: absolute
+  top: 50%
+  transform: translateY(-50%) translateX(-50%)
+  left: 50%
+  right: 0
+
+
+.check
+  fill: none
+  stroke: #FFFFFF
+  stroke-width: 3
+  stroke-linecap: round
+  stroke-linejoin: round
+
+select
+  // margin-left: 10px
+  font-family: "微軟正黑體"
+  border: 0
+  color: #2e5972
+  font-size: 15px
+  height: 30px
+  line-height: 38px
+  background-color: #d9e8f1
+  border-radius: 20px
+  padding-left: 10px
+  padding-right: 10px
+  width: 85px

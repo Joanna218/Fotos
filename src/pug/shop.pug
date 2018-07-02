@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel="stylesheet", href="../css/fonts/css/fontawesome-all.min.css")
+    link(rel="stylesheet", href="../css/Semantic/semantic.min.css")
+    link(rel="stylesheet", href="../css/shop.css")
+
+  body
+    #wrapper
+      include ./shared/_header.pug
+      .banner_nav
+        ._container_nav.filters
+          nav.button-group.js-radio-button-group(data-filter-group="color")
+            button.button.is-checked( data-filter="") 全部
+            button.button(data-filter=".view") 風景
+            button.button(data-filter=".viewnight") 夜景
+            button.button(data-filter=".food") 美食
+      .content
+        ._container_content
+          .box.viewnight
+            .box_container
+              form(action="#", method="post").shop_form
+                .product_img
+                  img.img-fluid(src="../img/item/1.png", width="200" height="150")
+                  .box_bg
+                    input(style='width:100%;height:100%;opacity:0.00001;' type="submit" value="" name="item_img")
+                    button.shop_add_car.ad1(type="button",value="",name="btn_car")
+                      i.fas.fa-shopping-cart
+                    button.shop_add_love(type="submit",value="",name="btn_love")
+                      i.far.fa-heart
+                .product_title title
+                .product_price price
+          .bg.bg1
+            .alertBox
+              .sm_icon
+                span.sm_icon_xx x
+              .line
+                .right
+                  img(src="../img/item/1.png", width="160" height="120")
+                .left
+                  span 商品名1
+                  span.alert_price $$$$1
+              form.alert_form(action="#", method="post")
+                .line2
+                  span 數量
+                  .count
+                    .minus -
+                    input.num(type="text",name="count_num",value="1")
+                    .add +
+                  button.alert_box_addcar(type="submit",value="",name="btn_car") 加入購物車
+          #bg
+            #alertBox
+              span
+                i.fas.fa-heart.fa-3x
+              p 收藏成功!
+
+
+          .box.view
+            .box_container
+              form(action="#", method="post").shop_form
+                .product_img
+                  img.img-fluid(src="../img/item/2.png", width="200" height="150")
+                  .box_bg
+                    input(style='width:100%;height:100%;opacity:0.00001;' type="submit" value="" name="item_img")
+                    button.shop_add_car.ad2(type="button",value="",name="btn_car")
+                      i.fas.fa-shopping-cart
+                    button.shop_add_love(type="submit",value="",name="btn_love")
+                      i.far.fa-heart
+                .product_title title
+                .product_price price
+          .bg.bg2
+            .alertBox
+              .sm_icon
+                span.sm_icon_xx x
+              .line
+                .right
+                  img(src="../img/item/2.png", width="160" height="120")
+                .left
+                  span 商品名2
+                  span.alert_price $$$$2
+              form.alert_form(action="#", method="post")
+                .line2
+                  span 數量
+                  .count
+                    .minus -
+                    input.num(type="text",name="count_num",value="1")
+                    .add +
+                  button.alert_box_addcar(type="submit",value="",name="btn_car") 加入購物車
+          #bg
+            #alertBox
+              span
+                i.fas.fa-heart.fa-3x
+              p 收藏成功!
+
+
+
+
+
+          .box.food
+            .box_container
+              form(action="#", method="post").shop_form
+                .product_img
+                  img.img-fluid(src="../img/item/13.png", width="200" height="150")
+                  .box_bg
+                    button.shop_add_car.ad13(type="button",value="",name="btn_car")
+                      i.fas.fa-shopping-cart
+                    button.shop_add_love(type="submit",value="",name="btn_love")
+                      i.far.fa-heart
+                .product_title title
+                .product_price price
+          .bg.bg13
+            .alertBox
+              .sm_icon
+                span.sm_icon_xx x
+              .line
+                .right
+                  img(src="../img/item/13.png", width="160" height="120")
+                .left
+                  span 商品名
+                  span.alert_price $$$$
+              form.alert_form(action="#", method="post")
+                .line2
+                  span 數量
+                  .count
+                    .minus -
+                    input.num(type="text",name="count_num",value="1")
+                    .add +
+                  button.alert_box_addcar(type="submit",value="",name="btn_car") 加入購物車
+          #bg
+            #alertBox
+              span
+                i.fas.fa-heart.fa-3x
+              p 收藏成功!
+
+          .box.food
+            .box_container
+              form(action="#", method="post").shop_form
+                .product_img
+                  img.img-fluid(src="../img/item/15.png", width="200" height="150")
+                  .box_bg
+                    button.shop_add_car.ad15(typ5="button",value="",name="btn_car")
+                      i.fas.fa-shopping-cart
+                    button.shop_add_love(type="submit",value="",name="btn_love")
+                      i.far.fa-heart
+                .product_title title
+                .product_price price
+
+          .bg.bg15
+            .alertBox
+              .sm_icon
+                span.sm_icon_xx x
+              .line
+                .right
+                  img(src="../img/item/15.png", width="160" height="120")
+                .left
+                  span 商品名
+                  span.alert_price $$$$
+              form.alert_form(action="#", method="post")
+                .line2
+                  span 數量
+                  .count
+                    .minus -
+                    input.num(type="text",name="count_num",value="1")
+                    .add +
+                  button.alert_box_addcar(type="submit",value="",name="btn_car") 加入購物車
+          #bg
+            #alertBox
+              span
+                i.fas.fa-heart.fa-3x
+              p 收藏成功!
+
+          .box.viewnight
+            .box_container
+              form(action="#", method="post").shop_form
+                .product_img
+                  img.img-fluid(src="../img/item/17.png", width="200" height="150")
+                  .box_bg
+                    button.shop_add_car.ad17(type="button",value="",name="btn_car")
+                      i.fas.fa-shopping-cart
+                    button.shop_add_love(type="submit",value="",name="btn_love")
+                      i.far.fa-heart
+                .product_title title
+                .product_price price
+
+          .bg.bg17
+            .alertBox
+              .sm_icon
+                span.sm_icon_xx x
+              .line
+                .right
+                  img(src="../img/item/17.png", width="160" height="120")
+                .left
+                  span 商品名
+                  span.alert_price $$$$
+              form.alert_form(action="#", method="post")
+                .line2
+                  span 數量
+                  .count
+                    .minus -
+                    input.num(type="text",name="count_num",value="1")
+                    .add +
+                  button.alert_box_addcar(type="submit",value="",name="btn_car") 加入購物車
+          #bg
+            #alertBox
+              span
+                i.fas.fa-heart.fa-3x
+              p 收藏成功!
+
+
+
+      include ./shared/_footer.pug
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
+    script(src="../js/isotope.pkgd.min.js")
+    script(src="../js/shop.js")
+    script(src="../js/search.js")

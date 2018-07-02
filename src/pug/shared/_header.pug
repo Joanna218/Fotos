@@ -1,1 +1,29 @@
-header#app-header
+header
+  //置中header
+  .header_container
+    .row1
+      .login
+        a(href="../html/join.html") 註冊
+        a(href="../html/login.html") 登入
+        a(href="#") 會員中心
+        a(href="#").glyphicon.glyphicon-shopping-cart.cart_size
+        form(action="search.jsp" method="POST" id="search-form")
+          .ui.icon.input
+            input.prompt.prompt_size(type="text", name="search", placeholder="Search...")
+            i.circular.search.link.icon
+    .row2
+      a(href="../html/index.html")
+        .logo
+      .nav_bar
+        nav
+          li
+            a(href="../html/index.html") 首頁
+          li
+            a(href="../html/shop.html") 商店
+          li
+            a(href="../html/about.html") 關於
+          li
+            a(href="../html/contact.html") 聯絡我們
+          li
+            a(href="../html/buy_qu.html") 常見問題
+

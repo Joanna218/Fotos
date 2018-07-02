@@ -1,0 +1,111 @@
+@import "base/_normalize"
+@import "base/_normalize-custom"
+@import "components/_header"
+@import "components/_footer"
+
+*
+  // border: 1px solid
+
+%_container
+  width: 90%
+  margin: 0 auto
+  max-width: 1140px
+::selection
+  background: #a4a3a3
+
+.cart
+  background-color: #d9e8f1
+  display: flex
+  .cart_container
+    @extend %_container
+    display: flex
+    width: 85%
+    background-color: white
+    margin-top: 80px
+    margin-bottom: 80px
+    .cart_l
+      width: 30%
+      display: flex
+      flex-direction: column
+      margin-left: 20px
+      padding-top: 50px
+      .title
+        color:#172f3d
+        font-size: 45px
+        font-weight: bold
+      .info
+        color: #2e5972
+        font-size: 14px
+        line-height: 1.5
+        margin-top: 55px
+    hr
+      border: 1px dotted #172f3d
+      height: 320px
+    .cart_r
+      width: 70%
+      padding-top: 50px
+      margin-left: 10px
+      table
+        width: 100%
+        color: #2e5972
+        th
+          padding: 10px
+          border-bottom-style: dashed
+          border-bottom-color: #224052
+          border-bottom-width: thin
+          color: #2e5972
+          text-align: center
+        td
+          color: #2e5972
+          padding: 5px
+          text-align: center
+          border-bottom-style: dashed
+          border-bottom-color: #224052
+          border-bottom-width: thin
+        .td_poscenter
+          display: flex
+          justify-content: center
+          align-items: center
+          .count
+            display: flex
+            border: 1px solid #d4d9de
+            border-radius: 4px
+            justify-content: center
+            .minus,.add,.num
+              font-size: 20px
+              padding: 1px 3px
+              text-align: center
+            .minus,.add
+              width: 20px
+              cursor: pointer
+              user-select: none
+              transition-duration: 0.5s
+              padding: 4px
+            .minus
+              border-right: 1px solid #d4d9de
+              color: #aaa
+              background-color: #f0f0f0
+              &:hover
+                background-color: #eee
+                color: #333
+            .add
+              border-left: 1px solid #d4d9de
+              color: #4e82a1
+              &:hover
+                background-color: #e7f1f7
+            .num
+              width: 50px
+              font-size: 18px
+        .single_price,.total_price
+          width: 80px
+          text-align: center
+          padding: 0
+        .delete
+          font-family: "微軟正黑體"
+          color:  #2e5972
+          font-size: 12px
+          width: 50px
+          height: 25px
+          background-color: #d9e8f1
+          border-radius: 20px
+

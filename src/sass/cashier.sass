@@ -1,0 +1,142 @@
+@import "base/_normalize"
+@import "base/_normalize-custom"
+@import "components/_header"
+@import "components/_footer"
+
+*
+  // border: 1px solid
+
+%_container
+  width: 80%
+  margin: 0 auto
+  max-width: 1140px
+
+//colors
+$color_delta_approx: #a4a3a3
+$color_link_water_approx: #d9e8f1
+$red: red
+$white: white
+$color_blue_dianne_approx: #224052
+$black_22: rgba(0,0,0,0.22)
+$color_big_stone_approx: #172f3d
+$color_mystic_approx: #e1ecf2
+
+
+
+::selection
+  background: $color_delta_approx
+
+body
+  background: $color_link_water_approx
+
+h2
+  font-family: '微軟正黑體'
+
+%_container
+  width: 90%
+  margin: 0 auto
+  max-width: 1140px
+
+::selection
+  background: #a4a3a3
+
+.cashier_container
+  display: flex
+  position: relative
+  margin: 40px auto
+  width: 70%
+  flex-direction: column
+  align-items: center
+  .top
+    background-color: $color_blue_dianne_approx
+    box-shadow: 0 0 40px 16px $black_22
+    color: $white
+    width: 100%
+    height: 150px
+    margin: 0 auto
+    .cashier_checkout
+      margin-left: 20px
+      margin-top: 20px
+      a
+        color: $white
+        font-size: 50px
+        font-weight: bold
+    .eula
+      margin-left: 22px
+      margin-top: 10px
+      a
+        color: $white
+        font-size: 14px
+  .bottom
+    width: 90%
+    height: auto
+    display: flex
+    background-color: $white
+    padding-top: 20px
+    .form_container
+      @extend %_container
+      form
+        width: 100%
+        color: #2e5972
+        .cashier
+          width: 100%
+          table
+            width: 100%
+            color: #2e5972
+            display: flex
+            justify-content: center
+            align-item: center
+            th
+              padding: 10px
+              border-bottom-style: dashed
+              border-bottom-color: #224052
+              border-bottom-width: thin
+              color: #2e5972
+              text-align: center
+            td
+              color:  #2e5972
+              padding: 10px
+              text-align: center
+              border-bottom-style: dashed
+              border-bottom-color: #224052
+              border-bottom-width: thin
+            .colspan
+              text-align: right
+
+        .wrap_radio
+          display: flex
+          margin-left: 20px
+          .radio
+            margin-left: 0px
+          .label
+            color: #172f3d
+            font-size: 14px
+          .ship
+            font-family: "微軟正黑體"
+            border-radius: 10px
+            border: 0
+            background-color: #e1ecf2
+            color:  #172f3d
+            font-size: 16px
+            height: 25px
+            line-height: 50px
+            width: 320px
+            text-align: left
+            padding-left: 10px
+            padding-right: 10px
+        .wrap_submit
+          display: flex
+          justify-content: center
+          align-items: center
+          .submit
+            font-family: "微軟正黑體"
+            border: 0
+            color:  #2e5972
+            font-size: 15px
+            width: 100px
+            height: 30px
+            background-color: #d9e8f1
+            border-radius: 20px
+            margin: 20px 0
+
+

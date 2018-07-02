@@ -1,0 +1,290 @@
+@import "base/_normalize"
+@import "base/_normalize-custom"
+@import "components/_header"
+@import "components/_footer"
+
+*
+  // border: 1px solidas
+
+%_container
+  width: 90%
+  margin: 0 auto
+  max-width: 1140px
+
+#wrapper
+  .banner_nav
+    ._container_nav
+      @extend %_container
+      nav
+        display: flex
+        justify-content: center
+        margin: 30px 0
+        .button
+          display: flex
+          align-items: center
+          justify-content: center
+          display: inline-block
+          padding: 0.5em 1.0em
+          background: transparent
+          border: none
+          border-radius: 7px
+          color: #222
+          font-size: 16px
+          font-weight: bold
+          text-shadow: 0 1px white
+          cursor: pointer
+          margin: 0 10px
+          letter-spacing: 2px
+          border: 1px solid #ccc
+          &:hover
+            background-color: #eee
+            text-shadow: 0 1px rgba(255, 255, 255, 0.5)
+            color: #222
+          &:active
+            box-shadow: inset 0 1px 10px rgba(0, 0, 0, 0.8)
+            background-color: #28f
+            border: 1px solid #337ab7
+          &.is-checked
+            background-color: #407d96
+        .button.is-checked
+          color: #fff
+          text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8)
+
+//...................content....................
+
+.content
+  @extend %_container
+  display: flex
+  justify-content: center
+  align-items: center
+  ._container_content
+    display: flex
+    flex-wrap: wrap
+    align-items: stretch
+    align-content: center
+    justify-content: center
+    width: 90%
+
+    .box
+      width: calc( 100% / 3 )
+      height: 350px
+      margin: 0
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      &:hover .box_bg
+        opacity: 1
+      .box_container
+        @extend %_container
+        display: flex
+        height: 80%
+        flex-direction: column
+        align-items: center
+        border: 1px solid #adcfdd
+        box-shadow: 0px 1px 4px 4px rgba(89, 88, 88,.08)
+        z-index: 1
+        .product_img
+          display: flex
+          position: relative
+          justify-content: center
+          align-items: center
+          width: 100%
+          margin-top: 20px
+        .product_title
+          width: 90%
+          height: 30px
+          margin: 0 auto
+          margin-top: 25px
+          text-align: center
+          color: #565656
+		      font-size: 16px
+        .product_price
+          width: 90%
+          height: 30px
+          margin: 0 auto
+          text-align: center
+          color: #565656
+		      font-size: 16px
+.shop_form
+  width: 100%
+  // z-index: 999
+
+img
+  border: 1px solid #dadbdb
+.box_bg
+  background-color: rgba(0, 0, 0, .3)
+  width: 100%
+  position: absolute
+  height: 130%
+  opacity: 0
+  transition-duration: .5s
+  &:hover
+    cursor: pointer
+.shop_add_car
+  background-color: #5e89a2
+  color: #ffffff
+  cursor: pointer
+  border-radius: 4px
+  padding: 10px
+  letter-spacing: 2px
+  padding-right: 20px
+  padding-left: 20px
+  left: 60px
+  bottom: 10px
+  position: absolute
+.shop_add_love
+  background-color: #5e89a2
+  color: #ffffff
+  cursor: pointer
+  border-radius: 4px
+  padding: 10px
+  letter-spacing: 2px
+  padding-right: 20px
+  padding-left: 20px
+  position: absolute
+  right: 60px
+  bottom: 10px
+.img-fluid
+  max-width: 100%
+  height: auto
+  display: block
+//..........................................
+.bg
+  position: fixed
+  left: 0
+  top: 0
+  height: 100%
+  width: 100%
+  background: rgba(0, 0, 0, .4)
+  display: none
+  opacity: 0
+  z-index: 99
+.alertBox
+  margin: 200px auto 0
+  text-align: center
+  padding-top: 25px
+  width: 500px
+  height: 300px
+  background: #FFF
+  border-radius: 3px
+  box-shadow: 2px 2px rgba(0, 0, 0, .3)
+  padding: 5px 20px
+  font-size: 1em
+  transition: background .3s
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  z-index: 999
+  justify-content: flex-start
+  .sm_icon
+    display: flex
+    justify-content: flex-end
+    width: 100%
+    &:hover
+      cursor: pointer
+  span
+    padding: 10px
+.alertBox p
+  font-size: 1.4em
+  margin-bottom: 20px
+.line
+  width: 100%
+  display: flex
+  margin-top: 10px
+  height: 150px
+  border-bottom: 3px solid #dcdcdc
+  .right
+    width: 40%
+  .left
+    width: 60%
+    display: flex
+    flex-direction: column
+    span
+      text-align: left
+    .alert_price
+      margin-top: 38px
+hr
+  width: 100%
+.alert_form
+  width: 100%
+  .line2
+    width: 100%
+    display: flex
+    margin-top: 20px
+    .count
+      display: flex
+      border: 1px solid #d4d9de
+      border-radius: 4px
+      .minus,.add,.num
+        font-size: 30px
+        padding: 0px 5px
+        text-align: center
+      .minus,.add
+        width: 35px
+        cursor: pointer
+        user-select: none
+        transition-duration: 0.5s
+        padding: 5px
+      .minus
+        border-right: 1px solid #d4d9de
+        color: #aaa
+        background-color: #f0f0f0
+        &:hover
+          background-color: #eee
+          color: #333
+      .add
+        border-left: 1px solid #d4d9de
+        color: #4e82a1
+        &:hover
+          background-color: #e7f1f7
+      .num
+        width: 80px
+    .alert_box_addcar
+      background-color: #5e89a2
+      color: #ffffff
+      cursor: pointer
+      border-radius: 4px
+      padding: 10px
+      padding-right: 20px
+      padding-left: 20px
+      font-size: 15px
+      margin-left: 20px
+//.......................................
+#bg
+  position: fixed
+  left: 0
+  top: 0
+  height: 100%
+  width: 100%
+  background: rgba(0, 0, 0, .4)
+  display: none
+  z-index: 99
+#alertBox
+  margin: 200px auto 0
+  text-align: center
+  padding-top: 25px
+  width: 300px
+  height: 200px
+  background: #FFF
+  border-radius: 3px
+  box-shadow: 2px 2px rgba(0, 0, 0, .3)
+  padding: 5px 20px
+  font-size: 1em
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  z-index: 9999
+  span
+    padding: 10px
+    display: flex
+  .price
+    margin-top: 38px
+#alertBox p
+  font-size: 1.4em
+  margin-bottom: 20px
+
+
+

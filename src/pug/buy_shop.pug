@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel="stylesheet", href="../css/Semantic/semantic.min.css")
+    link(rel="stylesheet", href="../css/fonts/css/fontawesome-all.min.css")
+    link(rel="stylesheet", href="../css/buy_shop.css")
+    style#css
+  body
+    #wrapper
+      include ./shared/_header.pug
+      .buy_shop_container
+        .top
+          .left
+            .row1
+              .big_box
+                img.big_img(src="../img/item/1.png" width="100%" height="100%" alt="Photo")
+            .row2
+              .sm_box
+                a(href="javascript:;" data-standard="../img/item/1.png")
+                  img.sm_img_border(src="../img/item/1.png" width="80" height="60" alt="Photo1")
+              .sm_box
+                a(href="javascript:;" data-standard="../img/item/back.png")
+                  img(src="../img/item/back.png" width="80" height="60" alt="Photo1")
+
+          .right
+            .line
+              span.label.label-primary.label_color 滿千折百
+            .line
+              h2.product_name 旅人陪星星
+            .line
+              sapn 編號：
+              span ddd
+            .line
+              sapn 庫存：
+              span ddd
+            .line
+              sapn 規格：
+              //- select(name="select",width="100")
+              option(value="size1") 2*3 (2公分*2.7公分)
+                //- option(value="size2") 4*6
+                //- option(value="size3") 8*12
+            .line
+              span 數量：
+            .line
+              .count
+                .minus -
+                input.num(type="text",name="count_num",value="1")
+                .add +
+            .line
+              button.btn_add_car(type="button",value="",name="btn_car") 加入購物車
+              input(type="hidden" name="" value="")
+              .heart_pos
+                i.far.fa-heart.fa-2x.color_heart
+
+            .line
+              .slide_info
+                hr.line_hr
+                .slide_line.slide_bgcolor
+                  .info_name.info_name1 產品資訊
+                  .plus1
+                .slide_line
+                  .info_detail.info1
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia labore modi aliquid totam, optio soluta eum pariatur ducimus maxime? Consequuntur quis
+                hr.line_hr
+                .slide_line.slide_bgcolor
+                  .info_name.info_name2 購物說明
+                  .plus2
+                .slide_line
+                  .info_detail.info2
+                    p 產品尺寸：2*3(2公分*2.7公分)
+                      br
+                      |產品材質：霧面萊尼卡(8磅)
+                      br
+                      |信封顏色: 湖水藍
+                      br
+                      |信封貼紙: 印花壓紋
+                hr.line_hr
+                .slide_line.slide_bgcolor
+                  .info_name.info_name3 退換貨說明
+                  .plus3
+                .slide_line
+                  .info_detail.info3
+                    p 收到商品後可享有7天免費鑑賞期(含例假日)。請留意，鑑賞期非試用期，若您收到商品經檢視後有任何不合意之處，請勿拆開使用。
+                hr.line_hr
+
+        .bottom
+          ul
+            li
+              a.current.critical(href="#tab1") 會員評論
+            li
+              a.critical(href="#tab2") 查看評論
+          .contents
+            #tab1
+              p
+                strong 會員評論
+                .wrapp_write
+                  .write_left
+                    form(action="#", method="post")
+                      .write_id 帳號：
+                        input(type="text" value="aaa" name="user_id" disabled)
+                      .total_score 總體評分
+                      .rating_bar
+                        span.rating
+                          input#rating5(type='radio', name='rating', value='  ')
+                          label(for='rating5') 5
+                          input#rating4(type='radio', name='rating', value='8')
+                          label(for='rating4') 4
+                          input#rating3(type='radio', name='rating', value='6')
+                          label(for='rating3') 3
+                          input#rating2(type='radio', name='rating', value='4', )
+                          label(for='rating2') 2
+                          input#rating1(type='radio', name='rating', value='2')
+                          label(for='rating1') 1
+                      .write_textarea
+                        span 內容
+                        textarea
+                      .send
+                        button.btn_send(type="submit") 送出
+                  .write_right
+                    .write_right_wrap
+                      img(src="../img/item/1.png", alt="" width="100%" height="100%")
+            #tab2
+              p
+                strong 查看評論
+                .mes
+                  .wrap_mes
+                    .left
+                      .user_id 使用者帳號 Joanna
+                      .user_time 時間 2018/06/10
+                    .right
+                      .mes_top 分數 10
+                      .mes_bottom 心得 這張明信片非常有質感，服務也相當周到!
+                  hr.hr_color
+                  .wrap_mes
+                    .left
+                      .user_id 使用者帳號 Joanna
+                      .user_time 時間 2018/06/10
+                    .right
+                      .mes_top 分數 10
+                      .mes_bottom 心得 這張明信片非常有質感，服務也相當周到!
+                  hr.hr_color
+
+      #bg
+        #alertBox
+          span
+            i.fas.fa-cart-plus.fa-3x
+          p 加入成功!
+      #bg2
+        #alertBox2
+          span
+            i.fas.fa-heart.fa-3x
+          p 收藏成功!
+      include ./shared/_footer.pug
+
+    script(src="../js/jquery-3.3.1.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
+    script(src="../js/buy_shop.js")
+    script(src="../js/search.js")

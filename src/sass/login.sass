@@ -1,0 +1,139 @@
+@import "base/_normalize"
+@import "base/_normalize-custom"
+@import "components/_header"
+@import "components/_footer"
+// @import "components/_header"
+
+
+  //colors
+$color_delta_approx: #a4a3a3
+$color_link_water_approx: #d9e8f1
+$white: white
+$color_big_stone_approx: #172f3d
+$color_casal_approx: #2e5972
+$color_blue_dianne_approx: #224052
+$black_22: rgba(0, 0, 0, 0.22)
+$concrete: #f2f2f2
+//fonts
+$font_0: Inter UI
+$font_1: sans-serif
+$font_2: 微軟正黑體
+//urls
+$url_0: url(#line)
+::selection
+    background: $color_delta_approx
+
+*
+  // border: 1px solid
+body
+    background: $color_link_water_approx
+    // font-family: $font_0, $font_1
+    margin: 0
+    // padding: 20px
+
+
+.page
+  background: $color_link_water_approx
+  display: flex
+  flex-direction: column
+  height: calc(100% - 40px)
+  // position: absolute
+  place-content: center
+  width: calc(100% - 40px)
+  margin: 50px 0
+
+.page_container
+  display: flex
+  height: 350px
+  margin: 0 auto
+  width: 640px
+  font-family: $font_2
+
+
+.left
+  background: $white
+  height: calc(100% - 40px)
+  top: 20px
+  position: relative
+  width: 50%
+
+
+.page_login
+  color: $color_big_stone_approx
+  font-size: 50px
+  font-weight: bold
+  margin: 50px 40px 40px
+
+
+.eula
+  color: $color_casal_approx
+  font-size: 14px
+  line-height: 1.5
+  margin: 40px
+
+
+.right
+  background: $color_blue_dianne_approx
+  box-shadow: 0 0 40px 16px $black_22
+  color: $color_blue_dianne_approx
+  position: relative
+  width: 50%
+
+
+svg
+  position: absolute
+  width: 320px
+
+
+path
+  fill: none
+  stroke: $url_0
+  stroke-width: 3
+  stroke-dasharray: 240 1386
+
+
+.form
+  margin: 40px
+  position: absolute
+
+
+label
+  color: $white
+  display: block
+  font-size: 14px
+  height: 16px
+  margin-top: 20px
+  margin-bottom: 5px
+
+
+.login_input
+  background: transparent
+  border: 0
+  color: $concrete
+  font-size: 20px
+  height: 30px
+  line-height: 30px
+  outline: none !important
+  width: 100%
+
+
+input::-moz-focus-inner
+  border: 0
+
+
+.submit
+  font-family: $font_2
+  color: $color_blue_dianne_approx
+  margin-top: 40px
+  transition: color 300ms
+  background-color: $color_link_water_approx
+  margin-left: 50px
+  border-radius: 50px
+  width: 60px
+  height: 30px
+
+
+.wrapper_submit
+  display: flex
+.span_color
+  color: white

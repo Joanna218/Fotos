@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/Semantic/semantic.min.css"/>
+    <link rel="stylesheet" href="../css/fonts/css/fontawesome-all.min.css"/>
+    <link rel="stylesheet" href="../css/buy_shop.css"/>
+    <style id="css"></style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <!--置中header-->
+        <div class="header_container">
+          <div class="row1">
+            <div class="login"><a href="../html/join.html">註冊</a><a href="../html/login.html">登入</a><a href="#">會員中心</a><a class="glyphicon glyphicon-shopping-cart cart_size" href="#"></a>
+              <form action="search.jsp" method="POST" id="search-form">
+                <div class="ui icon input">
+                  <input class="prompt prompt_size" type="text" name="search" placeholder="Search..."/><i class="circular search link icon"></i>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row2"><a href="../html/index.html">
+              <div class="logo"></div></a>
+            <div class="nav_bar">
+              <nav>
+                <li><a href="../html/index.html">首頁</a></li>
+                <li><a href="../html/shop.html">商店</a></li>
+                <li><a href="../html/about.html">關於</a></li>
+                <li><a href="../html/contact.html">聯絡我們</a></li>
+                <li><a href="../html/buy_qu.html">常見問題</a></li>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="buy_shop_container">
+        <div class="top">
+          <div class="left">
+            <div class="row1">
+              <div class="big_box"><img class="big_img" src="../img/item/1.png" width="100%" height="100%" alt="Photo"/></div>
+            </div>
+            <div class="row2">
+              <div class="sm_box"><a href="javascript:;" data-standard="../img/item/1.png"><img class="sm_img_border" src="../img/item/1.png" width="80" height="60" alt="Photo1"/></a></div>
+              <div class="sm_box"><a href="javascript:;" data-standard="../img/item/back.png"><img src="../img/item/back.png" width="80" height="60" alt="Photo1"/></a></div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="line"><span class="label label-primary label_color">滿千折百</span></div>
+            <div class="line">
+              <h2 class="product_name">旅人陪星星</h2>
+            </div>
+            <div class="line">
+              <sapn>編號：</sapn><span>ddd</span>
+            </div>
+            <div class="line">
+              <sapn>庫存：</sapn><span>ddd</span>
+            </div>
+            <div class="line">
+              <sapn>規格：</sapn>
+              <option value="size1">2*3 (2公分*2.7公分)</option>
+            </div>
+            <div class="line"><span>數量：</span></div>
+            <div class="line">
+              <div class="count">
+                <div class="minus">-</div>
+                <input class="num" type="text" name="count_num" value="1"/>
+                <div class="add">+</div>
+              </div>
+            </div>
+            <div class="line">
+              <button class="btn_add_car" type="button" value="" name="btn_car">加入購物車</button>
+              <input type="hidden" name="" value=""/>
+              <div class="heart_pos"><i class="far fa-heart fa-2x color_heart"></i></div>
+            </div>
+            <div class="line">
+              <div class="slide_info">
+                <hr class="line_hr"/>
+                <div class="slide_line slide_bgcolor">
+                  <div class="info_name info_name1">產品資訊</div>
+                  <div class="plus1"></div>
+                </div>
+                <div class="slide_line">
+                  <div class="info_detail info1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia labore modi aliquid totam, optio soluta eum pariatur ducimus maxime? Consequuntur quis</p>
+                  </div>
+                </div>
+                <hr class="line_hr"/>
+                <div class="slide_line slide_bgcolor">
+                  <div class="info_name info_name2">購物說明</div>
+                  <div class="plus2"></div>
+                </div>
+                <div class="slide_line">
+                  <div class="info_detail info2">
+                    <p>產品尺寸：2*3(2公分*2.7公分)<br/>產品材質：霧面萊尼卡(8磅)<br/>信封顏色: 湖水藍<br/>信封貼紙: 印花壓紋</p>
+                  </div>
+                </div>
+                <hr class="line_hr"/>
+                <div class="slide_line slide_bgcolor">
+                  <div class="info_name info_name3">退換貨說明</div>
+                  <div class="plus3"></div>
+                </div>
+                <div class="slide_line">
+                  <div class="info_detail info3">
+                    <p>收到商品後可享有7天免費鑑賞期(含例假日)。請留意，鑑賞期非試用期，若您收到商品經檢視後有任何不合意之處，請勿拆開使用。</p>
+                  </div>
+                </div>
+                <hr class="line_hr"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <ul>
+            <li><a class="current critical" href="#tab1">會員評論</a></li>
+            <li><a class="critical" href="#tab2">查看評論</a></li>
+          </ul>
+          <div class="contents">
+            <div id="tab1">
+              <p><strong>會員評論</strong>
+                <div class="wrapp_write">
+                  <div class="write_left">
+                    <form action="#" method="post">
+                      <div class="write_id">帳號：
+                        <input type="text" value="aaa" name="user_id" disabled="disabled"/>
+                      </div>
+                      <div class="total_score">總體評分</div>
+                      <div class="rating_bar"><span class="rating">
+                          <input id="rating5" type="radio" name="rating" value="  "/>
+                          <label for="rating5">5</label>
+                          <input id="rating4" type="radio" name="rating" value="8"/>
+                          <label for="rating4">4</label>
+                          <input id="rating3" type="radio" name="rating" value="6"/>
+                          <label for="rating3">3</label>
+                          <input id="rating2" type="radio" name="rating" value="4"/>
+                          <label for="rating2">2</label>
+                          <input id="rating1" type="radio" name="rating" value="2"/>
+                          <label for="rating1">1</label></span></div>
+                      <div class="write_textarea"><span>內容</span>
+                        <textarea></textarea>
+                      </div>
+                      <div class="send">
+                        <button class="btn_send" type="submit">送出</button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="write_right">
+                    <div class="write_right_wrap"><img src="../img/item/1.png" alt="" width="100%" height="100%"/></div>
+                  </div>
+                </div>
+              </p>
+            </div>
+            <div id="tab2">
+              <p><strong>查看評論</strong>
+                <div class="mes">
+                  <div class="wrap_mes">
+                    <div class="left">
+                      <div class="user_id">使用者帳號 Joanna</div>
+                      <div class="user_time">時間 2018/06/10</div>
+                    </div>
+                    <div class="right">
+                      <div class="mes_top">分數 10</div>
+                      <div class="mes_bottom">心得 這張明信片非常有質感，服務也相當周到!</div>
+                    </div>
+                  </div>
+                  <hr class="hr_color"/>
+                  <div class="wrap_mes">
+                    <div class="left">
+                      <div class="user_id">使用者帳號 Joanna</div>
+                      <div class="user_time">時間 2018/06/10</div>
+                    </div>
+                    <div class="right">
+                      <div class="mes_top">分數 10</div>
+                      <div class="mes_bottom">心得 這張明信片非常有質感，服務也相當周到!</div>
+                    </div>
+                  </div>
+                  <hr class="hr_color"/>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="bg">
+        <div id="alertBox"><span><i class="fas fa-cart-plus fa-3x"></i></span>
+          <p>加入成功!</p>
+        </div>
+      </div>
+      <div id="bg2">
+        <div id="alertBox2"><span><i class="fas fa-heart fa-3x"></i></span>
+          <p>收藏成功!</p>
+        </div>
+      </div>
+      <footer>
+        <div class="footer_container">
+          <div class="footer_logo"><a href="../html/index.html">
+              <div class="logo"></div></a><span class="visit_num">訪客人數： 2220 人</span></div>
+          <div class="footer_info">
+            <div class="info_box"><span class="footer_title">網站地圖</span><a href="../html/index.html">首頁</a><a href="../html/shop.html">商店</a><a href="../html/about.html">關於</a><a href="../html/contact.html">聯絡我們</a><a href="../html/buy_qu.html">常見問題</a></div>
+            <div class="info_box"><span class="footer_title"> 聯絡我們</span><span></span><span></span><span></span><span class="footer_adder">地址：桃園市中壢區中北路200號</span><span class="footer_adder">電話：+886-3-265-9999</span></div>
+            <div class="info_box box_map"><span class="footer_title">地圖</span>
+              <div class="maps">
+                <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBdr2bAntGk98dXnpM08SQ82mqt52a5CJI&amp;q=中原大學資管樓" width="100%" height="100%" margin-left="2px" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_copy_right"><span>Copyright © 2018 Fotos Company. All rights reserved.</span></div>
+      </footer>
+    </div>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/buy_shop.js"></script>
+    <script src="../js/search.js"></script>
+  </body>
+</html>

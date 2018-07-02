@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/Semantic/semantic.min.css"/>
+    <link rel="stylesheet" href="../css/track.css"/>
+  </head>
+  <body>
+    <div id="wrapp">
+      <header>
+        <!--置中header-->
+        <div class="header_container">
+          <div class="row1">
+            <div class="login"><a href="../html/join.html">註冊</a><a href="../html/login.html">登入</a><a href="#">會員中心</a><a class="glyphicon glyphicon-shopping-cart cart_size" href="#"></a>
+              <form action="search.jsp" method="POST" id="search-form">
+                <div class="ui icon input">
+                  <input class="prompt prompt_size" type="text" name="search" placeholder="Search..."/><i class="circular search link icon"></i>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row2"><a href="../html/index.html">
+              <div class="logo"></div></a>
+            <div class="nav_bar">
+              <nav>
+                <li><a href="../html/index.html">首頁</a></li>
+                <li><a href="../html/shop.html">商店</a></li>
+                <li><a href="../html/about.html">關於</a></li>
+                <li><a href="../html/contact.html">聯絡我們</a></li>
+                <li><a href="../html/buy_qu.html">常見問題</a></li>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="wrap_modify_member">
+        <div class="wrap_left">
+          <div class="left_container">
+            <li><a href="../html/modify_member.html">修改會員資料</a></li>
+            <li><a href="../html/track.html">追蹤訂單</a></li>
+            <li><a href="../html/mylove.html">我的最愛</a></li>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content_right">
+            <h1>追蹤訂單</h1>
+            <p class="info">所有訂單會需3-5個工作天，如需更改寄送地址，請在下訂後3天內進行更改，如有不便敬請見諒。</p><br/>
+            <hr/>
+            <form class="form" action="" method="post">
+              <table>
+                <tr>
+                  <th>訂單編號</th>
+                  <th>購買日期</th>
+                  <th>總金額</th>
+                  <th>詳細清單</th>
+                </tr>
+                <tr>
+                  <td>8451</td>
+                  <td>8745</td>
+                  <td>78451</td>
+                  <td class="plus"></td>
+                </tr>
+                <tr class="detail_title">
+                  <td>照片</td>
+                  <td>商品名稱</td>
+                  <td>數量</td>
+                  <td>單價</td>
+                </tr>
+                <tr class="detail">
+                  <td>picture1</td>
+                  <td>product_name1</td>
+                  <td>product_number1</td>
+                  <td>product_price1</td>
+                </tr>
+                <tr>
+                  <td>8451</td>
+                  <td>8745</td>
+                  <td>78451</td>
+                  <td class="plus"></td>
+                </tr>
+                <tr class="detail">
+                  <td>照片</td>
+                  <td>商品名稱</td>
+                  <td>數量</td>
+                  <td>單價</td>
+                </tr>
+                <tr class="detail">
+                  <td>picture2</td>
+                  <td>product_name2</td>
+                  <td>product_number2</td>
+                  <td>product_price2</td>
+                </tr>
+              </table>
+              <button class="checkout" type="submit" value="" name="btn_checkout">結帳</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer_container">
+          <div class="footer_logo"><a href="../html/index.html">
+              <div class="logo"></div></a><span class="visit_num">訪客人數： 2220 人</span></div>
+          <div class="footer_info">
+            <div class="info_box"><span class="footer_title">網站地圖</span><a href="../html/index.html">首頁</a><a href="../html/shop.html">商店</a><a href="../html/about.html">關於</a><a href="../html/contact.html">聯絡我們</a><a href="../html/buy_qu.html">常見問題</a></div>
+            <div class="info_box"><span class="footer_title"> 聯絡我們</span><span></span><span></span><span></span><span class="footer_adder">地址：桃園市中壢區中北路200號</span><span class="footer_adder">電話：+886-3-265-9999</span></div>
+            <div class="info_box box_map"><span class="footer_title">地圖</span>
+              <div class="maps">
+                <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBdr2bAntGk98dXnpM08SQ82mqt52a5CJI&amp;q=中原大學資管樓" width="100%" height="100%" margin-left="2px" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_copy_right"><span>Copyright © 2018 Fotos Company. All rights reserved.</span></div>
+      </footer>
+    </div>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+    <script src="../js/track.js"></script>
+    <script src="../js/search.js"></script>
+  </body>
+</html>
