@@ -457,6 +457,7 @@
   //新增使用者
   function join_users($user_name, $user_id, $user_pwd, $user_email, $user_gender, $user_birth, $user_addr) {
     $result = null ;
+    $user_pwd = md5($user_pwd);
     $create_time = date('Y-m-d H:i:s');
     $modify_time = 'NULL';
     $sql = "INSERT INTO `users` (`user_name`, `user_id`, `user_pwd`, `user_email`, `user_gender`, `user_birth`, `user_addr`, `modify_time`, `create_time`)
