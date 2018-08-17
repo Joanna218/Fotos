@@ -388,7 +388,7 @@ header {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        argin-left: auto; }
+        margin-left: auto; }
         header .header_container .row2 .nav_bar nav li {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -554,12 +554,26 @@ body {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px; }
-
+/* * {
+  border: 1px solid;
+} */
+#register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 .line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: center;
+  width: 60%;
   margin: 10px; }
+  .line .right {
+    width: 30%;
+  }
   .line .left {
     display: -webkit-box;
     display: -ms-flexbox;

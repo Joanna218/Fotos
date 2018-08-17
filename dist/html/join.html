@@ -1,146 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../css/Semantic/semantic.min.css"/>
-    <link rel="stylesheet" href="../css/join.css"/>
-  </head>
-  <body>
-    <div id="wrapper">
-      <header>
-        <!--置中header-->
-        <div class="header_container">
-          <div class="row1">
-            <div class="login"><a href="../html/join.html">註冊</a><a href="../html/login.html">登入</a><a href="#">會員中心</a><a class="glyphicon glyphicon-shopping-cart cart_size" href="#"></a>
-              <form action="search.jsp" method="POST" id="search-form">
-                <div class="ui icon input">
-                  <input class="prompt prompt_size" type="text" name="search" placeholder="Search..."/><i class="circular search link icon"></i>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="row2"><a href="../html/index.html">
-              <div class="logo"></div></a>
-            <div class="nav_bar">
-              <nav>
-                <li><a href="../html/index.html">首頁</a></li>
-                <li><a href="../html/shop.html">商店</a></li>
-                <li><a href="../html/about.html">關於</a></li>
-                <li><a href="../html/contact.html">聯絡我們</a></li>
-                <li><a href="../html/buy_qu.html">常見問題</a></li>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </header>
-      <div class="join_container">
-        <div class="top">
-          <div class="join_login"><a>註冊</a></div>
-          <div class="eula"><a>即刻註冊享有Fotos的服務</a></div>
-        </div>
-        <div class="bottom">
-          <div class="form">
-            <form action="#" method="post">
-              <div class="line">
-                <div class="right">
-                  <label for="name">姓名</label>
-                </div>
-                <div class="left">
-                  <input class="join_input" type="text" autocomplete="off" name="join_name" value="" required="required"/>
-                </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/Semantic/semantic.min.css" />
+  <link rel="stylesheet" href="../css/join.css" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <!--置中header-->
+      <div class="header_container">
+        <div class="row1">
+          <div class="login">
+            <a href="../html/join.html">註冊</a>
+            <a href="../html/login.html">登入</a>
+            <a href="#">會員中心</a>
+            <a class="glyphicon glyphicon-shopping-cart cart_size" href="#"></a>
+            <form action="search.jsp" method="POST" id="search-form">
+              <div class="ui icon input">
+                <input class="prompt prompt_size" type="text" name="search" placeholder="Search..." />
+                <i class="circular search link icon"></i>
               </div>
-              <div class="line">
-                <div class="right">
-                  <label for="id">帳號</label>
-                </div>
-                <div class="left">
-                  <input class="join_input" type="text" name="join_id" value="" autocomplete="off" required="required"/>
-                </div>
-              </div>
-              <div class="line">
-                <div class="right">
-                  <label for="password">密碼</label>
-                </div>
-                <div class="left">
-                  <input class="join_input" type="password" name="join_password" value="" autocomplete="off" required="required"/>
-                </div>
-              </div>
-              <div class="line">
-                <div class="right">
-                  <label for="repassword">確認密碼</label>
-                </div>
-                <div class="left">
-                  <input class="join_input" type="password" name="join_repassword" value="" autocomplete="off" required="required"/>
-                </div>
-              </div>
-              <div class="line">
-                <div class="right">
-                  <label for="email">電子信箱</label>
-                </div>
-                <div class="left">
-                  <input class="join_input" type="email" name="join_email" value="" autocomplete="off" required="required"/>
-                </div>
-              </div>
-              <div class="line">
-                <div class="right">
-                  <label for="sexual">性別</label>
-                </div>
-                <div class="left">
-                  <select class="join_input">
-                    <option>男</option>
-                    <option>女</option>
-                  </select>
-                </div>
-              </div>
-              <div class="line">
-                <div class="right">
-                  <label for="birth">生日</label>
-                </div>
-                <div class="left">
-                  <input class="join_input" type="date"/>
-                </div>
-              </div>
-              <div class="line">
-                <div class="right">
-                  <label for="address">地址</label>
-                </div>
-                <div class="left">
-                  <input class="join_input" type="text" name="join_address" value="" autocomplete="off" required="required"/>
-                </div>
-              </div>
-              <div class="wrap_submit">
-                <input id="submit" type="submit" value="註冊"/>
-              </div>
-              <div class="wrap_login"><span>已經擁有帳戶？</span><a href="../html/login.html">登入</a></div>
             </form>
           </div>
         </div>
+        <div class="row2">
+          <a href="../html/index.html">
+            <div class="logo"></div>
+          </a>
+          <div class="nav_bar">
+            <nav>
+              <li>
+                <a href="../html/index.html">首頁</a>
+              </li>
+              <li>
+                <a href="../html/shop.html">商店</a>
+              </li>
+              <li>
+                <a href="../html/about.html">關於</a>
+              </li>
+              <li>
+                <a href="../html/contact.html">聯絡我們</a>
+              </li>
+              <li>
+                <a href="../html/buy_qu.html">常見問題</a>
+              </li>
+            </nav>
+          </div>
+        </div>
       </div>
-      <footer>
-        <div class="footer_container">
-          <div class="footer_logo"><a href="../html/index.html">
-              <div class="logo"></div></a><span class="visit_num">訪客人數： 2220 人</span></div>
-          <div class="footer_info">
-            <div class="info_box"><span class="footer_title">網站地圖</span><a href="../html/index.html">首頁</a><a href="../html/shop.html">商店</a><a href="../html/about.html">關於</a><a href="../html/contact.html">聯絡我們</a><a href="../html/buy_qu.html">常見問題</a></div>
-            <div class="info_box"><span class="footer_title"> 聯絡我們</span><span></span><span></span><span></span><span class="footer_adder">地址：桃園市中壢區中北路200號</span><span class="footer_adder">電話：+886-3-265-9999</span></div>
-            <div class="info_box box_map"><span class="footer_title">地圖</span>
-              <div class="maps">
-                <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBdr2bAntGk98dXnpM08SQ82mqt52a5CJI&amp;q=中原大學資管樓" width="100%" height="100%" margin-left="2px" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-              </div>
+    </header>
+    <div class="join_container">
+      <div class="top">
+        <div class="join_login">
+          <a>註冊</a>
+        </div>
+        <div class="eula">
+          <a>即刻註冊享有Fotos的服務</a>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="form">
+          <form id="register">
+            <div class="line">
+              <label for="user_name" class="right">姓名</label>
+              <input type="text" class="form-control" id="user_name" placeholder="Name..." class="left" autocomplete="off" required>
+              <!-- <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+              <span id="inputSuccess2Status" class="sr-only">(success)</span> -->
+            </div>
+            <div class="line">
+
+              <label for="user_id" class="right">帳號</label>
+              <input type="text" class="form-control" id="user_id" placeholder="ID..." class="left" autocomplete="off" required>
+            </div>
+            <div class="line">
+              <label for="user_pwd" class="right">密碼</label>
+              <input type="password" class="form-control" id="user_pwd" placeholder="password..." class="left" autocomplete="off" required>
+            </div>
+            <div class="line">
+              <label for="user_repwd" class="right">確認密碼</label>
+              <input type="password" class="form-control" id="user_repwd" placeholder="repassword..." class="left" autocomplete="off" required>
+            </div>
+            <div class="line">
+              <label for="user_email" class="right">電子信箱</label>
+              <input type="text" class="form-control" id="user_email" placeholder="Email..." class="left" autocomplete="off" required>
+            </div>
+            <div class="line">
+              <label for="user_gender" class="right">性別</label>
+              <select class="form-control" id="user_gender" required>
+                <option value="男">男</option>
+                <option value="女">女</option>
+              </select>
+            </div>
+            <div class="line">
+              <label for="user_birth" class="right">生日</label>
+              <input class="form-control" id="user_birth" type="date" required>
+            </div>
+            <div class="line">
+              <label for="user_addr" class="right">地址</label>
+              <input type="text" class="form-control" id="user_addr" placeholder="Address..." class="left" autocomplete="off" required>
+            </div>
+            <div class="wrap_submit">
+              <!-- <input class="btn btn-default" id="submit" type="submit" value="註冊"> -->
+              <button type="submit" class="btn btn-default">註冊</button>
+            </div>
+            <div class="wrap_login">
+              <span>已經擁有帳戶？</span>
+              <a href="../html/login.html">登入</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_container">
+        <div class="footer_logo">
+          <a href="../html/index.html">
+            <div class="logo"></div>
+          </a>
+          <span class="visit_num">訪客人數： 2220 人</span>
+        </div>
+        <div class="footer_info">
+          <div class="info_box">
+            <span class="footer_title">網站地圖</span>
+            <a href="../html/index.html">首頁</a>
+            <a href="../html/shop.html">商店</a>
+            <a href="../html/about.html">關於</a>
+            <a href="../html/contact.html">聯絡我們</a>
+            <a href="../html/buy_qu.html">常見問題</a>
+          </div>
+          <div class="info_box">
+            <span class="footer_title"> 聯絡我們</span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="footer_adder">地址：桃園市中壢區中北路200號</span>
+            <span class="footer_adder">電話：+886-3-265-9999</span>
+          </div>
+          <div class="info_box box_map">
+            <span class="footer_title">地圖</span>
+            <div class="maps">
+              <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBdr2bAntGk98dXnpM08SQ82mqt52a5CJI&amp;q=中原大學資管樓" width="100%"
+                height="100%" margin-left="2px" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
             </div>
           </div>
         </div>
-        <div class="footer_copy_right"><span>Copyright © 2018 Fotos Company. All rights reserved.</span></div>
-      </footer>
-    </div>
-    <script src="../js/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
-    <script src="../js/join.js"></script>
-    <script src="../js/search.js"></script>
-  </body>
+      </div>
+      <div class="footer_copy_right">
+        <span>Copyright © 2018 Fotos Company. All rights reserved.</span>
+      </div>
+    </footer>
+  </div>
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+  <script src="../js/join.js"></script>
+  <script src="../js/search.js"></script>
+  <script src="../js/register.js"></script>
+</body>
+
 </html>
