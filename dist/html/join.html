@@ -68,43 +68,63 @@
       <div class="bottom">
         <div class="form">
           <form id="register">
-            <div class="line">
-              <label for="user_name" class="right">姓名</label>
-              <input type="text" class="form-control" id="user_name" placeholder="Name..." class="left" autocomplete="off" required>
-              <!-- <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
-              <span id="inputSuccess2Status" class="sr-only">(success)</span> -->
+            <div class="line_wrap">
+              <div class="line">
+                <label for="user_name" class="right">姓名</label>
+                <input type="text" class="form-control" id="user_name" aria-describedby="inputSuccess4Status" placeholder="Name..." class="left"
+                  autocomplete="off" required>
+                <span class="glyphicon glyphicon-ok form-control-feedback show_ok"></span>
+              </div>
+              <label class="lb_user_name">已使用!</label>
             </div>
-            <div class="line">
 
-              <label for="user_id" class="right">帳號</label>
-              <input type="text" class="form-control" id="user_id" placeholder="ID..." class="left" autocomplete="off" required>
+            <div class="line_wrap">
+              <div class="line">
+                <label for="user_id" class="right">帳號</label>
+                <input type="text" class="form-control" id="user_id" aria-describedby="inputSuccess4Status" placeholder="ID..." class="left"
+                  autocomplete="off" required>
+                <span class="glyphicon glyphicon-ok form-control-feedback show_ok2"></span>
+              </div>
+              <label class="lb_user_id">已使用!</label>
             </div>
-            <div class="line">
-              <label for="user_pwd" class="right">密碼</label>
-              <input type="password" class="form-control" id="user_pwd" placeholder="password..." class="left" autocomplete="off" required>
+            <div class="line_wrap">
+              <div class="line">
+                <label for="user_pwd" class="right">密碼</label>
+                <input type="password" class="form-control" id="user_pwd" placeholder="password..." class="left" autocomplete="off" required>
+              </div>
             </div>
-            <div class="line">
-              <label for="user_repwd" class="right">確認密碼</label>
-              <input type="password" class="form-control" id="user_repwd" placeholder="repassword..." class="left" autocomplete="off" required>
+            <div class="line_wrap">
+              <div class="line">
+                <label for="user_repwd" class="right">確認密碼</label>
+                <input type="password" class="form-control" id="user_repwd" placeholder="repassword..." class="left" autocomplete="off" required>
+              </div>
             </div>
-            <div class="line">
-              <label for="user_email" class="right">電子信箱</label>
-              <input type="text" class="form-control" id="user_email" placeholder="Email..." class="left" autocomplete="off" required>
+            <div class="line_wrap">
+              <div class="line">
+                <label for="user_email" class="right">電子信箱</label>
+                <input type="text" class="form-control" id="user_email" placeholder="Email..." class="left" autocomplete="off" required>
+              </div>
             </div>
-            <div class="line">
-              <label for="user_gender" class="right">性別</label>
-              <select class="form-control" id="user_gender" required>
-                <option value="男">男</option>
-                <option value="女">女</option>
-              </select>
+            <div class="line_wrap">
+              <div class="line">
+                <label for="user_gender" class="right">性別</label>
+                <select class="form-control" id="user_gender" required>
+                  <option value="男">男</option>
+                  <option value="女">女</option>
+                </select>
+              </div>
             </div>
-            <div class="line">
-              <label for="user_birth" class="right">生日</label>
-              <input class="form-control" id="user_birth" type="date" required>
+            <div class="line_wrap">
+              <div class="line">
+                <label for="user_birth" class="right">生日</label>
+                <input class="form-control" id="user_birth" type="date" required>
+              </div>
             </div>
-            <div class="line">
-              <label for="user_addr" class="right">地址</label>
-              <input type="text" class="form-control" id="user_addr" placeholder="Address..." class="left" autocomplete="off" required>
+            <div class="line_wrap">
+              <div class="line">
+                <label for="user_addr" class="right">地址</label>
+                <input type="text" class="form-control" id="user_addr" placeholder="Address..." class="left" autocomplete="off" required>
+              </div>
             </div>
             <div class="wrap_submit">
               <!-- <input class="btn btn-default" id="submit" type="submit" value="註冊"> -->
